@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="IEProjectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AgeSex">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Age" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sex" Type="nvarchar" MaxLength="10" />
+    <Property Name="States" Type="nvarchar" MaxLength="10" />
+    <Property Name="Value" Type="decimal" Precision="18" Scale="1" />
+  </EntityType>
+  <EntityType Name="AgeState">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Age" Type="nvarchar" MaxLength="100" />
+    <Property Name="Sex" Type="nvarchar" MaxLength="10" />
+    <Property Name="NSW" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="VIC" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="QLD" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="SA" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="WA" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="TAS" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="NT" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="ACT" Type="decimal" Precision="18" Scale="1" />
+  </EntityType>
+  <EntityType Name="Content">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ContentName" Type="nvarchar" MaxLength="20" />
+    <Property Name="ImageName" Type="nvarchar" MaxLength="20" />
+    <Property Name="Popularity" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="Rank" Type="int" />
+    <Property Name="TypeId" Type="int" />
+    <Property Name="Comment" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="Field">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FieldName" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Place">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Adress" Type="nvarchar" MaxLength="100" />
+    <Property Name="Rating" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="Total_rating_people" Type="int" />
+    <Property Name="Photo_reference" Type="nvarchar(max)" />
+    <Property Name="Field_id" Type="int" />
+  </EntityType>
+  <EntityType Name="SportType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Sport Type" Type="nvarchar(max)" />
+    <Property Name="Males" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="Females" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="Total" Type="decimal" Precision="18" Scale="1" />
+  </EntityType>
+  <Association Name="FK_Content_ToTable">
+    <End Role="Field" Type="Self.Field" Multiplicity="0..1" />
+    <End Role="Content" Type="Self.Content" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Field">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Content">
+        <PropertyRef Name="TypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Place_ToTable">
+    <End Role="Field" Type="Self.Field" Multiplicity="0..1" />
+    <End Role="Place" Type="Self.Place" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Field">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Place">
+        <PropertyRef Name="Field_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="IEProjectModelStoreContainer">
+    <EntitySet Name="AgeSex" EntityType="Self.AgeSex" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AgeState" EntityType="Self.AgeState" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Content" EntityType="Self.Content" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Field" EntityType="Self.Field" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Place" EntityType="Self.Place" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SportType" EntityType="Self.SportType" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Content_ToTable" Association="Self.FK_Content_ToTable">
+      <End Role="Field" EntitySet="Field" />
+      <End Role="Content" EntitySet="Content" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Place_ToTable" Association="Self.FK_Place_ToTable">
+      <End Role="Field" EntitySet="Field" />
+      <End Role="Place" EntitySet="Place" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

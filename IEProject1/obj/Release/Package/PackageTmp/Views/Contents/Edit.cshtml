@@ -1,0 +1,58 @@
+﻿@model IEnumerable<IEProject1.Models.Content>
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout_Semantic.cshtml";
+}
+
+<!-- Following Menu -->
+<div class="ui large top fixed menu">
+    <div class="ui container">
+        <a href="@Url.Action("Index", "Contents")" class="item">Home</a>
+        <a href="@Url.Action("Edit", "Contents", new { id= 1 })" class="item">Sports</a>
+        <a href="@Url.Action("Edit", "Contents", new { id= 2 })" class="item">Music</a>
+        <a href="@Url.Action("Edit", "Contents", new { id= 3 })" class="item">Egames</a>
+        <a href="@Url.Action("Edit", "Contents", new { id= 4 })" class="item">Culture</a>
+        <a href="@Url.Action("Create", "Contents")" class="item">Statistics</a>
+        @*<div class="right menu">
+            <div class="item">
+                <a class="ui button">Log in</a>
+            </div>
+            <div class="item">
+                <a class="ui primary button">Sign Up</a>
+            </div>*@
+        @*</div>*@
+    </div>
+</div>
+
+<div class="ui grid container">
+    @foreach (var item in Model)
+    {
+        <div class="four wide column ui card">
+            <div class="image">
+                <img src="~/Content/Images/@item.ImageName">
+            </div>
+            <div class="content">
+                <a class="header">@Html.DisplayFor(modelItem => item.ContentName)</a>
+                <div class="description">
+                    @Html.DisplayFor(modelItem => item.Comment)
+                </div>
+            </div>
+            <div class="extra content">
+                <a>
+                    <i class="user icon"></i>
+                    The rank of this activity is: @Html.DisplayFor(modelItem => item.Rank)
+                </a>
+            </div>
+        </div>
+    }
+
+</div>
+
+<div class="ui text container" style="padding-top:20px">
+    <h2>Do you want to see some popular places?</h2>
+    @*<div class="ui huge primary button" href="@Url.Action("Index", "Places")">Find Places<i class="right arrow icon"></i></div>*@
+    <div class="ui huge violet button" style="color:white">
+        <a href="@Url.Action("Index", "Places")" @*class="right arrow icon"*@>Find Places</a>
+    </div>
+</div>
+
