@@ -1,29 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using IEProject1.Models;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Data;
 using System.Data.Entity;
 using System.IO;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
-using IEProject1.Models;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
 namespace IEProject1.Controllers
 {
     public class PlacesController : Controller
     {
-        private IEProjectEntities db = new IEProjectEntities();
+        private IEProject1Entities db = new IEProject1Entities();
 
         // GET: Places
         public ActionResult Index(string searchString)
         {
+            //GetData();
             Place place = new Place();
-
-            //GetData(place);
-
             var places = db.Place.Include(p => p.Field).OrderByDescending(a => a.Rating);
             var ps = from s in places
                      select s;
@@ -61,7 +57,7 @@ namespace IEProject1.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,Adress,Rating,Total_rating_people,Photo_reference,Field_id")] Place place)
+        public ActionResult Create([Bind(Include = "Id,Name,Adress,Rating,latitude,longitude,Total_rating_people,Photo_reference,Field_id")] Place place)
         {
             if (ModelState.IsValid)
             {
@@ -95,7 +91,7 @@ namespace IEProject1.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Name,Adress,Rating,Total_rating_people,Photo_reference,Field_id")] Place place)
+        public ActionResult Edit([Bind(Include = "Id,Name,Adress,Rating,latitude,longitude,Total_rating_people,Photo_reference,Field_id")] Place place)
         {
             if (ModelState.IsValid)
             {
@@ -142,7 +138,7 @@ namespace IEProject1.Controllers
             base.Dispose(disposing);
         }
 
-        public void GetData(Place place)
+        public void GetData()
         {
             //db.Places.clear();
 
@@ -166,25 +162,28 @@ namespace IEProject1.Controllers
 
             foreach (var item in dynJson)
             {
-                place.Id = item.place_id;
-                place.Name = item.name;
-                //place.Photo_reference = item.photos["photo_reference"];
-                place.Rating = Convert.ToSingle(item.rating);
+                Place place = new Place();
+                place.Id = item["id"];
+                place.Name = item["name"];
+                place.latitude = item["geometry"]["location"]["lat"];
+                place.longitude = item["geometry"]["location"]["lng"];
+                place.Rating = (decimal)Convert.ToSingle(item.rating);
                 place.Adress = item.formatted_address;
                 place.Total_rating_people = Convert.ToInt32(item.user_ratings_total);
+                place.Field_id = 1;
 
-                Place place2 = db.Place.FirstOrDefault(m => m.Id == place.Id);
+                Place place2 = db.Place.FirstOrDefault(m => m.Id == place.Id /*&& m.Name == place.Name && m.Adress == place.Adress*/);
 
-                if (place2 != null)
+                if (place2 == null)
                 {
                     db.Place.Add(place);
                     db.SaveChanges();
                 }
 
             }
-
             response.Close();
 
         }
+
     }
 }

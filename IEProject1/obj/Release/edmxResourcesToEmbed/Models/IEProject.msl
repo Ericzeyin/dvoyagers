@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="IEProjectModelStoreContainer" CdmEntityContainer="IEProjectEntities">
+  <EntityContainerMapping StorageEntityContainer="IEProjectModelStoreContainer" CdmEntityContainer="IEProject1Entities">
     <EntitySetMapping Name="AgeSex">
       <EntityTypeMapping TypeName="IEProjectModel.AgeSex">
         <MappingFragment StoreEntitySet="AgeSex">
@@ -57,6 +57,8 @@
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Adress" ColumnName="Adress" />
           <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
           <ScalarProperty Name="Total_rating_people" ColumnName="Total_rating_people" />
           <ScalarProperty Name="Photo_reference" ColumnName="Photo_reference" />
           <ScalarProperty Name="Field_id" ColumnName="Field_id" />

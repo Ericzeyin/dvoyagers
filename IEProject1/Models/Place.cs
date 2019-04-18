@@ -18,6 +18,8 @@ namespace IEProject1.Models
         public string Name { get; set; }
         public string Adress { get; set; }
         public Nullable<decimal> Rating { get; set; }
+        public Nullable<decimal> latitude { get; set; }
+        public Nullable<decimal> longitude { get; set; }
         public Nullable<int> Total_rating_people { get; set; }
         public string Photo_reference { get; set; }
         public Nullable<int> Field_id { get; set; }

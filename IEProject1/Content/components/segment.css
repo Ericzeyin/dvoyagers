@@ -649,13 +649,14 @@
 .ui.inverted.segment .segment {
   color: rgba(0, 0, 0, 0.87);
 }
-.ui.inverted.segment .inverted.segment {
-  color: #ffffff;
-}
+    .ui.inverted.segment .inverted.segment {
+        color: #ffffff;
+    }
 .ui.inverted.segment,
 .ui.primary.inverted.segment {
-  background-color: #1b1c1d;
-  color: #ffffff;
+    background-color: #1b1c1d;
+    color: #ffffff;
+
 }
 .ui.inverted.block.segment,
 .ui.inverted.attached.segment {

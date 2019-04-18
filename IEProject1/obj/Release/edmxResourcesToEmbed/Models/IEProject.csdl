@@ -56,6 +56,8 @@
     <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <Property Name="Adress" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <Property Name="Rating" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="latitude" Type="Decimal" Precision="18" Scale="6" />
+    <Property Name="longitude" Type="Decimal" Precision="18" Scale="6" />
     <Property Name="Total_rating_people" Type="Int32" />
     <Property Name="Photo_reference" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="Field_id" Type="Int32" />
@@ -95,7 +97,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="IEProjectEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="IEProject1Entities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="AgeSex" EntityType="Self.AgeSex" />
     <EntitySet Name="AgeState" EntityType="Self.AgeState" />
     <EntitySet Name="Content" EntityType="Self.Content" />

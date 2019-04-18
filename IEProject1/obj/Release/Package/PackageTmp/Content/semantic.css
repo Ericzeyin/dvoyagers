@@ -6360,7 +6360,8 @@ h5.ui.header .sub.header {
 --------------------*/
 
 .ui.inverted.header {
-  color: #ffffff;
+    /*color: #ffffff;*/
+    color:black;
 }
 
 .ui.inverted.header .sub.header {
@@ -14800,8 +14801,10 @@ ol.ui.horizontal.list li:before,
 
 .ui.inverted.segment,
 .ui.primary.inverted.segment {
-  background-color: #1b1c1d;
-  color: #ffffff;
+    /*background-color: #1b1c1d;
+  color: #ffffff;*/
+    background-color: #ffffff;
+    color:black;
 }
 
 .ui.inverted.block.segment,
@@ -19366,7 +19369,7 @@ ol.ui.horizontal.list li:before,
 .ui.menu a.item:hover {
   cursor: pointer;
   background: rgba(0, 0, 0, 0.03);
-  color: rgba(0, 0, 0, 0.95);
+  color:blueviolet;/*rgba(0, 0, 0, 0.95);*/
 }
 
 /*--------------
@@ -19376,8 +19379,8 @@ ol.ui.horizontal.list li:before,
 .ui.link.menu .item:active,
 .ui.menu .link.item:active,
 .ui.menu a.item:active {
-  background: rgba(0, 0, 0, 0.03);
-  color: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.03);
+    color: blueviolet; /*rgba(0, 0, 0, 0.9);*/
 }
 
 /*--------------
@@ -19386,7 +19389,7 @@ ol.ui.horizontal.list li:before,
 
 .ui.menu .active.item {
   background: rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.95);
+  color: blueviolet;/*rgba(0, 0, 0, 0.95)*/
   font-weight: normal;
   box-shadow: none;
 }
@@ -19399,11 +19402,11 @@ ol.ui.horizontal.list li:before,
   Active Hover
 ---------------*/
 
-.ui.menu .active.item:hover,
-.ui.vertical.menu .active.item:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.95);
-}
+    .ui.menu .active.item:hover,
+    .ui.vertical.menu .active.item:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+        color: blueviolet; /*rgba(0, 0, 0, 0.95)*/
+    }
 
 /*--------------
      Disabled
@@ -19459,14 +19462,15 @@ Floated Menu / Item
 ---------------*/
 
 .ui.vertical.menu {
-  display: block;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  background: #ffffff;
-  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /*background: #ffffff;*/
+    background-color: transparent;
+    box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
 }
 
 /*--- Item ---*/
@@ -19537,7 +19541,7 @@ Floated Menu / Item
 
 .ui.vertical.menu .item .menu a.item:hover,
 .ui.vertical.menu .item .menu .link.item:hover {
-  color: rgba(0, 0, 0, 0.85);
+  color:blueviolet;/*rgba(0, 0, 0, 0.85);*/
 }
 
 .ui.vertical.menu .menu .item:before {
@@ -19771,7 +19775,7 @@ Floated Menu / Item
 .ui.secondary.menu .link.item:hover,
 .ui.secondary.menu a.item:hover {
   background: rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.95);
+  color:blueviolet/*rgba(0, 0, 0, 0.95)*/;
 }
 
 /* Active */
@@ -19788,26 +19792,26 @@ Floated Menu / Item
 .ui.secondary.menu .active.item:hover {
   box-shadow: none;
   background: rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.95);
+  color:blueviolet/*rgba(0, 0, 0, 0.95)*/;
 }
 
 /* Inverted */
 
 .ui.secondary.inverted.menu .link.item,
 .ui.secondary.inverted.menu a.item {
-  color: rgba(255, 255, 255, 0.7) !important;
+  color:blueviolet/*rgba(255, 255, 255, 0.7)*/ !important;
 }
 
 .ui.secondary.inverted.menu .dropdown.item:hover,
 .ui.secondary.inverted.menu .link.item:hover,
 .ui.secondary.inverted.menu a.item:hover {
   background: rgba(255, 255, 255, 0.08);
-  color: #ffffff !important;
+  color:blueviolet/*#ffffff*/ !important;
 }
 
 .ui.secondary.inverted.menu .active.item {
   background: rgba(255, 255, 255, 0.15);
-  color: #ffffff !important;
+  color:blueviolet/*#ffffff*/ !important;
 }
 
 /* Fix item margins */
@@ -19966,7 +19970,8 @@ Floated Menu / Item
 }
 
 .ui.secondary.inverted.pointing.menu .item {
-  color: rgba(255, 255, 255, 0.9);
+  /*color: rgba(255, 255, 255, 0.9);*/
+  color:black;
 }
 
 .ui.secondary.inverted.pointing.menu .header.item {
@@ -19975,16 +19980,19 @@ Floated Menu / Item
 
 /* Hover */
 
-.ui.secondary.inverted.pointing.menu .item:hover {
-  color: rgba(0, 0, 0, 0.95);
-}
+    .ui.secondary.inverted.pointing.menu .item:hover {
+        /*color: rgba(0, 0, 0, 0.95);*/
+        color:blueviolet;
+    }
 
 /* Active */
 
-.ui.secondary.inverted.pointing.menu .active.item {
-  border-color: #ffffff;
-  color: #ffffff;
-}
+    .ui.secondary.inverted.pointing.menu .active.item {
+        /*border-color: #ffffff;*/
+        /*color: #ffffff;*/
+        border-color: blueviolet;
+        color: blueviolet;
+    }
 
 /*--------------
     Text Menu
@@ -20374,13 +20382,13 @@ Floated Menu / Item
 .ui.inverted.menu .link.item:hover,
 .ui.inverted.menu a.item:hover {
   background: rgba(255, 255, 255, 0.08);
-  color: #ffffff;
+  color:blueviolet;
 }
 
 .ui.vertical.inverted.menu .item .menu a.item:hover,
 .ui.vertical.inverted.menu .item .menu .link.item:hover {
   background: transparent;
-  color: #ffffff;
+  color:/*#ffffff*/;
 }
 
 /*--- Pressed ---*/

@@ -12,7 +12,7 @@ namespace IEProject1.Controllers
 {
     public class ContentsController : Controller
     {
-        private IEProjectEntities db = new IEProjectEntities();
+        private IEProject1Entities db = new IEProject1Entities();
 
         // GET: Contents
         public ActionResult Index()

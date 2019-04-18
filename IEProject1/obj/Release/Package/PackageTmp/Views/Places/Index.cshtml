@@ -14,77 +14,44 @@
         <a href="@Url.Action("Edit", "Contents", new { id= 3 })" class="item">Egames</a>
         <a href="@Url.Action("Edit", "Contents", new { id= 4 })" class="item">Culture</a>
         <a href="@Url.Action("Create", "Contents")" class="item">Statistics</a>
-        @*<div class="right menu">
-            <div class="item">
-                <a class="ui button">Log in</a>
-            </div>
-            <div class="item">
-                <a class="ui primary button">Sign Up</a>
-            </div>*@
-        @*</div>*@
     </div>
 </div>
 
-<div class="ui grid container" style="padding-top:120px">
+<div class="ui grid container right item" style="padding-top:80px">
     @using (Html.BeginForm())
     {
-        <p>
-            Search Suburb: @Html.TextBox("SearchString")
-            <input type="submit" value="Search" />
-        </p>
+        <div class="content">
+            <p>
+                <div class="ui action input">
+                    <input type="submit" placeholder="Navigate to..." value="Search" >
+                    <div class="ui button">@Html.TextBox("SearchString")</div>
+                </div>
+            </p>
+         </div>
     }
-
-    <table class="table">
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Adress)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Rating)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Total_rating_people)
-            </th>
-            @*<th>
-                    @Html.DisplayNameFor(model => model.Photo_reference)
-                </th>*@
-            @*<th>
-                    @Html.DisplayNameFor(model => model.Field.FieldName)
-                </th>*@
-            <th></th>
-        </tr>
-
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Adress)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Rating)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Total_rating_people)
-                </td>
-                @*<td>
-                        @Html.DisplayFor(modelItem => item.Photo_reference)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Field.FieldName)
-                    </td>
-                    <td>
-                        @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-                        @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-                        @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-                    </td>*@
-            </tr>
-        }
-
-    </table>
 </div>
+
+    <div class="ui grid container">
+        <div class="ui four cards">
+            @foreach (var item in Model)
+            {
+            <div class="card">
+                <a href="@Url.Action("Index", "Map", new { Lat=@item.latitude, Lng=@item.longitude})">
+                    <div class="content">
+                        <div class="header">@item.Name</div>
+                        <div class="meta">Sports</div>
+                        <div class="description">
+                            <p>Adress: @item.Adress</p>
+                            <p>There are @item.Total_rating_people rating.</p>
+                        </div>
+                    </div>
+                    <div class="extra">
+                        Rating:
+                        <div class="ui rating" data-rating="@item.Rating" data-max-rating="5"></div>
+                    </div>
+                 </a>
+            </div>
+               
+            }
+        </div>
+     </div>

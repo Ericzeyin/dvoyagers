@@ -1,10 +1,9 @@
 ﻿@model IEnumerable<IEProject1.Models.Content>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Home Page";
     Layout = "~/Views/Shared/_Layout_Semantic.cshtml";
 }
-
 
 <body>
     <!-- Following Menu -->
@@ -15,14 +14,6 @@
             <a class="item">Music</a>
             <a class="item">EGames</a>
             <a class="item">Photography</a>
-            @*<div class="right menu">
-                    <div class="item">
-                        <a class="ui button">Log in</a>
-                    </div>
-                    <div class="item">
-                        <a class="ui primary button">Sign Up</a>
-                    </div>
-                </div>*@
         </div>
     </div>
 
@@ -31,63 +22,79 @@
         <div class="ui inverted vertical masthead center aligned segment">
             <div class="ui container">
                 <div class="ui large secondary inverted pointing menu">
-                    <div class="ui dropdown link item">
-                        Menu
-                        <div class="menu">
-                            <a href="@Url.Action("Edit", "Contents", new { id= 1 })" class="item">Sports</a>
-                            <a href="@Url.Action("Edit", "Contents", new { id= 2 })" class="item">Music</a>
-                            <a href="@Url.Action("Edit", "Contents", new { id= 3 })" class="item">EGames</a>
-                            <a href="@Url.Action("Edit", "Contents", new { id= 4 })" class="item">Culture</a>
-                            <a href="@Url.Action("Create", "Contents")" class="item">Statistics</a>
-                            @*<a href="@Url.Action("Details", "Contents")" class="item">Table</a>*@
+                    <div class="ui vertical menu">
+                        <div class="ui dropdown item">
+                            Menu
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <a href="@Url.Action("Edit", "Contents", new { id= 1 })" class="item">Sports</a>
+                                <a href="@Url.Action("Edit", "Contents", new { id= 2 })" class="item">Music</a>
+                                <a href="@Url.Action("Edit", "Contents", new { id= 3 })" class="item">EGames</a>
+                                <a href="@Url.Action("Edit", "Contents", new { id= 4 })" class="item">Culture</a>
+                                <a href="@Url.Action("Create", "Contents")" class="item">Statistics</a>
+                            </div>
                         </div>
                     </div>
-                    @*<div class="right item">
-                            <a class="ui inverted button">Log in</a>
-                            <a class="ui inverted button">Sign Up</a>
-                        </div>*@
                 </div>
             </div>
 
-            <div class="ui text container" style="padding-top:130px">
-                <h1 class="ui inverted header">
-                    Head Start
-                </h1>
+            <div class="ui text container" style="padding-top:230px">
+                <h1 class="ui inverted header">NewVics</h1>
                 <h2>Do whatever you want when you want to.</h2>
                 @*<div class="ui huge primary button" href="@Url.Action("Index", "Content")">See Activities<i class="right arrow icon"></i></div>*@
             </div>
         </div>
     </div>
 
-    <div class="ui vertical stripe segment">
+    <div class="ui grid container" style="text-align:center;padding-top:10px">
         <div class="ui text container">
             <h1 class="ui header">See the most popular activities</h1>
             <h2>There are different kinds of activities that you can participate in. The following are the top eight most popular activies.</h2>
         </div>
     </div>
 
-    <div class="ui grid container">
-        @foreach (var item in Model)
-        {
-            <div class="four wide column ui card">
-                <div class="image">
-                    <img src="~/Content/Images/@item.ImageName">
-                </div>
-                <div class="content">
-                    <a class="header">@Html.DisplayFor(modelItem => item.ContentName)</a>
-                    <div class="description">
-                        @Html.DisplayFor(modelItem => item.Comment)
+    @*<div class="ui grid container">
+            @foreach (var item in Model)
+            {
+                <div class="four wide column ui card">
+                    <div class="image">
+                        <img src="~/Content/Images/@item.ImageName">
+                    </div>
+                    <div class="content">
+                        <a class="header">@Html.DisplayFor(modelItem => item.ContentName)</a>
+                        <div class="description">
+                            @Html.DisplayFor(modelItem => item.Comment)
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <a>
+                            <i class="user icon"></i>
+                            The popularity of this activity is: @Html.DisplayFor(modelItem => item.Popularity)
+                        </a>
                     </div>
                 </div>
-                <div class="extra content">
-                    <a>
-                        <i class="user icon"></i>
-                        The popularity of this activity is: @Html.DisplayFor(modelItem => item.Popularity)
-                    </a>
+            }
+        </div>*@
+    <div class="ui grid container">
+        <div class="ui four cards">
+            @foreach (var item in Model)
+            {
+                <div class="card">
+                    <div class="image">
+                        <img src="~/Content/Images/@item.ImageName">
+                    </div>
+                    <div class="extra">
+                        Rating:@item.Popularity
+                        @*<div class="ui rating" data-rating="@item.Popularity"></div>*@
+                        <div class="ui accurate star widget">
+                            <div class="highlight" style="width:75%"></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        }
+            }
+        </div>
     </div>
+
 
 
     <div name="FieldChoose" class="ui vertical stripe segment">
@@ -130,5 +137,6 @@
             </div>
         </div>
     </div>
+
 
 </body>

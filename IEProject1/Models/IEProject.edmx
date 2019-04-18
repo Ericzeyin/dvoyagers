@@ -58,6 +58,8 @@
           <Property Name="Name" Type="nvarchar" MaxLength="100" />
           <Property Name="Adress" Type="nvarchar" MaxLength="100" />
           <Property Name="Rating" Type="decimal" Precision="18" Scale="1" />
+          <Property Name="latitude" Type="decimal" Precision="18" Scale="6" />
+          <Property Name="longitude" Type="decimal" Precision="18" Scale="6" />
           <Property Name="Total_rating_people" Type="int" />
           <Property Name="Photo_reference" Type="nvarchar(max)" />
           <Property Name="Field_id" Type="int" />
@@ -173,6 +175,8 @@
           <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="Adress" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="Rating" Type="Decimal" Precision="18" Scale="1" />
+          <Property Name="latitude" Type="Decimal" Precision="18" Scale="6" />
+          <Property Name="longitude" Type="Decimal" Precision="18" Scale="6" />
           <Property Name="Total_rating_people" Type="Int32" />
           <Property Name="Photo_reference" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Field_id" Type="Int32" />
@@ -212,7 +216,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="IEProjectEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="IEProject1Entities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="AgeSex" EntityType="Self.AgeSex" />
           <EntitySet Name="AgeState" EntityType="Self.AgeState" />
           <EntitySet Name="Content" EntityType="Self.Content" />
@@ -233,7 +237,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="IEProjectModelStoreContainer" CdmEntityContainer="IEProjectEntities">
+        <EntityContainerMapping StorageEntityContainer="IEProjectModelStoreContainer" CdmEntityContainer="IEProject1Entities">
           <EntitySetMapping Name="AgeSex">
             <EntityTypeMapping TypeName="IEProjectModel.AgeSex">
               <MappingFragment StoreEntitySet="AgeSex">
@@ -290,6 +294,8 @@
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Adress" ColumnName="Adress" />
                 <ScalarProperty Name="Rating" ColumnName="Rating" />
+                <ScalarProperty Name="latitude" ColumnName="latitude" />
+                <ScalarProperty Name="longitude" ColumnName="longitude" />
                 <ScalarProperty Name="Total_rating_people" ColumnName="Total_rating_people" />
                 <ScalarProperty Name="Photo_reference" ColumnName="Photo_reference" />
                 <ScalarProperty Name="Field_id" ColumnName="Field_id" />

@@ -13,10 +13,10 @@ namespace IEProject1.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class IEProjectEntities : DbContext
+    public partial class IEProject1Entities : DbContext
     {
-        public IEProjectEntities()
-            : base("name=IEProjectEntities")
+        public IEProject1Entities()
+            : base("name=IEProject1Entities")
         {
         }
     
