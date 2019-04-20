@@ -9,10 +9,10 @@
 <div class="ui large top fixed menu">
     <div class="ui container">
         <a href="@Url.Action("Index", "Contents")" class="item">Home</a>
-        <a href="@Url.Action("Edit", "Contents", new { id= 1 })" class="item">Sports</a>
-        <a href="@Url.Action("Edit", "Contents", new { id= 2 })" class="item">Music</a>
-        <a href="@Url.Action("Edit", "Contents", new { id= 3 })" class="item">Egames</a>
-        <a href="@Url.Action("Edit", "Contents", new { id= 4 })" class="item">Culture</a>
+        <a href="@Url.Action("Edit", "Contents", new { id = 1 })" class="item">Sports</a>
+        <a href="@Url.Action("Edit", "Contents", new { id = 2 })" class="item">Music</a>
+        <a href="@Url.Action("Edit", "Contents", new { id = 3 })" class="item">Egames</a>
+        <a href="@Url.Action("Edit", "Contents", new { id = 4 })" class="item">Culture</a>
         <a href="@Url.Action("Create", "Contents")" class="item">Statistics</a>
     </div>
 </div>
@@ -23,35 +23,81 @@
         <div class="content">
             <p>
                 <div class="ui action input">
-                    <input type="submit" placeholder="Navigate to..." value="Search" >
+                    <input type="submit" placeholder="Navigate to..." value="Search">
                     <div class="ui button">@Html.TextBox("SearchString")</div>
                 </div>
             </p>
-         </div>
+        </div>
     }
 </div>
 
-    <div class="ui grid container">
-        <div class="ui four cards">
-            @foreach (var item in Model)
-            {
-            <div class="card">
-                <a href="@Url.Action("Index", "Map", new { Lat=@item.latitude, Lng=@item.longitude})">
-                    <div class="content">
-                        <div class="header">@item.Name</div>
-                        <div class="meta">Sports</div>
-                        <div class="description">
-                            <p>Adress: @item.Adress</p>
-                            <p>There are @item.Total_rating_people rating.</p>
-                        </div>
-                    </div>
-                    <div class="extra">
-                        Rating:
-                        <div class="ui rating" data-rating="@item.Rating" data-max-rating="5"></div>
-                    </div>
-                 </a>
-            </div>
-               
-            }
-        </div>
-     </div>
+@*<div class="ui grid container">
+       <div class="ui four cards">
+           @foreach (var item in Model)
+           {
+           <div class="card">
+               <a href="@Url.Action("Index", "Map", new { Lat=@item.latitude, Lng=@item.longitude})">
+                   <div class="content">
+                       <div class="header">@item.Name</div>
+                       <div class="meta">Sports</div>
+                       <div class="description">
+                           <p>Adress: @item.Adress</p>
+                           <p>There are @item.Total_rating_people rating.</p>
+                       </div>
+                   </div>
+                   <div class="extra">
+                       Rating:
+                       <div class="ui rating" data-rating="@item.Rating" data-max-rating="5"></div>
+                   </div>
+                </a>
+           </div>
+
+           }
+       </div>
+    </div>*@
+
+<h2 style="background-color: Yellow;color: Blue; text-align: center; font-style: oblique">Find clubs near your suburb</h2>
+<fieldset>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <div id="googleMap" class="ui container" style="height:400px;width:100%;"></div>
+
+    <script>
+
+ function myMap() {
+     var markersArray = [];
+     var contentArray = [];
+     var _c = null;
+     var myCenter = new google.maps.LatLng(-37.883145, 145.013360);
+     var mapProp = { center: myCenter, zoom: 13, scrollwheel: false, draggable: true, mapTypeId: google.maps.MapTypeId.ROADMAP };
+     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+    @foreach(var item in Model)
+    {
+        <text>
+        markersArray.push(new google.maps.Marker({
+            animation: google.maps.Animation.DROP,
+            position: new google.maps.LatLng('@item.latitude', '@item.longitude', false),
+            title: '@item.Name',
+            map: map
+     })); 
+        </text>
+     }
+
+       for (var i = 0; i < markersArray.length; i++) {
+             markersArray[i].setMap(map);
+        }
+    }
+
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrX2JUBuXyOQ7P8p8Q_SLJ3GTX5m1eRPs&callback=myMap"></script>
+</fieldset>
+<footer>
+    <p style="background-color: Yellow; font-weight: bold; color:blue; text-align: center; font-style: oblique">© @DateTime.Now.ToLocalTime()</p> @*Add Date Time*@
+</footer>
+
