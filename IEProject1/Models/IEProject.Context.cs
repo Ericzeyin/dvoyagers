@@ -30,6 +30,9 @@ namespace IEProject1.Models
         public virtual DbSet<Content> Content { get; set; }
         public virtual DbSet<Field> Field { get; set; }
         public virtual DbSet<Place> Place { get; set; }
+        public virtual DbSet<RPlace> RPlace { get; set; }
         public virtual DbSet<SportType> SportType { get; set; }
+        public virtual DbSet<YPlace> YPlace { get; set; }
+        public virtual DbSet<Yoga> Yoga { get; set; }
     }
 }

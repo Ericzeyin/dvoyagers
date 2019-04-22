@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="IEProjectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="DVoyagers_dbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="AgeSex">
     <Key>
       <PropertyRef Name="Id" />
@@ -59,6 +59,20 @@
     <Property Name="Photo_reference" Type="nvarchar(max)" />
     <Property Name="Field_id" Type="int" />
   </EntityType>
+  <EntityType Name="RPlace">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Adress" Type="nvarchar" MaxLength="100" />
+    <Property Name="Rating" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="latitude" Type="decimal" Precision="18" Scale="6" />
+    <Property Name="longitude" Type="decimal" Precision="18" Scale="6" />
+    <Property Name="Total_rating_people" Type="int" />
+    <Property Name="Photo_reference" Type="nvarchar(max)" />
+    <Property Name="Field_id" Type="int" />
+  </EntityType>
   <EntityType Name="SportType">
     <Key>
       <PropertyRef Name="Id" />
@@ -68,6 +82,36 @@
     <Property Name="Males" Type="decimal" Precision="18" Scale="1" />
     <Property Name="Females" Type="decimal" Precision="18" Scale="1" />
     <Property Name="Total" Type="decimal" Precision="18" Scale="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DVoyagers_db.dbo.Yoga' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Yoga">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Adress" Type="nvarchar" MaxLength="100" />
+    <Property Name="Suburb" Type="nvarchar" MaxLength="50" />
+    <Property Name="Postcode" Type="nvarchar" MaxLength="50" />
+    <Property Name="State" Type="nvarchar" MaxLength="50" />
+    <Property Name="Business_Category" Type="nvarchar" MaxLength="50" />
+    <Property Name="LGA" Type="nvarchar" MaxLength="100" />
+    <Property Name="Region" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="YPlace">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Adress" Type="nvarchar" MaxLength="100" />
+    <Property Name="Rating" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="latitude" Type="decimal" Precision="18" Scale="6" />
+    <Property Name="longitude" Type="decimal" Precision="18" Scale="6" />
+    <Property Name="Total_rating_people" Type="int" />
+    <Property Name="Photo_reference" Type="nvarchar(max)" />
+    <Property Name="Field_id" Type="int" />
   </EntityType>
   <Association Name="FK_Content_ToTable">
     <End Role="Field" Type="Self.Field" Multiplicity="0..1" />
@@ -93,13 +137,52 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="IEProjectModelStoreContainer">
+  <Association Name="FK_RPlace_ToTable">
+    <End Role="Field" Type="Self.Field" Multiplicity="0..1" />
+    <End Role="RPlace" Type="Self.RPlace" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Field">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RPlace">
+        <PropertyRef Name="Field_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_YPlace_ToTable">
+    <End Role="Field" Type="Self.Field" Multiplicity="0..1" />
+    <End Role="YPlace" Type="Self.YPlace" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Field">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="YPlace">
+        <PropertyRef Name="Field_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DVoyagers_dbModelStoreContainer">
     <EntitySet Name="AgeSex" EntityType="Self.AgeSex" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="AgeState" EntityType="Self.AgeState" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Content" EntityType="Self.Content" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Field" EntityType="Self.Field" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Place" EntityType="Self.Place" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RPlace" EntityType="Self.RPlace" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="SportType" EntityType="Self.SportType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="YPlace" EntityType="Self.YPlace" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Yoga" EntityType="Self.Yoga" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Yoga].[Id] AS [Id], 
+    [Yoga].[Name] AS [Name], 
+    [Yoga].[Adress] AS [Adress], 
+    [Yoga].[Suburb] AS [Suburb], 
+    [Yoga].[Postcode] AS [Postcode], 
+    [Yoga].[State] AS [State], 
+    [Yoga].[Business_Category] AS [Business_Category], 
+    [Yoga].[LGA] AS [LGA], 
+    [Yoga].[Region] AS [Region]
+    FROM [dbo].[Yoga] AS [Yoga]</DefiningQuery>
+    </EntitySet>
     <AssociationSet Name="FK_Content_ToTable" Association="Self.FK_Content_ToTable">
       <End Role="Field" EntitySet="Field" />
       <End Role="Content" EntitySet="Content" />
@@ -107,6 +190,14 @@
     <AssociationSet Name="FK_Place_ToTable" Association="Self.FK_Place_ToTable">
       <End Role="Field" EntitySet="Field" />
       <End Role="Place" EntitySet="Place" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RPlace_ToTable" Association="Self.FK_RPlace_ToTable">
+      <End Role="Field" EntitySet="Field" />
+      <End Role="RPlace" EntitySet="RPlace" />
+    </AssociationSet>
+    <AssociationSet Name="FK_YPlace_ToTable" Association="Self.FK_YPlace_ToTable">
+      <End Role="Field" EntitySet="Field" />
+      <End Role="YPlace" EntitySet="YPlace" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

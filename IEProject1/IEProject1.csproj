@@ -216,7 +216,16 @@
     <Compile Include="Models\Place.cs">
       <DependentUpon>IEProject.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\RPlace.cs">
+      <DependentUpon>IEProject.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\SportType.cs">
+      <DependentUpon>IEProject.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Yoga.cs">
+      <DependentUpon>IEProject.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\YPlace.cs">
       <DependentUpon>IEProject.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />

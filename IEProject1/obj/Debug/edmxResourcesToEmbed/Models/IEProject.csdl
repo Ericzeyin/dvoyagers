@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="IEProjectModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="DVoyagers_dbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="AgeSex">
     <Key>
       <PropertyRef Name="Id" />
@@ -47,6 +47,8 @@
     <Property Name="FieldName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Content" Relationship="Self.FK_Content_ToTable" FromRole="Field" ToRole="Content" />
     <NavigationProperty Name="Place" Relationship="Self.FK_Place_ToTable" FromRole="Field" ToRole="Place" />
+    <NavigationProperty Name="RPlace" Relationship="Self.FK_RPlace_ToTable" FromRole="Field" ToRole="RPlace" />
+    <NavigationProperty Name="YPlace" Relationship="Self.FK_YPlace_ToTable" FromRole="Field" ToRole="YPlace" />
   </EntityType>
   <EntityType Name="Place">
     <Key>
@@ -63,6 +65,21 @@
     <Property Name="Field_id" Type="Int32" />
     <NavigationProperty Name="Field" Relationship="Self.FK_Place_ToTable" FromRole="Place" ToRole="Field" />
   </EntityType>
+  <EntityType Name="RPlace">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Adress" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Rating" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="latitude" Type="Decimal" Precision="18" Scale="6" />
+    <Property Name="longitude" Type="Decimal" Precision="18" Scale="6" />
+    <Property Name="Total_rating_people" Type="Int32" />
+    <Property Name="Photo_reference" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Field_id" Type="Int32" />
+    <NavigationProperty Name="Field" Relationship="Self.FK_RPlace_ToTable" FromRole="RPlace" ToRole="Field" />
+  </EntityType>
   <EntityType Name="SportType">
     <Key>
       <PropertyRef Name="Id" />
@@ -72,6 +89,35 @@
     <Property Name="Males" Type="Decimal" Precision="18" Scale="1" />
     <Property Name="Females" Type="Decimal" Precision="18" Scale="1" />
     <Property Name="Total" Type="Decimal" Precision="18" Scale="1" />
+  </EntityType>
+  <EntityType Name="YPlace">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Adress" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Rating" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="latitude" Type="Decimal" Precision="18" Scale="6" />
+    <Property Name="longitude" Type="Decimal" Precision="18" Scale="6" />
+    <Property Name="Total_rating_people" Type="Int32" />
+    <Property Name="Photo_reference" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Field_id" Type="Int32" />
+    <NavigationProperty Name="Field" Relationship="Self.FK_YPlace_ToTable" FromRole="YPlace" ToRole="Field" />
+  </EntityType>
+  <EntityType Name="Yoga">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Adress" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Suburb" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Postcode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Business_Category" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LGA" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Region" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
   </EntityType>
   <Association Name="FK_Content_ToTable">
     <End Role="Field" Type="Self.Field" Multiplicity="0..1" />
@@ -97,13 +143,40 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_RPlace_ToTable">
+    <End Role="Field" Type="Self.Field" Multiplicity="0..1" />
+    <End Role="RPlace" Type="Self.RPlace" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Field">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RPlace">
+        <PropertyRef Name="Field_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_YPlace_ToTable">
+    <End Role="Field" Type="Self.Field" Multiplicity="0..1" />
+    <End Role="YPlace" Type="Self.YPlace" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Field">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="YPlace">
+        <PropertyRef Name="Field_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="IEProject1Entities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="AgeSex" EntityType="Self.AgeSex" />
     <EntitySet Name="AgeState" EntityType="Self.AgeState" />
     <EntitySet Name="Content" EntityType="Self.Content" />
     <EntitySet Name="Field" EntityType="Self.Field" />
     <EntitySet Name="Place" EntityType="Self.Place" />
+    <EntitySet Name="RPlace" EntityType="Self.RPlace" />
     <EntitySet Name="SportType" EntityType="Self.SportType" />
+    <EntitySet Name="YPlace" EntityType="Self.YPlace" />
+    <EntitySet Name="Yoga" EntityType="Self.Yoga" />
     <AssociationSet Name="FK_Content_ToTable" Association="Self.FK_Content_ToTable">
       <End Role="Field" EntitySet="Field" />
       <End Role="Content" EntitySet="Content" />
@@ -111,6 +184,14 @@
     <AssociationSet Name="FK_Place_ToTable" Association="Self.FK_Place_ToTable">
       <End Role="Field" EntitySet="Field" />
       <End Role="Place" EntitySet="Place" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RPlace_ToTable" Association="Self.FK_RPlace_ToTable">
+      <End Role="Field" EntitySet="Field" />
+      <End Role="RPlace" EntitySet="RPlace" />
+    </AssociationSet>
+    <AssociationSet Name="FK_YPlace_ToTable" Association="Self.FK_YPlace_ToTable">
+      <End Role="Field" EntitySet="Field" />
+      <End Role="YPlace" EntitySet="YPlace" />
     </AssociationSet>
   </EntityContainer>
 </Schema>
