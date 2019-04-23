@@ -27,7 +27,19 @@ namespace IEProject1.Controllers
             {
                 ps = ps.Where(s => s.Adress.Contains(searchString));
             }
-            return View(ps.ToList());
+
+            Place pl = ps.FirstOrDefault();
+
+            if (pl == null)
+            {
+                ViewData["Message"] = "Sorry, there is no club in your suburb!";
+            }
+            else
+            {
+                ViewData["Message"] = null;
+            }
+            ViewData["Places"] = ps;
+            return View();
         }
 
         // GET: Places/Details/5

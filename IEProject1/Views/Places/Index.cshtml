@@ -31,32 +31,16 @@
     }
 </div>
 
-@*<div class="ui grid container">
-       <div class="ui four cards">
-           @foreach (var item in Model)
-           {
-           <div class="card">
-               <a href="@Url.Action("Index", "Map", new { Lat=@item.latitude, Lng=@item.longitude})">
-                   <div class="content">
-                       <div class="header">@item.Name</div>
-                       <div class="meta">Sports</div>
-                       <div class="description">
-                           <p>Adress: @item.Adress</p>
-                           <p>There are @item.Total_rating_people rating.</p>
-                       </div>
-                   </div>
-                   <div class="extra">
-                       Rating:
-                       <div class="ui rating" data-rating="@item.Rating" data-max-rating="5"></div>
-                   </div>
-                </a>
-           </div>
+@if (ViewData["Message"] != null)
+{
+ <script>
+$(document).ready(function(){
+    alert('@ViewData["Message"]');
+});
+</script>
+}
 
-           }
-       </div>
-    </div>*@
-
-<h2 style="background-color: Yellow;color: Blue; text-align: center; font-style: oblique">Find clubs near your suburb</h2>
+ <h2 style="background-color: Yellow;color: Blue; text-align: center; font-style: oblique">Find clubs near your suburb</h2>
 <fieldset>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -67,17 +51,16 @@
     <div id="googleMap" class="ui container" style="height:400px;width:100%;"></div>
 
     <script>
-
  function myMap() {
-     var markersArray = [];
-     var contentArray = [];
-     var _c = null;
-     var myCenter = new google.maps.LatLng(-37.883145, 145.013360);
-     var mapProp = { center: myCenter, zoom: 13, scrollwheel: false, draggable: true, mapTypeId: google.maps.MapTypeId.ROADMAP };
-     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            var markersArray = [];
+            var contentArray = [];
+            var _c = null;
+            var myCenter = new google.maps.LatLng(-37.883145, 145.013360);
+            var mapProp = { center: myCenter, zoom: 13, scrollwheel: false, draggable: true, mapTypeId: google.maps.MapTypeId.ROADMAP };
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 
-    @foreach(var item in Model)
-    {
+        @foreach (var item in (IEnumerable<IEProject1.Models.Place >)ViewData["Places"])
+        {
         <text>
         markersArray.push(new google.maps.Marker({
             animation: google.maps.Animation.DROP,
@@ -86,17 +69,16 @@
             map: map
      }));
         </text>
-     }
+            }
 
        for (var i = 0; i < markersArray.length; i++) {
              markersArray[i].setMap(map);
-        }
     }
-
+}
     </script>
-
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrX2JUBuXyOQ7P8p8Q_SLJ3GTX5m1eRPs&callback=myMap"></script>
 </fieldset>
+
 <footer>
     <p style="background-color: Yellow; font-weight: bold; color:blue; text-align: center; font-style: oblique">© @DateTime.Now.ToLocalTime()</p> @*Add Date Time*@
 </footer>

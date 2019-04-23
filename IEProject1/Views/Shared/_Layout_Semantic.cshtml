@@ -6,7 +6,10 @@
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/semantic")
-    @Styles.Render("~/Content/semantic.min")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/semantic")
+    @Scripts.Render("~/Scripts/semantic.min.js")
+    @Scripts.Render("~/Scripts/jquery-ui.js")
     <style>
         .ui.accurate.star.widget {
             background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAcklEQVQoz2P4//8/AzmYgWKN6KC4uFgYhGF8UjTqgjBJGqG2GUOxMF6NQAViQCwFxGpAbICk0QAqBpITw6ZRAUkxLqyA1akENCvg9SNQgRYWTVoEA4cSjTDFalAM5uPVCFTABY0/ASSDBKBiXNRNcqRiADBao1Bj6dJdAAAAAElFTkSuQmCC') repeat scroll 0% 0% transparent;
@@ -26,21 +29,7 @@
     </style>
 </head>
 <body>
-
     @RenderBody()
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/semantic")
-    @Scripts.Render("~/Scripts/semantic.min")
     @*@RenderSection("scripts", required: false)*@
-    <script>
-        // This waits for the DOM to load correctly before changing elements
-        $(document).ready(function () {
-            // All your normal JS code goes in here
-            $(".ui.rating").rating({
-                initialRating:0,
-                maxRating: 5
-            });
-        });
-    </script>
 </body>
 </html>
