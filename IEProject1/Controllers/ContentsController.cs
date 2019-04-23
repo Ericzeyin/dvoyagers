@@ -129,5 +129,11 @@ namespace IEProject1.Controllers
             }
             base.Dispose(disposing);
         }
+
+        public ActionResult Page1()
+        {
+            return View();
+        }
+
     }
 }

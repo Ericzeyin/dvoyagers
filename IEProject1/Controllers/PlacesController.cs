@@ -19,8 +19,11 @@ namespace IEProject1.Controllers
         public ActionResult Index(string searchString)
         {
             //GetData();
+
             Place place = new Place();
+
             var places = db.Place.Include(p => p.Field).OrderByDescending(a => a.Rating);
+
             var ps = from s in places
                      select s;
             if (!(String.IsNullOrEmpty(searchString)))
@@ -153,8 +156,16 @@ namespace IEProject1.Controllers
         public void GetData()
         {
             //db.Places.clear();
-
             string url = @"https://maps.googleapis.com/maps/api/place/textsearch/json?query=fitness+center+in+caulfield+east&key=AIzaSyD9LUlNJjOHpdMmBFzYkLpuC91VlO5McLg";
+
+            //string str1 = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=";
+            //string type = "fitness+center+";
+            //string inornear = "in";
+            //string suburb = "caulfield";
+            //string key = "&key=AIzaSyD9LUlNJjOHpdMmBFzYkLpuC91VlO5McLg";
+            //string str = str1 + type + inornear + suburb + key;
+
+            //string url = @str;
 
             WebRequest request = WebRequest.Create(url);
 

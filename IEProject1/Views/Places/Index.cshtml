@@ -22,25 +22,27 @@
     {
         <div class="content">
             <p>
-                <div class="ui action input">
-                    <input type="submit" placeholder="Navigate to..." value="Search">
-                    <div class="ui button">@Html.TextBox("SearchString")</div>
-                </div>
+                    <div class="ui icon input">
+                        <input type="text" placeholder="Search suburb..." name="SearchString">
+                        @*<i class="search link icon"></i>*@
+                        <input class="search icon" type="submit" />
+                        </div>          
             </p>
         </div>
     }
 </div>
 
+
 @if (ViewData["Message"] != null)
 {
- <script>
+    <script>
 $(document).ready(function(){
     alert('@ViewData["Message"]');
 });
-</script>
+    </script>
 }
 
- <h2 style="background-color: Yellow;color: Blue; text-align: center; font-style: oblique">Find clubs near your suburb</h2>
+<h2 style="background-color: Yellow;color: Blue; text-align: center; font-style: oblique">Find clubs near your suburb</h2>
 <fieldset>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
