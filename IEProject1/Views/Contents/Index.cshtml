@@ -11,9 +11,9 @@
         <div class="ui container">
             <a class="active item">Home</a>
             <a class="item">Sports</a>
-            <a class="item">Music</a>
-            <a class="item">EGames</a>
-            <a class="item">Photography</a>
+            <a class="item">Religion</a>
+            <a class="item">Yoga</a>
+            <a class="item">Culture</a>
         </div>
     </div>
 
@@ -27,11 +27,15 @@
                             Menu
                             <i class="dropdown icon"></i>
                             <div class="menu">
-                                <a href="@Url.Action("Edit", "Contents", new { id= 1 })" class="item">Sports</a>
-                                <a href="@Url.Action("Edit", "Contents", new { id= 2 })" class="item">Music</a>
-                                <a href="@Url.Action("Edit", "Contents", new { id= 3 })" class="item">EGames</a>
+                                @*<a href="@Url.Action("Edit", "Contents", new { id= 1 })" class="item">Sports</a>
+                                    <a href="@Url.Action("Edit", "Contents", new { id= 2 })" class="item">Religion</a>
+                                    <a href="@Url.Action("Edit", "Contents", new { id= 3 })" class="item">Yoga</a>
+                                    <a href="@Url.Action("Edit", "Contents", new { id= 4 })" class="item">Culture</a>
+                                    <a href="@Url.Action("Create", "Contents")" class="item">Statistics</a>*@
+                                <a href="@Url.Action("Index", "Places")" class="item">Sports</a>
+                                <a href="@Url.Action("Index", "RPlaces")" class="item">Religion</a>
+                                <a href="@Url.Action("Index", "YPlaces")" class="item">Yoga&Taichi</a>
                                 <a href="@Url.Action("Edit", "Contents", new { id= 4 })" class="item">Culture</a>
-                                <a href="@Url.Action("Create", "Contents")" class="item">Statistics</a>
                             </div>
                         </div>
                     </div>
@@ -50,8 +54,12 @@
         <div class="ui text container">
             <h1 class="ui header">See the most popular activities</h1>
             <h2>There are different kinds of activities that you can participate in. The following are the top eight most popular activies.</h2>
+            <div class="ui huge violet button" style="color:white">
+                <a href="@Url.Action("Create", "Contents")">See statistics</a>
+            </div>
         </div>
     </div>
+
 
     @*<div class="ui grid container">
             @foreach (var item in Model)
@@ -109,23 +117,22 @@
             <div class="row">
                 <div class="eight wide column">
                     @*<img src="~/Content/Images/sports.jpg">*@
-                    <a href="@Url.Action("Edit", "Contents", new { id= 1 })" class="links">
+                    <a href="@Url.Action("Index", "Places")" class="links">
                         <img src="@Url.Content("~/Content/Images/sports.jpg")">
                     </a>
-
                 </div>
                 <div class="eight wide column">
                     @*<img src="~/Content/Images/Music.jpg">*@
-                    <a href="@Url.Action("Edit", "Contents", new { id= 2 })" class="links">
-                        <img src="@Url.Content("~/Content/Images/Music.jpg")">
+                    <a href="@Url.Action("Index", "RPlaces")" class="links">
+                        <img src="@Url.Content("~/Content/Images/religion.jpg")">
                     </a>
                 </div>
             </div>
             <div class="row">
                 <div class="eight wide column">
                     @*<img src="~/Content/Images/egames.jpg">*@
-                    <a href="@Url.Action("Edit", "Contents", new { id= 3 })" class="links">
-                        <img src="@Url.Content("~/Content/Images/egames.jpg")">
+                    <a <a href="@Url.Action("Index", "YPlaces")" class="links">
+                        <img src="@Url.Content("~/Content/Images/yoga.jpg")">
                     </a>
                 </div>
                 <div class="eight wide column">

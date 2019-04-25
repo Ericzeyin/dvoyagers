@@ -175,7 +175,9 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\ContentsController.cs" />
     <Compile Include="Controllers\PlacesController.cs" />
+    <Compile Include="Controllers\RPlacesController.cs" />
     <Compile Include="Controllers\SemanticUIController.cs" />
+    <Compile Include="Controllers\YPlacesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -384,6 +386,7 @@
     <Content Include="Content\Images\Music.jpg" />
     <Content Include="Content\Images\photography.jpg" />
     <Content Include="Content\Images\piano.jpg" />
+    <Content Include="Content\Images\religion.jpg" />
     <Content Include="Content\Images\scenery.jpg" />
     <Content Include="Content\Images\ski.jpg" />
     <Content Include="Content\Images\sport1.png" />
@@ -398,6 +401,7 @@
     <Content Include="Content\Images\ui-icons_ffffff_256x240.png" />
     <Content Include="Content\Images\violin.jpg" />
     <Content Include="Content\Images\wow.jpg" />
+    <Content Include="Content\Images\yoga.jpg" />
     <Content Include="Content\jquery-ui.css" />
     <Content Include="Content\jquery-ui.structure.css" />
     <Content Include="Content\jquery-ui.theme.css" />
@@ -489,6 +493,16 @@
     <Content Include="Views\Places\Edit.cshtml" />
     <Content Include="Views\Places\Index.cshtml" />
     <Content Include="Views\Contents\Page1.cshtml" />
+    <Content Include="Views\RPlaces\Create.cshtml" />
+    <Content Include="Views\RPlaces\Delete.cshtml" />
+    <Content Include="Views\RPlaces\Details.cshtml" />
+    <Content Include="Views\RPlaces\Edit.cshtml" />
+    <Content Include="Views\RPlaces\Index.cshtml" />
+    <Content Include="Views\YPlaces\Create.cshtml" />
+    <Content Include="Views\YPlaces\Delete.cshtml" />
+    <Content Include="Views\YPlaces\Details.cshtml" />
+    <Content Include="Views\YPlaces\Edit.cshtml" />
+    <Content Include="Views\YPlaces\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

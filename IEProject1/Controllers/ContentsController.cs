@@ -68,14 +68,33 @@ namespace IEProject1.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+            else if (id == 1)
+            {
+                ViewData["Message"] = "Places";
+            }
+            else if (id == 2)
+            {
+                ViewData["Message"] = "RPlaces";
+            }
+            else if (id == 3)
+            {
+                ViewData["Message"] = "YPlaces";
+            }
+            //else if (id == 4)
+            //{
+            //    ViewData["Message"] = "Culture";
+            //}
             //Content content = db.Contents.Find(id);
             var content = db.Content.Where(s => s.TypeId == id);
+            
             if (content == null)
             {
                 return HttpNotFound();
             }
+            ViewData["content"] = content;
             //ViewBag.TypeId = new SelectList(db.Fields, "Id", "FieldName", content.TypeId);
-            return View(content.ToList());
+            //return View(content.ToList());
+            return View();
         }
 
         // POST: Contents/Edit/5

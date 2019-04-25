@@ -1,0 +1,96 @@
+﻿@model IEProject1.Models.YPlace
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <h3>Are you sure you want to delete this?</h3>
+    <div>
+        <h4>YPlace</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Adress)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Adress)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Rating)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Rating)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.latitude)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.latitude)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.longitude)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.longitude)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Total_rating_people)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Total_rating_people)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Photo_reference)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Photo_reference)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Field.FieldName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Field.FieldName)
+            </dd>
+    
+        </dl>
+    
+        @using (Html.BeginForm()) {
+            @Html.AntiForgeryToken()
+    
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-default" /> |
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+        }
+    </div>
+</body>
+</html>

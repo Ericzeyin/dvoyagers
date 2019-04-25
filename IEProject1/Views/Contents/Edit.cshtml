@@ -8,18 +8,22 @@
 <div class="ui large top fixed menu">
     <div class="ui container">
         <a href="@Url.Action("Index", "Contents")" class="item">Home</a>
-        <a href="@Url.Action("Edit", "Contents", new { id= 1 })" class="item">Sports</a>
-        <a href="@Url.Action("Edit", "Contents", new { id= 2 })" class="item">Music</a>
-        <a href="@Url.Action("Edit", "Contents", new { id= 3 })" class="item">Egames</a>
+        @*<a href="@Url.Action("Edit", "Contents", new { id= 1 })" class="item">Sports</a>
+        <a href="@Url.Action("Edit", "Contents", new { id= 2 })" class="item">Religion</a>
+        <a href="@Url.Action("Edit", "Contents", new { id= 3 })" class="item">Yoga</a>
         <a href="@Url.Action("Edit", "Contents", new { id= 4 })" class="item">Culture</a>
-        <a href="@Url.Action("Create", "Contents")" class="item">Statistics</a>
+        <a href="@Url.Action("Create", "Contents")" class="item">Statistics</a>*@
+        <a href="@Url.Action("Index", "Places")" class="item">Sports</a>
+        <a href="@Url.Action("Index", "RPlaces")" class="item">Religion</a>
+        <a href="@Url.Action("Index", "YPlaces")" class="item">Yoga&Taichi</a>
+        <a href="@Url.Action("Edit", "Contents", new { id= 4 })" class="item">Culture</a>
         @*<div class="right menu">
-            <div class="item">
-                <a class="ui button">Log in</a>
-            </div>
-            <div class="item">
-                <a class="ui primary button">Sign Up</a>
-            </div>*@
+        <div class="item">
+            <a class="ui button">Log in</a>
+        </div>
+        <div class="item">
+            <a class="ui primary button">Sign Up</a>
+        </div>*@
         @*</div>*@
     </div>
 </div>
@@ -48,7 +52,7 @@
     </div>*@
 <div class="ui grid container">
     <div class="ui four cards">
-        @foreach (var item in Model)
+        @foreach (var item in (IEnumerable<IEProject1.Models.Content>)ViewData["content"])
         {
             <div class="card">
                 <div class="image">
@@ -62,14 +66,16 @@
         }
     </div>
 
-    <div class="ui text container" style="padding-top:20px">
-        <h2>Do you want to see some popular places?</h2>
-        @*<div class="ui huge primary button" href="@Url.Action("Index", "Places")">Find Places<i class="right arrow icon"></i></div>*@
-        <div class="ui huge violet button" style="color:white">
-            <a href="@Url.Action("Index", "Places")" @*class="right arrow icon"*@>Find Places</a>
-        </div>
-    </div>
-</div>
+
+        @*<div class="ui text container" style="padding-top:20px">
+            <h2>Do you want to see some popular places?</h2>
+            <div class="ui huge violet button" style="color:white">
+                <a href="@Url.Action("Index", "Places")">Find Places</a>
+            </div>
+        </div>*@
+
+
+ </div>
 
 
 
