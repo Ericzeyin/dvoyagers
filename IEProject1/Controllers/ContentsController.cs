@@ -2,11 +2,17 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Net;
+using System.Security.Cryptography;
+using System.Text;
 using System.Web;
 using System.Web.Mvc;
 using IEProject1.Models;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace IEProject1.Controllers
 {
@@ -17,8 +23,26 @@ namespace IEProject1.Controllers
         // GET: Contents
         public ActionResult Index()
         {
+            using (StreamReader reader = new StreamReader(Server.MapPath("~/Content/twitterTrends.json")))
+            {
+
+                string result = reader.ReadToEnd();
+                //var json = JObject.Parse(result);
+                JArray jsonArray = JArray.Parse(result);
+                var trend = jsonArray[0]["trends"].ToString();
+
+                var trends = JsonConvert.DeserializeObject<List<Trend>>(trend).Take(12);
+
+                ViewData["trends"] = trends;
+            }
+
+
             var contents = db.Content.Include(c => c.Field).Where(s => s.Rank < 9).OrderBy(a => a.Rank);
-            return View(contents.ToList());
+
+            ViewData["contents"] = contents;
+            return View();
+
+           // return View(contents.ToList());
         }
 
         // GET: Contents/Details/5
@@ -154,5 +178,88 @@ namespace IEProject1.Controllers
             return View();
         }
 
+        public string GetTwitterTrends()
+        {
+            // oauth application keys
+            string oauth_token = "278606942-WGdc2l5nXNtYENK14v3bBBQlUfZvYJSDfBFV8IZ1";
+            string oauth_token_secret = "8gyATwlCkj26HlPhZCRfkWSu3OdVVg6bsL85jd3l1IFSQ";
+
+            string oauth_consumer_key = "OhOhEUTcnQAnJpNg8NvzwY9bh";
+            string oauth_consumer_secret = "qBgfNz1q9jrb1QFvuoXzpuT6H6qmeALpf2nd7MAIgJ56QSulm8";
+
+            var oauth_version = "1.0";
+            var oauth_signature_method = "HMAC-SHA1";
+            var oauth_nonce = Convert.ToBase64String(new ASCIIEncoding().GetBytes(DateTime.Now.Ticks.ToString()));
+            var timeSpan = DateTime.UtcNow - new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+            var oauth_timestamp = Convert.ToInt64(timeSpan.TotalSeconds).ToString();
+            var resource_url = "https://api.twitter.com/1.1/trends/place.json?id=1103816";
+
+            //encrypted oAuth signature
+            var baseFormat = "oauth_consumer_key={0}&oauth_nonce={1}&oauth_signature_method={2}" +
+                "&oauth_timestamp={3}&oauth_token={4}&oauth_version={5}";
+
+            var baseString = string.Format(baseFormat,
+                                        oauth_consumer_key,
+                                        oauth_nonce,
+                                        oauth_signature_method,
+                                        oauth_timestamp,
+                                        oauth_token,
+                                        oauth_version
+                                        );
+
+            baseString = string.Concat("GET&", Uri.EscapeDataString(resource_url),
+                         "&", Uri.EscapeDataString(baseString));
+
+            //Encrypt data
+
+            var compositeKey = string.Concat(Uri.EscapeDataString(oauth_consumer_secret),
+                        "&", Uri.EscapeDataString(oauth_token_secret));
+
+            string oauth_signature;
+            using (HMACSHA1 hasher = new HMACSHA1(ASCIIEncoding.ASCII.GetBytes(compositeKey)))
+            {
+                oauth_signature = Convert.ToBase64String(hasher.ComputeHash(ASCIIEncoding.ASCII.GetBytes(baseString)));
+            }
+
+            //Finish Authentification header
+
+            var headerFormat = "OAuth oauth_nonce=\"{0}\", oauth_signature_method=\"{1}\", " +
+                   "oauth_timestamp=\"{2}\", oauth_consumer_key=\"{3}\", " +
+                   "oauth_token=\"{4}\", oauth_signature=\"{5}\", " +
+                   "oauth_version=\"{6}\"";
+
+            var authHeader = string.Format(headerFormat,
+                                    Uri.EscapeDataString(oauth_nonce),
+                                    Uri.EscapeDataString(oauth_signature_method),
+                                    Uri.EscapeDataString(oauth_timestamp),
+                                    Uri.EscapeDataString(oauth_consumer_key),
+                                    Uri.EscapeDataString(oauth_token),
+                                    Uri.EscapeDataString(oauth_signature),
+                                    Uri.EscapeDataString(oauth_version)
+                            );
+
+            //Disable exprect 100 continue header
+            ServicePointManager.Expect100Continue = false;
+
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(resource_url);
+            request.UseDefaultCredentials = true;
+            request.PreAuthenticate = true;
+            request.Credentials = CredentialCache.DefaultCredentials;
+            request.Headers.Add("Authorization", authHeader);
+            request.Method = "GET";
+
+            WebResponse response = request.GetResponse();
+            string responseData;
+
+            using (StreamReader reader = new StreamReader(response.GetResponseStream()))
+            {
+                responseData = reader.ReadToEnd();
+            }
+
+            return responseData; // Or do whatever you want with the response
+        }
+
     }
+
+
 }

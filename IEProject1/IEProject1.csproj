@@ -46,6 +46,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="RestSharp, Version=106.5.3.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.5.3\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -174,9 +177,11 @@
     <Compile Include="App_Start\SemanticUIStart.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\ContentsController.cs" />
+    <Compile Include="Controllers\OAuthController.cs" />
     <Compile Include="Controllers\PlacesController.cs" />
     <Compile Include="Controllers\RPlacesController.cs" />
     <Compile Include="Controllers\SemanticUIController.cs" />
+    <Compile Include="Controllers\Trend.cs" />
     <Compile Include="Controllers\YPlacesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -220,6 +225,7 @@
     <Compile Include="Models\SportType.cs">
       <DependentUpon>IEProject.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Twitter.cs" />
     <Compile Include="Models\Yoga.cs">
       <DependentUpon>IEProject.tt</DependentUpon>
     </Compile>
@@ -451,7 +457,13 @@
     <Content Include="Models\IEProject.edmx.diagram">
       <DependentUpon>IEProject.edmx</DependentUpon>
     </Content>
+    <Content Include="libman.json" />
+    <Content Include="Content\twitterTrends.json" />
+    <Content Include="Content\ReligionTwitterSearch.json" />
+    <Content Include="Content\sportsTwitterSearch.json" />
+    <Content Include="Content\yogaTwitterSearch.json" />
     <None Include="Properties\PublishProfiles\DVoyagers - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\DVoyagers2 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -506,6 +518,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\OAuth\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

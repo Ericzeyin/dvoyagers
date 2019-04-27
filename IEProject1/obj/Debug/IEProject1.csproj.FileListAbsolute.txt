@@ -104,3 +104,5 @@ C:\Users\Eric\source\repos\IEProject1\IEProject1\obj\Debug\IEProject1.csproj.Cop
 C:\Users\Eric\source\repos\IEProject1\IEProject1\obj\Debug\IEProject1.dll
 C:\Users\Eric\source\repos\IEProject1\IEProject1\obj\Debug\IEProject1.pdb
 C:\Users\Eric\source\repos\IEProject1\IEProject1\bin\WebActivatorEx.dll
+C:\Users\Eric\source\repos\IEProject1\IEProject1\bin\RestSharp.dll
+C:\Users\Eric\source\repos\IEProject1\IEProject1\bin\RestSharp.xml

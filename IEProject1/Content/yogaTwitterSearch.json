@@ -1,0 +1,1677 @@
+{
+  "search_metadata": {
+    "completed_in": 0.043,
+    "count": 10,
+    "max_id": 1122075065237954560,
+    "max_id_str": "1122075065237954560",
+    "next_results": "?max_id=1121665335537487872&q=%25melbourne%2B%25yoga&count=10&include_entities=1&result_type=mixed",
+    "query": "%25melbourne%2B%25yoga",
+    "refresh_url": "?since_id=1122075065237954560&q=%25melbourne%2B%25yoga&result_type=mixed&include_entities=1",
+    "since_id": 0,
+    "since_id_str": "0"
+  },
+  "statuses": [
+    {
+      "contributors": "None",
+      "coordinates": "None",
+      "created_at": "Sat Apr 27 09:48:37 +0000 2019",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "id": 1114685861168201728,
+            "id_str": "1114685861168201728",
+            "indices": [ 3, 18 ],
+            "name": "Genevieve Sarig",
+            "screen_name": "GenevieveSarig"
+          }
+        ]
+      },
+      "favorite_count": 0,
+      "favorited": "False",
+      "geo": "None",
+      "id": 1122075065237954560,
+      "id_str": "1122075065237954560",
+      "in_reply_to_screen_name": "None",
+      "in_reply_to_status_id": "None",
+      "in_reply_to_status_id_str": "None",
+      "in_reply_to_user_id": "None",
+      "in_reply_to_user_id_str": "None",
+      "is_quote_status": "True",
+      "lang": "en",
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "place": "None",
+      "quoted_status_id": 1121968478163021824,
+      "quoted_status_id_str": "1121968478163021824",
+      "retweet_count": 2,
+      "retweeted": "False",
+      "retweeted_status": {
+        "contributors": "None",
+        "coordinates": "None",
+        "created_at": "Sat Apr 27 07:28:37 +0000 2019",
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "urls": [
+            {
+              "display_url": "twitter.com/i/web/status/1…",
+              "expanded_url": "https://twitter.com/i/web/status/1122039832291602432",
+              "indices": [ 117, 140 ],
+              "url": "https://t.co/T9jCMcCo6M"
+            }
+          ],
+          "user_mentions": []
+        },
+        "favorite_count": 2,
+        "favorited": "False",
+        "geo": "None",
+        "id": 1122039832291602432,
+        "id_str": "1122039832291602432",
+        "in_reply_to_screen_name": "None",
+        "in_reply_to_status_id": "None",
+        "in_reply_to_status_id_str": "None",
+        "in_reply_to_user_id": "None",
+        "in_reply_to_user_id_str": "None",
+        "is_quote_status": "True",
+        "lang": "en",
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "place": "None",
+        "possibly_sensitive": "False",
+        "quoted_status": {
+          "contributors": "None",
+          "coordinates": "None",
+          "created_at": "Sat Apr 27 02:45:05 +0000 2019",
+          "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "urls": [
+              {
+                "display_url": "twitter.com/i/web/status/1…",
+                "expanded_url": "https://twitter.com/i/web/status/1121968478163021824",
+                "indices": [ 117, 140 ],
+                "url": "https://t.co/dlnPqAhqAD"
+              }
+            ],
+            "user_mentions": []
+          },
+          "favorite_count": 2870,
+          "favorited": "False",
+          "geo": "None",
+          "id": 1121968478163021824,
+          "id_str": "1121968478163021824",
+          "in_reply_to_screen_name": "None",
+          "in_reply_to_status_id": "None",
+          "in_reply_to_status_id_str": "None",
+          "in_reply_to_user_id": "None",
+          "in_reply_to_user_id_str": "None",
+          "is_quote_status": "False",
+          "lang": "en",
+          "metadata": {
+            "iso_language_code": "en",
+            "result_type": "recent"
+          },
+          "place": "None",
+          "possibly_sensitive": "False",
+          "retweet_count": 1298,
+          "retweeted": "False",
+          "source": null,
+          "\"<a href=\"https": null, //www.hootsuite.com" rel="nofollow">Hootsuite Inc.</a>",
+          "text": "Technologies for inner wellbeing are key today because as our outer possibilities increase, our inner vacuum become… https://t.co/dlnPqAhqAD",
+          "truncated": "True",
+          "user": {
+            "contributors_enabled": "False",
+            "created_at": "Fri Aug 21 13:49:35 +0000 2009",
+            "default_profile": "False",
+            "default_profile_image": "False",
+            "description": "A Yogi, Mystic & Visionary. This account is managed by volunteers @Ishafoundation. Tweets from Sadhguru himself are signed - Sg",
+            "entities": {
+              "description": { "urls": [] },
+              "url": {
+                "urls": [
+                  {
+                    "display_url": "Isha.Sadhguru.org",
+                    "expanded_url": "http://Isha.Sadhguru.org",
+                    "indices": [ 0, 22 ],
+                    "url": "http://t.co/S2QHNyuXyg"
+                  }
+                ]
+              }
+            },
+            "favourites_count": 0,
+            "follow_request_sent": "False",
+            "followers_count": 2033652,
+            "following": "True",
+            "friends_count": 2,
+            "geo_enabled": "True",
+            "has_extended_profile": "False",
+            "id": 67611162,
+            "id_str": "67611162",
+            "is_translation_enabled": "False",
+            "is_translator": "False",
+            "lang": "en",
+            "listed_count": 1191,
+            "location": "India",
+            "name": "Sadhguru",
+            "notifications": "False",
+            "profile_background_color": "B08E76",
+            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme8/bg.gif",
+            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme8/bg.gif",
+            "profile_background_tile": "False",
+            "profile_image_url": "http://pbs.twimg.com/profile_images/1049617066297155584/hjelJTDw_normal.jpg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1049617066297155584/hjelJTDw_normal.jpg",
+            "profile_link_color": "04279C",
+            "profile_sidebar_border_color": "000000",
+            "profile_sidebar_fill_color": "EADEAA",
+            "profile_text_color": "333333",
+            "profile_use_background_image": "True",
+            "protected": "False",
+            "screen_name": "SadhguruJV",
+            "statuses_count": 8129,
+            "time_zone": "None",
+            "translator_type": "none",
+            "url": "http://t.co/S2QHNyuXyg",
+            "utc_offset": "None",
+            "verified": "True"
+          }
+        },
+        "quoted_status_id": 1121968478163021824,
+        "quoted_status_id_str": "1121968478163021824",
+        "retweet_count": 2,
+        "retweeted": "False",
+        "source": null,
+        "\"<a href=\"http": null, //twitter.com/download/android" rel="nofollow">Twitter for Android</a>",
+        "text": "Stop wasting time and money on yoga that has lost all authenticity and get yourself to Inner Engineering with Sadhg… https://t.co/T9jCMcCo6M",
+        "truncated": "True",
+        "user": {
+          "contributors_enabled": "False",
+          "created_at": "Sun Apr 07 00:26:33 +0000 2019",
+          "default_profile": "True",
+          "default_profile_image": "False",
+          "description": "",
+          "entities": { "description": { "urls": [] } },
+          "favourites_count": 74,
+          "follow_request_sent": "False",
+          "followers_count": 6,
+          "following": "False",
+          "friends_count": 27,
+          "geo_enabled": "False",
+          "has_extended_profile": "False",
+          "id": 1114685861168201728,
+          "id_str": "1114685861168201728",
+          "is_translation_enabled": "False",
+          "is_translator": "False",
+          "lang": "en",
+          "listed_count": 0,
+          "location": "",
+          "name": "Genevieve Sarig",
+          "notifications": "False",
+          "profile_background_color": "F5F8FA",
+          "profile_background_image_url": "None",
+          "profile_background_image_url_https": "None",
+          "profile_background_tile": "False",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/1114685861168201728/1554701777",
+          "profile_image_url": "http://pbs.twimg.com/profile_images/1120644338482946049/yFsKxQpf_normal.jpg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/1120644338482946049/yFsKxQpf_normal.jpg",
+          "profile_link_color": "1DA1F2",
+          "profile_sidebar_border_color": "C0DEED",
+          "profile_sidebar_fill_color": "DDEEF6",
+          "profile_text_color": "333333",
+          "profile_use_background_image": "True",
+          "protected": "False",
+          "screen_name": "GenevieveSarig",
+          "statuses_count": 31,
+          "time_zone": "None",
+          "translator_type": "none",
+          "url": "None",
+          "utc_offset": "None",
+          "verified": "False"
+        }
+      },
+      "source": null,
+      "\"<a href=\"http": null, //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+      "text": "RT @GenevieveSarig: Stop wasting time and money on yoga that has lost all authenticity and get yourself to Inner Engineering with Sadhguru…",
+      "truncated": "False",
+      "user": {
+        "contributors_enabled": "False",
+        "created_at": "Tue Dec 27 07:01:43 +0000 2016",
+        "default_profile": "True",
+        "default_profile_image": "False",
+        "description": "life & science enthusiast, translation of scientific breakthrough with rigorous clinical trials e.g.mesenchymal stromal cells for osteoarthritis plus more. mom",
+        "entities": { "description": { "urls": [] } },
+        "favourites_count": 447,
+        "follow_request_sent": "False",
+        "followers_count": 57,
+        "following": "False",
+        "friends_count": 144,
+        "geo_enabled": "True",
+        "has_extended_profile": "False",
+        "id": 813640991215230976,
+        "id_str": "813640991215230976",
+        "is_translation_enabled": "False",
+        "is_translator": "False",
+        "lang": "en",
+        "listed_count": 0,
+        "location": "Templestowe, Melbourne",
+        "name": "Dr Kiran S",
+        "notifications": "False",
+        "profile_background_color": "F5F8FA",
+        "profile_background_image_url": "None",
+        "profile_background_image_url_https": "None",
+        "profile_background_tile": "False",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/813640991215230976/1554685075",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/1084378919334174721/C16yOSSJ_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1084378919334174721/C16yOSSJ_normal.jpg",
+        "profile_link_color": "1DA1F2",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": "True",
+        "protected": "False",
+        "screen_name": "kiranmelbourne",
+        "statuses_count": 223,
+        "time_zone": "None",
+        "translator_type": "none",
+        "url": "None",
+        "utc_offset": "None",
+        "verified": "False"
+      }
+    },
+    {
+      "contributors": "None",
+      "coordinates": "None",
+      "created_at": "Sat Apr 27 08:52:19 +0000 2019",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "urls": [
+          {
+            "display_url": "twitter.com/i/web/status/1…",
+            "expanded_url": "https://twitter.com/i/web/status/1122060897575292928",
+            "indices": [ 116, 139 ],
+            "url": "https://t.co/fHcsEoyZof"
+          }
+        ],
+        "user_mentions": [
+          {
+            "id": 218730857,
+            "id_str": "218730857",
+            "indices": [ 86, 93 ],
+            "name": "Qantas",
+            "screen_name": "Qantas"
+          }
+        ]
+      },
+      "favorite_count": 4,
+      "favorited": "False",
+      "geo": "None",
+      "id": 1122060897575292928,
+      "id_str": "1122060897575292928",
+      "in_reply_to_screen_name": "None",
+      "in_reply_to_status_id": "None",
+      "in_reply_to_status_id_str": "None",
+      "in_reply_to_user_id": "None",
+      "in_reply_to_user_id_str": "None",
+      "is_quote_status": "False",
+      "lang": "en",
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "place": "None",
+      "retweet_count": 0,
+      "retweeted": "False",
+      "source": null,
+      "\"<a href=\"http": null, //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+      "text": "Just had the most lovely encounter with Christine, one of the flight attendants on my @qantas flight from Adelaide… https://t.co/fHcsEoyZof",
+      "truncated": "True",
+      "user": {
+        "contributors_enabled": "False",
+        "created_at": "Mon Mar 30 22:13:38 +0000 2009",
+        "default_profile": "False",
+        "default_profile_image": "False",
+        "description": "Cessalee Stovall: Mormon by trade, traveler by nature. Living the good life since 1983 #COLTS #NOLES #Cescapades. Follow my other endeavors @5MinuteCall",
+        "entities": {
+          "description": { "urls": [] },
+          "url": {
+            "urls": [
+              {
+                "display_url": "cessalee.com",
+                "expanded_url": "http://cessalee.com",
+                "indices": [ 0, 23 ],
+                "url": "https://t.co/nSFHEN7i6h"
+              }
+            ]
+          }
+        },
+        "favourites_count": 2244,
+        "follow_request_sent": "False",
+        "followers_count": 533,
+        "following": "False",
+        "friends_count": 574,
+        "geo_enabled": "True",
+        "has_extended_profile": "True",
+        "id": 27743487,
+        "id_str": "27743487",
+        "is_translation_enabled": "False",
+        "is_translator": "False",
+        "lang": "en",
+        "listed_count": 12,
+        "location": "everywhere",
+        "name": "Cessalee Stovall",
+        "notifications": "False",
+        "profile_background_color": "EDECE9",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme3/bg.gif",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme3/bg.gif",
+        "profile_background_tile": "False",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/27743487/1466364593",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/744613184363892738/CsXBhfU0_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/744613184363892738/CsXBhfU0_normal.jpg",
+        "profile_link_color": "088253",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "E3E2DE",
+        "profile_text_color": "634047",
+        "profile_use_background_image": "True",
+        "protected": "False",
+        "screen_name": "cessalee",
+        "statuses_count": 1202,
+        "time_zone": "None",
+        "translator_type": "none",
+        "url": "https://t.co/nSFHEN7i6h",
+        "utc_offset": "None",
+        "verified": "False"
+      }
+    },
+    {
+      "contributors": "None",
+      "coordinates": "None",
+      "created_at": "Sat Apr 27 07:28:37 +0000 2019",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "urls": [
+          {
+            "display_url": "twitter.com/i/web/status/1…",
+            "expanded_url": "https://twitter.com/i/web/status/1122039832291602432",
+            "indices": [ 117, 140 ],
+            "url": "https://t.co/T9jCMcCo6M"
+          }
+        ],
+        "user_mentions": []
+      },
+      "favorite_count": 2,
+      "favorited": "False",
+      "geo": "None",
+      "id": 1122039832291602432,
+      "id_str": "1122039832291602432",
+      "in_reply_to_screen_name": "None",
+      "in_reply_to_status_id": "None",
+      "in_reply_to_status_id_str": "None",
+      "in_reply_to_user_id": "None",
+      "in_reply_to_user_id_str": "None",
+      "is_quote_status": "True",
+      "lang": "en",
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "place": "None",
+      "possibly_sensitive": "False",
+      "quoted_status": {
+        "contributors": "None",
+        "coordinates": "None",
+        "created_at": "Sat Apr 27 02:45:05 +0000 2019",
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "urls": [
+            {
+              "display_url": "twitter.com/i/web/status/1…",
+              "expanded_url": "https://twitter.com/i/web/status/1121968478163021824",
+              "indices": [ 117, 140 ],
+              "url": "https://t.co/dlnPqAhqAD"
+            }
+          ],
+          "user_mentions": []
+        },
+        "favorite_count": 2870,
+        "favorited": "False",
+        "geo": "None",
+        "id": 1121968478163021824,
+        "id_str": "1121968478163021824",
+        "in_reply_to_screen_name": "None",
+        "in_reply_to_status_id": "None",
+        "in_reply_to_status_id_str": "None",
+        "in_reply_to_user_id": "None",
+        "in_reply_to_user_id_str": "None",
+        "is_quote_status": "False",
+        "lang": "en",
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "place": "None",
+        "possibly_sensitive": "False",
+        "retweet_count": 1298,
+        "retweeted": "False",
+        "source": null,
+        "\"<a href=\"https": null, //www.hootsuite.com" rel="nofollow">Hootsuite Inc.</a>",
+        "text": "Technologies for inner wellbeing are key today because as our outer possibilities increase, our inner vacuum become… https://t.co/dlnPqAhqAD",
+        "truncated": "True",
+        "user": {
+          "contributors_enabled": "False",
+          "created_at": "Fri Aug 21 13:49:35 +0000 2009",
+          "default_profile": "False",
+          "default_profile_image": "False",
+          "description": "A Yogi, Mystic & Visionary. This account is managed by volunteers @Ishafoundation. Tweets from Sadhguru himself are signed - Sg",
+          "entities": {
+            "description": { "urls": [] },
+            "url": {
+              "urls": [
+                {
+                  "display_url": "Isha.Sadhguru.org",
+                  "expanded_url": "http://Isha.Sadhguru.org",
+                  "indices": [ 0, 22 ],
+                  "url": "http://t.co/S2QHNyuXyg"
+                }
+              ]
+            }
+          },
+          "favourites_count": 0,
+          "follow_request_sent": "False",
+          "followers_count": 2033652,
+          "following": "True",
+          "friends_count": 2,
+          "geo_enabled": "True",
+          "has_extended_profile": "False",
+          "id": 67611162,
+          "id_str": "67611162",
+          "is_translation_enabled": "False",
+          "is_translator": "False",
+          "lang": "en",
+          "listed_count": 1191,
+          "location": "India",
+          "name": "Sadhguru",
+          "notifications": "False",
+          "profile_background_color": "B08E76",
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme8/bg.gif",
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme8/bg.gif",
+          "profile_background_tile": "False",
+          "profile_image_url": "http://pbs.twimg.com/profile_images/1049617066297155584/hjelJTDw_normal.jpg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/1049617066297155584/hjelJTDw_normal.jpg",
+          "profile_link_color": "04279C",
+          "profile_sidebar_border_color": "000000",
+          "profile_sidebar_fill_color": "EADEAA",
+          "profile_text_color": "333333",
+          "profile_use_background_image": "True",
+          "protected": "False",
+          "screen_name": "SadhguruJV",
+          "statuses_count": 8129,
+          "time_zone": "None",
+          "translator_type": "none",
+          "url": "http://t.co/S2QHNyuXyg",
+          "utc_offset": "None",
+          "verified": "True"
+        }
+      },
+      "quoted_status_id": 1121968478163021824,
+      "quoted_status_id_str": "1121968478163021824",
+      "retweet_count": 2,
+      "retweeted": "False",
+      "source": null,
+      "\"<a href=\"http": null, //twitter.com/download/android" rel="nofollow">Twitter for Android</a>",
+      "text": "Stop wasting time and money on yoga that has lost all authenticity and get yourself to Inner Engineering with Sadhg… https://t.co/T9jCMcCo6M",
+      "truncated": "True",
+      "user": {
+        "contributors_enabled": "False",
+        "created_at": "Sun Apr 07 00:26:33 +0000 2019",
+        "default_profile": "True",
+        "default_profile_image": "False",
+        "description": "",
+        "entities": { "description": { "urls": [] } },
+        "favourites_count": 74,
+        "follow_request_sent": "False",
+        "followers_count": 6,
+        "following": "False",
+        "friends_count": 27,
+        "geo_enabled": "False",
+        "has_extended_profile": "False",
+        "id": 1114685861168201728,
+        "id_str": "1114685861168201728",
+        "is_translation_enabled": "False",
+        "is_translator": "False",
+        "lang": "en",
+        "listed_count": 0,
+        "location": "",
+        "name": "Genevieve Sarig",
+        "notifications": "False",
+        "profile_background_color": "F5F8FA",
+        "profile_background_image_url": "None",
+        "profile_background_image_url_https": "None",
+        "profile_background_tile": "False",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/1114685861168201728/1554701777",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/1120644338482946049/yFsKxQpf_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1120644338482946049/yFsKxQpf_normal.jpg",
+        "profile_link_color": "1DA1F2",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": "True",
+        "protected": "False",
+        "screen_name": "GenevieveSarig",
+        "statuses_count": 31,
+        "time_zone": "None",
+        "translator_type": "none",
+        "url": "None",
+        "utc_offset": "None",
+        "verified": "False"
+      }
+    },
+    {
+      "contributors": "None",
+      "coordinates": "None",
+      "created_at": "Sat Apr 27 06:23:53 +0000 2019",
+      "entities": {
+        "hashtags": [
+          {
+            "indices": [ 131, 143 ],
+            "text": "yogateacher"
+          }
+        ],
+        "symbols": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "id": 502954948,
+            "id_str": "502954948",
+            "indices": [ 3, 11 ],
+            "name": "michael symon",
+            "screen_name": "mjs2466"
+          }
+        ]
+      },
+      "favorite_count": 0,
+      "favorited": "False",
+      "geo": "None",
+      "id": 1122023544211292160,
+      "id_str": "1122023544211292160",
+      "in_reply_to_screen_name": "None",
+      "in_reply_to_status_id": "None",
+      "in_reply_to_status_id_str": "None",
+      "in_reply_to_user_id": "None",
+      "in_reply_to_user_id_str": "None",
+      "is_quote_status": "False",
+      "lang": "en",
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "place": "None",
+      "retweet_count": 1,
+      "retweeted": "False",
+      "retweeted_status": {
+        "contributors": "None",
+        "coordinates": "None",
+        "created_at": "Sat Apr 27 05:29:36 +0000 2019",
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "urls": [
+            {
+              "display_url": "twitter.com/i/web/status/1…",
+              "expanded_url": "https://twitter.com/i/web/status/1122009883681804288",
+              "indices": [ 119, 142 ],
+              "url": "https://t.co/RtDzaUXlMS"
+            }
+          ],
+          "user_mentions": []
+        },
+        "favorite_count": 0,
+        "favorited": "False",
+        "geo": "None",
+        "id": 1122009883681804288,
+        "id_str": "1122009883681804288",
+        "in_reply_to_screen_name": "None",
+        "in_reply_to_status_id": "None",
+        "in_reply_to_status_id_str": "None",
+        "in_reply_to_user_id": "None",
+        "in_reply_to_user_id_str": "None",
+        "is_quote_status": "False",
+        "lang": "en",
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "place": "None",
+        "possibly_sensitive": "False",
+        "retweet_count": 1,
+        "retweeted": "False",
+        "source": null,
+        "\"<a href=\"http": null, //instagram.com" rel="nofollow">Instagram</a>",
+        "text": "Morning yoga teaching in and around Melbourne snapfitnessaltonanorth &amp; sphc_portmelbourne. It’s great to be busy.… https://t.co/RtDzaUXlMS",
+        "truncated": "True",
+        "user": {
+          "contributors_enabled": "False",
+          "created_at": "Sat Feb 25 12:38:46 +0000 2012",
+          "default_profile": "True",
+          "default_profile_image": "False",
+          "description": "",
+          "entities": { "description": { "urls": [] } },
+          "favourites_count": 6196,
+          "follow_request_sent": "False",
+          "followers_count": 60,
+          "following": "False",
+          "friends_count": 181,
+          "geo_enabled": "True",
+          "has_extended_profile": "True",
+          "id": 502954948,
+          "id_str": "502954948",
+          "is_translation_enabled": "False",
+          "is_translator": "False",
+          "lang": "en",
+          "listed_count": 6,
+          "location": "",
+          "name": "michael symon",
+          "notifications": "False",
+          "profile_background_color": "C0DEED",
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_tile": "False",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/502954948/1556343099",
+          "profile_image_url": "http://pbs.twimg.com/profile_images/1122010387426099200/i2gX5ld6_normal.jpg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/1122010387426099200/i2gX5ld6_normal.jpg",
+          "profile_link_color": "1DA1F2",
+          "profile_sidebar_border_color": "C0DEED",
+          "profile_sidebar_fill_color": "DDEEF6",
+          "profile_text_color": "333333",
+          "profile_use_background_image": "True",
+          "protected": "False",
+          "screen_name": "mjs2466",
+          "statuses_count": 2166,
+          "time_zone": "None",
+          "translator_type": "none",
+          "url": "None",
+          "utc_offset": "None",
+          "verified": "False"
+        }
+      },
+      "source": null,
+      "\"<a href=\"https": null, //www.botlibre.com" rel="nofollow">Bot Libre!</a>",
+      "text": "RT @mjs2466: Morning yoga teaching in and around Melbourne snapfitnessaltonanorth &amp; sphc_portmelbourne. It’s great to be busy. #yogateacher…",
+      "truncated": "False",
+      "user": {
+        "contributors_enabled": "False",
+        "created_at": "Tue Mar 13 06:14:43 +0000 2018",
+        "default_profile": "False",
+        "default_profile_image": "False",
+        "description": "Best Women Yoga Program for health and fitness. YOGABURN Helping Women Get #Lighter, #Healthier and Happier  #Women #Yoga #Workout #health #fitness #weightloss🔽",
+        "entities": {
+          "description": { "urls": [] },
+          "url": {
+            "urls": [
+              {
+                "display_url": "bit.ly/2DxqUad",
+                "expanded_url": "http://bit.ly/2DxqUad",
+                "indices": [ 0, 23 ],
+                "url": "https://t.co/fDbWA9Pva4"
+              }
+            ]
+          }
+        },
+        "favourites_count": 0,
+        "follow_request_sent": "False",
+        "followers_count": 150,
+        "following": "False",
+        "friends_count": 13,
+        "geo_enabled": "False",
+        "has_extended_profile": "False",
+        "id": 973442212200665088,
+        "id_str": "973442212200665088",
+        "is_translation_enabled": "False",
+        "is_translator": "False",
+        "lang": "en-gb",
+        "listed_count": 2,
+        "location": "United States",
+        "name": "YOGABURN Helping Women Get Healthier Review",
+        "notifications": "False",
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": "False",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/973442212200665088/1521195065",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/973455860046295040/3v9eop4d_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/973455860046295040/3v9eop4d_normal.jpg",
+        "profile_link_color": "F58EA8",
+        "profile_sidebar_border_color": "000000",
+        "profile_sidebar_fill_color": "000000",
+        "profile_text_color": "000000",
+        "profile_use_background_image": "False",
+        "protected": "False",
+        "screen_name": "bestyogaworkout",
+        "statuses_count": 5660,
+        "time_zone": "None",
+        "translator_type": "none",
+        "url": "https://t.co/fDbWA9Pva4",
+        "utc_offset": "None",
+        "verified": "False"
+      }
+    },
+    {
+      "contributors": "None",
+      "coordinates": "None",
+      "created_at": "Sat Apr 27 05:29:36 +0000 2019",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "urls": [
+          {
+            "display_url": "twitter.com/i/web/status/1…",
+            "expanded_url": "https://twitter.com/i/web/status/1122009883681804288",
+            "indices": [ 119, 142 ],
+            "url": "https://t.co/RtDzaUXlMS"
+          }
+        ],
+        "user_mentions": []
+      },
+      "favorite_count": 0,
+      "favorited": "False",
+      "geo": "None",
+      "id": 1122009883681804288,
+      "id_str": "1122009883681804288",
+      "in_reply_to_screen_name": "None",
+      "in_reply_to_status_id": "None",
+      "in_reply_to_status_id_str": "None",
+      "in_reply_to_user_id": "None",
+      "in_reply_to_user_id_str": "None",
+      "is_quote_status": "False",
+      "lang": "en",
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "place": "None",
+      "possibly_sensitive": "False",
+      "retweet_count": 1,
+      "retweeted": "False",
+      "source": null,
+      "\"<a href=\"http": null, //instagram.com" rel="nofollow">Instagram</a>",
+      "text": "Morning yoga teaching in and around Melbourne snapfitnessaltonanorth &amp; sphc_portmelbourne. It’s great to be busy.… https://t.co/RtDzaUXlMS",
+      "truncated": "True",
+      "user": {
+        "contributors_enabled": "False",
+        "created_at": "Sat Feb 25 12:38:46 +0000 2012",
+        "default_profile": "True",
+        "default_profile_image": "False",
+        "description": "",
+        "entities": { "description": { "urls": [] } },
+        "favourites_count": 6196,
+        "follow_request_sent": "False",
+        "followers_count": 60,
+        "following": "False",
+        "friends_count": 181,
+        "geo_enabled": "True",
+        "has_extended_profile": "True",
+        "id": 502954948,
+        "id_str": "502954948",
+        "is_translation_enabled": "False",
+        "is_translator": "False",
+        "lang": "en",
+        "listed_count": 6,
+        "location": "",
+        "name": "michael symon",
+        "notifications": "False",
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": "False",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/502954948/1556343099",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/1122010387426099200/i2gX5ld6_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1122010387426099200/i2gX5ld6_normal.jpg",
+        "profile_link_color": "1DA1F2",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": "True",
+        "protected": "False",
+        "screen_name": "mjs2466",
+        "statuses_count": 2166,
+        "time_zone": "None",
+        "translator_type": "none",
+        "url": "None",
+        "utc_offset": "None",
+        "verified": "False"
+      }
+    },
+    {
+      "contributors": "None",
+      "coordinates": "None",
+      "created_at": "Fri Apr 26 21:20:31 +0000 2019",
+      "entities": {
+        "hashtags": [
+          {
+            "indices": [ 0, 18 ],
+            "text": "Openwaterswimming"
+          },
+          {
+            "indices": [ 19, 24 ],
+            "text": "yoga"
+          },
+          {
+            "indices": [ 25, 36 ],
+            "text": "meditation"
+          },
+          {
+            "indices": [ 37, 45 ],
+            "text": "pilates"
+          },
+          {
+            "indices": [ 46, 70 ],
+            "text": "BrightonBathsHealthClub"
+          },
+          {
+            "indices": [ 71, 85 ],
+            "text": "BrightonBaths"
+          },
+          {
+            "indices": [ 86, 93 ],
+            "text": "Health"
+          },
+          {
+            "indices": [ 94, 102 ],
+            "text": "Fitness"
+          },
+          {
+            "indices": [ 103, 113 ],
+            "text": "Lifestyle"
+          }
+        ],
+        "symbols": [],
+        "urls": [
+          {
+            "display_url": "twitter.com/i/web/status/1…",
+            "expanded_url": "https://twitter.com/i/web/status/1121886800891396096",
+            "indices": [ 115, 138 ],
+            "url": "https://t.co/rrNL7U8yf7"
+          }
+        ],
+        "user_mentions": []
+      },
+      "favorite_count": 0,
+      "favorited": "False",
+      "geo": "None",
+      "id": 1121886800891396096,
+      "id_str": "1121886800891396096",
+      "in_reply_to_screen_name": "BrightonBaths",
+      "in_reply_to_status_id": 1121885813304729600,
+      "in_reply_to_status_id_str": "1121885813304729600",
+      "in_reply_to_user_id": 401810837,
+      "in_reply_to_user_id_str": "401810837",
+      "is_quote_status": "False",
+      "lang": "und",
+      "metadata": {
+        "iso_language_code": "und",
+        "result_type": "recent"
+      },
+      "place": {
+        "attributes": {},
+        "bounding_box": {
+          "coordinates": [
+            [
+              [ 144.593741856, -38.433859306 ],
+              [ 145.512528832, -38.433859306 ],
+              [ 145.512528832, -37.5112737225 ],
+              [ 144.593741856, -37.5112737225 ]
+            ]
+          ],
+          "type": "Polygon"
+        },
+        "contained_within": [],
+        "country": "Australia",
+        "country_code": "AU",
+        "full_name": "Melbourne, Victoria",
+        "id": "01864a8a64df9dc4",
+        "name": "Melbourne",
+        "place_type": "city",
+        "url": "https://api.twitter.com/1.1/geo/id/01864a8a64df9dc4.json"
+      },
+      "retweet_count": 0,
+      "retweeted": "False",
+      "source": null,
+      "\"<a href=\"http": null, //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+      "text": "#Openwaterswimming #yoga #meditation #pilates #BrightonBathsHealthClub #BrightonBaths #Health #Fitness #Lifestyle… https://t.co/rrNL7U8yf7",
+      "truncated": "True",
+      "user": {
+        "contributors_enabled": "False",
+        "created_at": "Mon Oct 31 03:43:38 +0000 2011",
+        "default_profile": "False",
+        "default_profile_image": "False",
+        "description": "Brighton Baths Health Club is a truly unique venue, connected to nature and encapsulating a way of living that embraces true health, lifestyle and wellbeing.",
+        "entities": {
+          "description": { "urls": [] },
+          "url": {
+            "urls": [
+              {
+                "display_url": "brightonbathshealthclub.com.au",
+                "expanded_url": "http://www.brightonbathshealthclub.com.au",
+                "indices": [ 0, 23 ],
+                "url": "https://t.co/W2kG7gViul"
+              }
+            ]
+          }
+        },
+        "favourites_count": 343,
+        "follow_request_sent": "False",
+        "followers_count": 272,
+        "following": "False",
+        "friends_count": 260,
+        "geo_enabled": "True",
+        "has_extended_profile": "False",
+        "id": 401810837,
+        "id_str": "401810837",
+        "is_translation_enabled": "False",
+        "is_translator": "False",
+        "lang": "en",
+        "listed_count": 29,
+        "location": "251 Esplanade Brighton Melb",
+        "name": "Brighton Baths",
+        "notifications": "False",
+        "profile_background_color": "FFFFFF",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": "False",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/401810837/1539999030",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/750174232227647488/PJzg-1_I_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/750174232227647488/PJzg-1_I_normal.jpg",
+        "profile_link_color": "0084B4",
+        "profile_sidebar_border_color": "316985",
+        "profile_sidebar_fill_color": "A6CEFF",
+        "profile_text_color": "333333",
+        "profile_use_background_image": "True",
+        "protected": "False",
+        "screen_name": "BrightonBaths",
+        "statuses_count": 3067,
+        "time_zone": "None",
+        "translator_type": "none",
+        "url": "https://t.co/W2kG7gViul",
+        "utc_offset": "None",
+        "verified": "False"
+      }
+    },
+    {
+      "contributors": "None",
+      "coordinates": "None",
+      "created_at": "Fri Apr 26 21:19:49 +0000 2019",
+      "entities": {
+        "hashtags": [
+          {
+            "indices": [ 0, 18 ],
+            "text": "Openwaterswimming"
+          },
+          {
+            "indices": [ 19, 24 ],
+            "text": "yoga"
+          },
+          {
+            "indices": [ 25, 36 ],
+            "text": "meditation"
+          },
+          {
+            "indices": [ 37, 45 ],
+            "text": "pilates"
+          },
+          {
+            "indices": [ 46, 70 ],
+            "text": "BrightonBathsHealthClub"
+          },
+          {
+            "indices": [ 71, 85 ],
+            "text": "BrightonBaths"
+          },
+          {
+            "indices": [ 86, 93 ],
+            "text": "Health"
+          },
+          {
+            "indices": [ 94, 102 ],
+            "text": "Fitness"
+          },
+          {
+            "indices": [ 103, 113 ],
+            "text": "Lifestyle"
+          }
+        ],
+        "symbols": [],
+        "urls": [
+          {
+            "display_url": "twitter.com/i/web/status/1…",
+            "expanded_url": "https://twitter.com/i/web/status/1121886625540108288",
+            "indices": [ 115, 138 ],
+            "url": "https://t.co/LbPXCHca3z"
+          }
+        ],
+        "user_mentions": []
+      },
+      "favorite_count": 1,
+      "favorited": "False",
+      "geo": "None",
+      "id": 1121886625540108288,
+      "id_str": "1121886625540108288",
+      "in_reply_to_screen_name": "IcebergersBBHC",
+      "in_reply_to_status_id": 1121886211197427712,
+      "in_reply_to_status_id_str": "1121886211197427712",
+      "in_reply_to_user_id": 795144302649188352,
+      "in_reply_to_user_id_str": "795144302649188352",
+      "is_quote_status": "False",
+      "lang": "und",
+      "metadata": {
+        "iso_language_code": "und",
+        "result_type": "recent"
+      },
+      "place": {
+        "attributes": {},
+        "bounding_box": {
+          "coordinates": [
+            [
+              [ 144.593741856, -38.433859306 ],
+              [ 145.512528832, -38.433859306 ],
+              [ 145.512528832, -37.5112737225 ],
+              [ 144.593741856, -37.5112737225 ]
+            ]
+          ],
+          "type": "Polygon"
+        },
+        "contained_within": [],
+        "country": "Australia",
+        "country_code": "AU",
+        "full_name": "Melbourne, Victoria",
+        "id": "01864a8a64df9dc4",
+        "name": "Melbourne",
+        "place_type": "city",
+        "url": "https://api.twitter.com/1.1/geo/id/01864a8a64df9dc4.json"
+      },
+      "retweet_count": 0,
+      "retweeted": "False",
+      "source": null,
+      "\"<a href=\"http": null, //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+      "text": "#Openwaterswimming #yoga #meditation #pilates #BrightonBathsHealthClub #BrightonBaths #Health #Fitness #Lifestyle… https://t.co/LbPXCHca3z",
+      "truncated": "True",
+      "user": {
+        "contributors_enabled": "False",
+        "created_at": "Sun Nov 06 06:02:29 +0000 2016",
+        "default_profile": "True",
+        "default_profile_image": "False",
+        "description": "Brighton Baths Health Club is home to the Brighton ICEBERGERS. A diverse group of people brought together by their love of Ocean swimming.",
+        "entities": {
+          "description": { "urls": [] },
+          "url": {
+            "urls": [
+              {
+                "display_url": "brightonbathshealthclub.com.au",
+                "expanded_url": "http://www.brightonbathshealthclub.com.au",
+                "indices": [ 0, 23 ],
+                "url": "https://t.co/W2kG7gViul"
+              }
+            ]
+          }
+        },
+        "favourites_count": 36,
+        "follow_request_sent": "False",
+        "followers_count": 30,
+        "following": "False",
+        "friends_count": 38,
+        "geo_enabled": "True",
+        "has_extended_profile": "False",
+        "id": 795144302649188352,
+        "id_str": "795144302649188352",
+        "is_translation_enabled": "False",
+        "is_translator": "False",
+        "lang": "en",
+        "listed_count": 0,
+        "location": "251B The Esplande Brighton ",
+        "name": "BrightonIcebergers",
+        "notifications": "False",
+        "profile_background_color": "F5F8FA",
+        "profile_background_image_url": "None",
+        "profile_background_image_url_https": "None",
+        "profile_background_tile": "False",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/795144302649188352/1539999576",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/797190688605540352/tGdsZvbT_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/797190688605540352/tGdsZvbT_normal.jpg",
+        "profile_link_color": "1DA1F2",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": "True",
+        "protected": "False",
+        "screen_name": "IcebergersBBHC",
+        "statuses_count": 865,
+        "time_zone": "None",
+        "translator_type": "none",
+        "url": "https://t.co/W2kG7gViul",
+        "utc_offset": "None",
+        "verified": "False"
+      }
+    },
+    {
+      "contributors": "None",
+      "coordinates": "None",
+      "created_at": "Fri Apr 26 13:08:42 +0000 2019",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "urls": [
+          {
+            "display_url": "timeout.com/melbourne/thin…",
+            "expanded_url": "https://www.timeout.com/melbourne/things-to-do/beer-yoga?utm_medium=Social&utm_source=Facebook#Echobox=1556260665",
+            "indices": [ 81, 104 ],
+            "url": "https://t.co/qeE1m4lDKd"
+          }
+        ],
+        "user_mentions": []
+      },
+      "favorite_count": 0,
+      "favorited": "False",
+      "geo": "None",
+      "id": 1121763030809944064,
+      "id_str": "1121763030809944064",
+      "in_reply_to_screen_name": "None",
+      "in_reply_to_status_id": "None",
+      "in_reply_to_status_id_str": "None",
+      "in_reply_to_user_id": "None",
+      "in_reply_to_user_id_str": "None",
+      "is_quote_status": "False",
+      "lang": "en",
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "place": "None",
+      "possibly_sensitive": "False",
+      "retweet_count": 0,
+      "retweeted": "False",
+      "source": null,
+      "\"<a href=\"http": null, //www.facebook.com/twitter" rel="nofollow">Facebook</a>",
+      "text": "Beer yoga has arrived in Melbourne so you can get loose and lit at the same time https://t.co/qeE1m4lDKd",
+      "truncated": "False",
+      "user": {
+        "contributors_enabled": "False",
+        "created_at": "Wed Dec 17 09:57:51 +0000 2014",
+        "default_profile": "True",
+        "default_profile_image": "False",
+        "description": "",
+        "entities": {
+          "description": { "urls": [] },
+          "url": {
+            "urls": [
+              {
+                "display_url": "pegasussuites.com.au",
+                "expanded_url": "http://www.pegasussuites.com.au",
+                "indices": [ 0, 22 ],
+                "url": "http://t.co/0IYkpCrMfm"
+              }
+            ]
+          }
+        },
+        "favourites_count": 508,
+        "follow_request_sent": "False",
+        "followers_count": 330,
+        "following": "False",
+        "friends_count": 1363,
+        "geo_enabled": "False",
+        "has_extended_profile": "False",
+        "id": 2933293514,
+        "id_str": "2933293514",
+        "is_translation_enabled": "False",
+        "is_translator": "False",
+        "lang": "en",
+        "listed_count": 8,
+        "location": "\"206 A\"Beckett",
+        "Street" "Melbourne\",",
+        "name": "Pegasus Hotel",
+        "notifications": "False",
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": "False",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/545156451488919553/bbB_cLNk_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/545156451488919553/bbB_cLNk_normal.jpeg",
+        "profile_link_color": "1DA1F2",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": "True",
+        "protected": "False",
+        "screen_name": "PegasusMelb",
+        "statuses_count": 1878,
+        "time_zone": "None",
+        "translator_type": "none",
+        "url": "http://t.co/0IYkpCrMfm",
+        "utc_offset": "None",
+        "verified": "False"
+      }
+    },
+    {
+      "contributors": "None",
+      "coordinates": "None",
+      "created_at": "Fri Apr 26 06:51:14 +0000 2019",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "id": 187711248,
+            "id_str": "187711248",
+            "indices": [ 3, 14 ],
+            "name": "Time Out Melbourne",
+            "screen_name": "TimeOutMel"
+          }
+        ]
+      },
+      "favorite_count": 0,
+      "favorited": "False",
+      "geo": "None",
+      "id": 1121668037633908736,
+      "id_str": "1121668037633908736",
+      "in_reply_to_screen_name": "None",
+      "in_reply_to_status_id": "None",
+      "in_reply_to_status_id_str": "None",
+      "in_reply_to_user_id": "None",
+      "in_reply_to_user_id_str": "None",
+      "is_quote_status": "False",
+      "lang": "en",
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "place": "None",
+      "retweet_count": 2,
+      "retweeted": "False",
+      "retweeted_status": {
+        "contributors": "None",
+        "coordinates": "None",
+        "created_at": "Fri Apr 26 06:40:11 +0000 2019",
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "urls": [
+            {
+              "display_url": "twitter.com/i/web/status/1…",
+              "expanded_url": "https://twitter.com/i/web/status/1121665257951219712",
+              "indices": [ 117, 140 ],
+              "url": "https://t.co/vyd2bGwYKE"
+            }
+          ],
+          "user_mentions": []
+        },
+        "favorite_count": 3,
+        "favorited": "False",
+        "geo": "None",
+        "id": 1121665257951219712,
+        "id_str": "1121665257951219712",
+        "in_reply_to_screen_name": "None",
+        "in_reply_to_status_id": "None",
+        "in_reply_to_status_id_str": "None",
+        "in_reply_to_user_id": "None",
+        "in_reply_to_user_id_str": "None",
+        "is_quote_status": "False",
+        "lang": "en",
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "place": "None",
+        "possibly_sensitive": "False",
+        "retweet_count": 2,
+        "retweeted": "False",
+        "source": null,
+        "\"<a href=\"https": null, //www.echobox.com" rel="nofollow">Echobox Social</a>",
+        "text": "\"Chapel Street bar Two Wrongs is now offering beer yoga classes where you\"ll",
+        "drink" "roughly",
+        "three" "glasses",
+        "of" "beer",
+        "dur…": null,
+        "https": null, //t.co/vyd2bGwYKE",
+        "truncated": "True",
+        "user": {
+          "contributors_enabled": "False",
+          "created_at": "Mon Sep 06 23:36:21 +0000 2010",
+          "default_profile": "False",
+          "default_profile_image": "False",
+          "description": "\"Time Out - Melbourne\"s",
+          "arts",
+          "entertainment",
+          "nightlife" "and",
+          "food" "guide.\",",
+          "entities": {
+            "description": { "urls": [] },
+            "url": {
+              "urls": [
+                {
+                  "display_url": "timeout.com/melbourne",
+                  "expanded_url": "https://www.timeout.com/melbourne",
+                  "indices": [ 0, 23 ],
+                  "url": "https://t.co/ibtRZ4E6X9"
+                }
+              ]
+            }
+          },
+          "favourites_count": 424,
+          "follow_request_sent": "False",
+          "followers_count": 115005,
+          "following": "False",
+          "friends_count": 83,
+          "geo_enabled": "True",
+          "has_extended_profile": "True",
+          "id": 187711248,
+          "id_str": "187711248",
+          "is_translation_enabled": "False",
+          "is_translator": "False",
+          "lang": "en",
+          "listed_count": 529,
+          "location": "Melbourne",
+          "name": "Time Out Melbourne",
+          "notifications": "False",
+          "profile_background_color": "022330",
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png",
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png",
+          "profile_background_tile": "False",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/187711248/1554079471",
+          "profile_image_url": "http://pbs.twimg.com/profile_images/718223731005460480/zGERXeZO_normal.jpg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/718223731005460480/zGERXeZO_normal.jpg",
+          "profile_link_color": "0084B4",
+          "profile_sidebar_border_color": "A8C7F7",
+          "profile_sidebar_fill_color": "C0DFEC",
+          "profile_text_color": "333333",
+          "profile_use_background_image": "True",
+          "protected": "False",
+          "screen_name": "TimeOutMel",
+          "statuses_count": 8765,
+          "time_zone": "None",
+          "translator_type": "none",
+          "url": "https://t.co/ibtRZ4E6X9",
+          "utc_offset": "None",
+          "verified": "True"
+        }
+      },
+      "source": null,
+      "\"<a href=\"http": null, //twitter.com/download/android" rel="nofollow">Twitter for Android</a>",
+      "text": "\"RT @TimeOutMel: Chapel Street bar Two Wrongs is now offering beer yoga classes where you\"ll",
+      "drink" "roughly",
+      "three" "glasses",
+      "of" "beer",
+      "during" "each…\",",
+      "truncated": "False",
+      "user": {
+        "contributors_enabled": "False",
+        "created_at": "Mon Sep 25 12:42:11 +0000 2017",
+        "default_profile": "True",
+        "default_profile_image": "False",
+        "description": "Love life, do it",
+        "entities": { "description": { "urls": [] } },
+        "favourites_count": 5195,
+        "follow_request_sent": "False",
+        "followers_count": 27,
+        "following": "False",
+        "friends_count": 253,
+        "geo_enabled": "False",
+        "has_extended_profile": "True",
+        "id": 912296171581739009,
+        "id_str": "912296171581739009",
+        "is_translation_enabled": "False",
+        "is_translator": "False",
+        "lang": "en",
+        "listed_count": 0,
+        "location": "Melbourne, Victoria",
+        "name": "GreenGalliano",
+        "notifications": "False",
+        "profile_background_color": "F5F8FA",
+        "profile_background_image_url": "None",
+        "profile_background_image_url_https": "None",
+        "profile_background_tile": "False",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/912644816973922309/Cr1lkKHo_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/912644816973922309/Cr1lkKHo_normal.jpg",
+        "profile_link_color": "1DA1F2",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": "True",
+        "protected": "False",
+        "screen_name": "GreenRedGaliano",
+        "statuses_count": 2044,
+        "time_zone": "None",
+        "translator_type": "none",
+        "url": "None",
+        "utc_offset": "None",
+        "verified": "False"
+      }
+    },
+    {
+      "contributors": "None",
+      "coordinates": "None",
+      "created_at": "Fri Apr 26 06:40:30 +0000 2019",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "id": 187711248,
+            "id_str": "187711248",
+            "indices": [ 3, 14 ],
+            "name": "Time Out Melbourne",
+            "screen_name": "TimeOutMel"
+          }
+        ]
+      },
+      "favorite_count": 0,
+      "favorited": "False",
+      "geo": "None",
+      "id": 1121665335537487873,
+      "id_str": "1121665335537487873",
+      "in_reply_to_screen_name": "None",
+      "in_reply_to_status_id": "None",
+      "in_reply_to_status_id_str": "None",
+      "in_reply_to_user_id": "None",
+      "in_reply_to_user_id_str": "None",
+      "is_quote_status": "False",
+      "lang": "en",
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "place": "None",
+      "retweet_count": 2,
+      "retweeted": "False",
+      "retweeted_status": {
+        "contributors": "None",
+        "coordinates": "None",
+        "created_at": "Fri Apr 26 06:40:11 +0000 2019",
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "urls": [
+            {
+              "display_url": "twitter.com/i/web/status/1…",
+              "expanded_url": "https://twitter.com/i/web/status/1121665257951219712",
+              "indices": [ 117, 140 ],
+              "url": "https://t.co/vyd2bGwYKE"
+            }
+          ],
+          "user_mentions": []
+        },
+        "favorite_count": 3,
+        "favorited": "False",
+        "geo": "None",
+        "id": 1121665257951219712,
+        "id_str": "1121665257951219712",
+        "in_reply_to_screen_name": "None",
+        "in_reply_to_status_id": "None",
+        "in_reply_to_status_id_str": "None",
+        "in_reply_to_user_id": "None",
+        "in_reply_to_user_id_str": "None",
+        "is_quote_status": "False",
+        "lang": "en",
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "place": "None",
+        "possibly_sensitive": "False",
+        "retweet_count": 2,
+        "retweeted": "False",
+        "source": null,
+        "\"<a href=\"https": null, //www.echobox.com" rel="nofollow">Echobox Social</a>",
+        "text": "\"Chapel Street bar Two Wrongs is now offering beer yoga classes where you\"ll",
+        "drink" "roughly",
+        "three" "glasses",
+        "of" "beer",
+        "dur…": null,
+        "https": null, //t.co/vyd2bGwYKE",
+        "truncated": "True",
+        "user": {
+          "contributors_enabled": "False",
+          "created_at": "Mon Sep 06 23:36:21 +0000 2010",
+          "default_profile": "False",
+          "default_profile_image": "False",
+          "description": "\"Time Out - Melbourne\"s",
+          "arts",
+          "entertainment",
+          "nightlife" "and",
+          "food" "guide.\",",
+          "entities": {
+            "description": { "urls": [] },
+            "url": {
+              "urls": [
+                {
+                  "display_url": "timeout.com/melbourne",
+                  "expanded_url": "https://www.timeout.com/melbourne",
+                  "indices": [ 0, 23 ],
+                  "url": "https://t.co/ibtRZ4E6X9"
+                }
+              ]
+            }
+          },
+          "favourites_count": 424,
+          "follow_request_sent": "False",
+          "followers_count": 115005,
+          "following": "False",
+          "friends_count": 83,
+          "geo_enabled": "True",
+          "has_extended_profile": "True",
+          "id": 187711248,
+          "id_str": "187711248",
+          "is_translation_enabled": "False",
+          "is_translator": "False",
+          "lang": "en",
+          "listed_count": 529,
+          "location": "Melbourne",
+          "name": "Time Out Melbourne",
+          "notifications": "False",
+          "profile_background_color": "022330",
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png",
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png",
+          "profile_background_tile": "False",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/187711248/1554079471",
+          "profile_image_url": "http://pbs.twimg.com/profile_images/718223731005460480/zGERXeZO_normal.jpg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/718223731005460480/zGERXeZO_normal.jpg",
+          "profile_link_color": "0084B4",
+          "profile_sidebar_border_color": "A8C7F7",
+          "profile_sidebar_fill_color": "C0DFEC",
+          "profile_text_color": "333333",
+          "profile_use_background_image": "True",
+          "protected": "False",
+          "screen_name": "TimeOutMel",
+          "statuses_count": 8765,
+          "time_zone": "None",
+          "translator_type": "none",
+          "url": "https://t.co/ibtRZ4E6X9",
+          "utc_offset": "None",
+          "verified": "True"
+        }
+      },
+      "source": null,
+      "\"<a href=\"http": null, //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+      "text": "\"RT @TimeOutMel: Chapel Street bar Two Wrongs is now offering beer yoga classes where you\"ll",
+      "drink" "roughly",
+      "three" "glasses",
+      "of" "beer",
+      "during" "each…\",",
+      "truncated": "False",
+      "user": {
+        "contributors_enabled": "False",
+        "created_at": "Tue Jun 07 13:05:00 +0000 2011",
+        "default_profile": "False",
+        "default_profile_image": "False",
+        "description": "\"Canadian moved to Aus - rep\"n",
+        "everything" "#Melbs",
+        "&" "then",
+        "sum" "•",
+        "celebs" "(#HollywoodMelb)",
+        "•" "food",
+        "•" "sports",
+        "•" "events",
+        "|" "Tweets",
+        "by" "@repTdotO",
+        "|": null,
+        "IG": "reptdoto\",",
+        "entities": {
+          "description": { "urls": [] },
+          "url": {
+            "urls": [
+              {
+                "display_url": "facebook.com/HollywoodMelbo…",
+                "expanded_url": "http://facebook.com/HollywoodMelbourne",
+                "indices": [ 0, 23 ],
+                "url": "https://t.co/43is3S1STx"
+              }
+            ]
+          }
+        },
+        "favourites_count": 2132,
+        "follow_request_sent": "False",
+        "followers_count": 842,
+        "following": "False",
+        "friends_count": 2039,
+        "geo_enabled": "True",
+        "has_extended_profile": "False",
+        "id": 312644307,
+        "id_str": "312644307",
+        "is_translation_enabled": "False",
+        "is_translator": "False",
+        "lang": "en",
+        "listed_count": 21,
+        "location": "Melbourne, VIC",
+        "name": "Kyle Hartman",
+        "notifications": "False",
+        "profile_background_color": "1A1B1F",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme9/bg.gif",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme9/bg.gif",
+        "profile_background_tile": "False",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/312644307/1398981046",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/904951779053338624/1BtXr-GW_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/904951779053338624/1BtXr-GW_normal.jpg",
+        "profile_link_color": "2FC2EF",
+        "profile_sidebar_border_color": "181A1E",
+        "profile_sidebar_fill_color": "252429",
+        "profile_text_color": "666666",
+        "profile_use_background_image": "True",
+        "protected": "False",
+        "screen_name": "hartMelbs",
+        "statuses_count": 7179,
+        "time_zone": "None",
+        "translator_type": "none",
+        "url": "https://t.co/43is3S1STx",
+        "utc_offset": "None",
+        "verified": "False"
+      }
+    }
+  ]
+}

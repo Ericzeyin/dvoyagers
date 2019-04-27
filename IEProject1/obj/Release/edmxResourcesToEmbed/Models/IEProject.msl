@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="IEProjectModelStoreContainer" CdmEntityContainer="IEProject1Entities">
+  <EntityContainerMapping StorageEntityContainer="DVoyagers_dbModelStoreContainer" CdmEntityContainer="IEProject1Entities">
     <EntitySetMapping Name="AgeSex">
-      <EntityTypeMapping TypeName="IEProjectModel.AgeSex">
+      <EntityTypeMapping TypeName="DVoyagers_dbModel.AgeSex">
         <MappingFragment StoreEntitySet="AgeSex">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Age" ColumnName="Age" />
@@ -13,7 +13,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="AgeState">
-      <EntityTypeMapping TypeName="IEProjectModel.AgeState">
+      <EntityTypeMapping TypeName="DVoyagers_dbModel.AgeState">
         <MappingFragment StoreEntitySet="AgeState">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Age" ColumnName="Age" />
@@ -30,7 +30,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Content">
-      <EntityTypeMapping TypeName="IEProjectModel.Content">
+      <EntityTypeMapping TypeName="DVoyagers_dbModel.Content">
         <MappingFragment StoreEntitySet="Content">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="ContentName" ColumnName="ContentName" />
@@ -43,7 +43,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Field">
-      <EntityTypeMapping TypeName="IEProjectModel.Field">
+      <EntityTypeMapping TypeName="DVoyagers_dbModel.Field">
         <MappingFragment StoreEntitySet="Field">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="FieldName" ColumnName="FieldName" />
@@ -51,7 +51,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Place">
-      <EntityTypeMapping TypeName="IEProjectModel.Place">
+      <EntityTypeMapping TypeName="DVoyagers_dbModel.Place">
         <MappingFragment StoreEntitySet="Place">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -65,14 +65,59 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="RPlace">
+      <EntityTypeMapping TypeName="DVoyagers_dbModel.RPlace">
+        <MappingFragment StoreEntitySet="RPlace">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Adress" ColumnName="Adress" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="Total_rating_people" ColumnName="Total_rating_people" />
+          <ScalarProperty Name="Photo_reference" ColumnName="Photo_reference" />
+          <ScalarProperty Name="Field_id" ColumnName="Field_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="SportType">
-      <EntityTypeMapping TypeName="IEProjectModel.SportType">
+      <EntityTypeMapping TypeName="DVoyagers_dbModel.SportType">
         <MappingFragment StoreEntitySet="SportType">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Sport_Type" ColumnName="Sport Type" />
           <ScalarProperty Name="Males" ColumnName="Males" />
           <ScalarProperty Name="Females" ColumnName="Females" />
           <ScalarProperty Name="Total" ColumnName="Total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="YPlace">
+      <EntityTypeMapping TypeName="DVoyagers_dbModel.YPlace">
+        <MappingFragment StoreEntitySet="YPlace">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Adress" ColumnName="Adress" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="Total_rating_people" ColumnName="Total_rating_people" />
+          <ScalarProperty Name="Photo_reference" ColumnName="Photo_reference" />
+          <ScalarProperty Name="Field_id" ColumnName="Field_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Yoga">
+      <EntityTypeMapping TypeName="DVoyagers_dbModel.Yoga">
+        <MappingFragment StoreEntitySet="Yoga">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Adress" ColumnName="Adress" />
+          <ScalarProperty Name="Suburb" ColumnName="Suburb" />
+          <ScalarProperty Name="Postcode" ColumnName="Postcode" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Business_Category" ColumnName="Business_Category" />
+          <ScalarProperty Name="LGA" ColumnName="LGA" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

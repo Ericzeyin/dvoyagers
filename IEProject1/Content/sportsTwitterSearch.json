@@ -1,0 +1,1368 @@
+{
+  "search_metadata": {
+    "completed_in": 0.047,
+    "count": 10,
+    "max_id": 1122118616286224387,
+    "max_id_str": "1122118616286224387",
+    "next_results": "?max_id=1121521690343657472&q=%25melbourne%2B%25sports&count=10&include_entities=1&result_type=mixed",
+    "query": "%25melbourne%2B%25sports",
+    "refresh_url": "?since_id=1122118616286224387&q=%25melbourne%2B%25sports&result_type=mixed&include_entities=1",
+    "since_id": 0,
+    "since_id_str": "0"
+  },
+  "statuses": [
+    {
+      "contributors": "None",
+      "coordinates": "None",
+      "created_at": "Thu Apr 25 21:09:42 +0000 2019",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "urls": [
+          {
+            "display_url": "twitter.com/i/web/status/1…",
+            "expanded_url": "https://twitter.com/i/web/status/1121521690343657473",
+            "indices": [ 121, 144 ],
+            "url": "https://t.co/zSadOVpKx0"
+          }
+        ],
+        "user_mentions": []
+      },
+      "favorite_count": 45,
+      "favorited": "False",
+      "geo": "None",
+      "id": 1121521690343657473,
+      "id_str": "1121521690343657473",
+      "in_reply_to_screen_name": "None",
+      "in_reply_to_status_id": "None",
+      "in_reply_to_status_id_str": "None",
+      "in_reply_to_user_id": "None",
+      "in_reply_to_user_id_str": "None",
+      "is_quote_status": "False",
+      "lang": "en",
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "popular"
+      },
+      "place": "None",
+      "possibly_sensitive": "False",
+      "retweet_count": 16,
+      "retweeted": "False",
+      "source": null,
+      "\"<a href=\"http": null, //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+      "text": "The Govt is announcing today $15m for a new multidisciplinary sports R&amp;D hub in the heart of Melbourne.\n\nThis money… https://t.co/zSadOVpKx0",
+      "truncated": "True",
+      "user": {
+        "contributors_enabled": "False",
+        "created_at": "Sat Aug 08 09:45:57 +0000 2009",
+        "default_profile": "False",
+        "default_profile_image": "False",
+        "description": "Treasurer, Deputy Leader of the Liberal Party, Federal Member for Kooyong.",
+        "entities": {
+          "description": { "urls": [] },
+          "url": {
+            "urls": [
+              {
+                "display_url": "joshfrydenberg.com.au",
+                "expanded_url": "http://www.joshfrydenberg.com.au/",
+                "indices": [ 0, 23 ],
+                "url": "https://t.co/QAM8l2u2JL"
+              }
+            ]
+          }
+        },
+        "favourites_count": 64,
+        "follow_request_sent": "False",
+        "followers_count": 44364,
+        "following": "False",
+        "friends_count": 513,
+        "geo_enabled": "True",
+        "has_extended_profile": "False",
+        "id": 63942152,
+        "id_str": "63942152",
+        "is_translation_enabled": "False",
+        "is_translator": "False",
+        "lang": "en",
+        "listed_count": 534,
+        "location": "Authorised J. Frydenberg MP, Liberal Party, Camberwell, VIC",
+        "name": "Josh Frydenberg",
+        "notifications": "False",
+        "profile_background_color": "426680",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": "False",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/63942152/1554960079",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/1116209073882427392/Lj3QKlS4_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1116209073882427392/Lj3QKlS4_normal.jpg",
+        "profile_link_color": "1B95E0",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": "True",
+        "protected": "False",
+        "screen_name": "JoshFrydenberg",
+        "statuses_count": 5509,
+        "time_zone": "None",
+        "translator_type": "none",
+        "url": "https://t.co/QAM8l2u2JL",
+        "utc_offset": "None",
+        "verified": "True"
+      }
+    },
+    {
+      "contributors": "None",
+      "coordinates": "None",
+      "created_at": "Sat Apr 27 06:00:10 +0000 2019",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "urls": [
+          {
+            "display_url": "twitter.com/i/web/status/1…",
+            "expanded_url": "https://twitter.com/i/web/status/1122017575288885250",
+            "indices": [ 117, 140 ],
+            "url": "https://t.co/vP2KScMghF"
+          }
+        ],
+        "user_mentions": []
+      },
+      "favorite_count": 4,
+      "favorited": "False",
+      "geo": "None",
+      "id": 1122017575288885250,
+      "id_str": "1122017575288885250",
+      "in_reply_to_screen_name": "None",
+      "in_reply_to_status_id": "None",
+      "in_reply_to_status_id_str": "None",
+      "in_reply_to_user_id": "None",
+      "in_reply_to_user_id_str": "None",
+      "is_quote_status": "False",
+      "lang": "en",
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "popular"
+      },
+      "place": "None",
+      "possibly_sensitive": "False",
+      "retweet_count": 5,
+      "retweeted": "False",
+      "source": null,
+      "\"<a href=\"https": null, //www.hootsuite.com" rel="nofollow">Hootsuite Inc.</a>",
+      "text": "\"A one-of-a-kind sports car worth $300,000 has been stolen from a garage in one of Melbourne\"s",
+      "most" "exclusive",
+      "suburb…": null,
+      "https": null, //t.co/vP2KScMghF",
+      "truncated": "True",
+      "user": {
+        "contributors_enabled": "False",
+        "created_at": "Thu Aug 26 00:33:14 +0000 2010",
+        "default_profile": "False",
+        "default_profile_image": "False",
+        "description": "@PHitchener9 and @alicialoxley present Melbourne’s #9News on @Channel9 at 4.00pm/6.00pm. Simulcast on @LightFM899. Community Guidelines: https://t.co/h3hABkSNCP",
+        "entities": {
+          "description": {
+            "urls": [
+              {
+                "display_url": "9jump.in/8oT7O4S",
+                "expanded_url": "http://9jump.in/8oT7O4S",
+                "indices": [ 137, 160 ],
+                "url": "https://t.co/h3hABkSNCP"
+              }
+            ]
+          },
+          "url": {
+            "urls": [
+              {
+                "display_url": "9News.com.au/Victoria",
+                "expanded_url": "http://9News.com.au/Victoria",
+                "indices": [ 0, 22 ],
+                "url": "http://t.co/mTeTNcmhaU"
+              }
+            ]
+          }
+        },
+        "favourites_count": 398,
+        "follow_request_sent": "False",
+        "followers_count": 122192,
+        "following": "False",
+        "friends_count": 2345,
+        "geo_enabled": "False",
+        "has_extended_profile": "False",
+        "id": 183036128,
+        "id_str": "183036128",
+        "is_translation_enabled": "False",
+        "is_translator": "False",
+        "lang": "en",
+        "listed_count": 1009,
+        "location": "Melbourne, Australia",
+        "name": "Nine News Melbourne",
+        "notifications": "False",
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": "False",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/183036128/1543106227",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/1087570278257811456/Gapo024__normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1087570278257811456/Gapo024__normal.jpg",
+        "profile_link_color": "1B95E0",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": "True",
+        "protected": "False",
+        "screen_name": "9NewsMelb",
+        "statuses_count": 211709,
+        "time_zone": "None",
+        "translator_type": "none",
+        "url": "http://t.co/mTeTNcmhaU",
+        "utc_offset": "None",
+        "verified": "True"
+      }
+    },
+    {
+      "contributors": "None",
+      "coordinates": "None",
+      "created_at": "Fri Apr 26 21:54:08 +0000 2019",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "urls": [
+          {
+            "display_url": "twitter.com/i/web/status/1…",
+            "expanded_url": "https://twitter.com/i/web/status/1121895260303478784",
+            "indices": [ 117, 140 ],
+            "url": "https://t.co/9Vo6i3Tqre"
+          }
+        ],
+        "user_mentions": []
+      },
+      "favorite_count": 9,
+      "favorited": "False",
+      "geo": "None",
+      "id": 1121895260303478784,
+      "id_str": "1121895260303478784",
+      "in_reply_to_screen_name": "None",
+      "in_reply_to_status_id": "None",
+      "in_reply_to_status_id_str": "None",
+      "in_reply_to_user_id": "None",
+      "in_reply_to_user_id_str": "None",
+      "is_quote_status": "False",
+      "lang": "en",
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "popular"
+      },
+      "place": {
+        "attributes": {},
+        "bounding_box": {
+          "coordinates": [
+            [
+              [ 144.593741856, -38.433859306 ],
+              [ 145.512528832, -38.433859306 ],
+              [ 145.512528832, -37.5112737225 ],
+              [ 144.593741856, -37.5112737225 ]
+            ]
+          ],
+          "type": "Polygon"
+        },
+        "contained_within": [],
+        "country": "Australia",
+        "country_code": "AU",
+        "full_name": "Melbourne, Victoria",
+        "id": "01864a8a64df9dc4",
+        "name": "Melbourne",
+        "place_type": "city",
+        "url": "https://api.twitter.com/1.1/geo/id/01864a8a64df9dc4.json"
+      },
+      "possibly_sensitive": "False",
+      "retweet_count": 5,
+      "retweeted": "False",
+      "source": null,
+      "\"<a href=\"http": null, //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+      "text": "SEEN THIS? A blue McLaren 12C Spyder was stolen from a home in Toorak, Melbourne on Wednesday. 2-3 men managed to b… https://t.co/9Vo6i3Tqre",
+      "truncated": "True",
+      "user": {
+        "contributors_enabled": "False",
+        "created_at": "Sat May 29 09:45:46 +0000 2010",
+        "default_profile": "False",
+        "default_profile_image": "False",
+        "description": "Reporter for 10 News First @10newsfirstmelb | Pitch a story.. ✉️ kcostalos@networkten.com.au 📸 Travel shots & BTS on Insta: @costalos |",
+        "entities": {
+          "description": { "urls": [] },
+          "url": {
+            "urls": [
+              {
+                "display_url": "facebook.com/costalos/",
+                "expanded_url": "https://www.facebook.com/costalos/",
+                "indices": [ 0, 23 ],
+                "url": "https://t.co/nyJMUvCEOQ"
+              }
+            ]
+          }
+        },
+        "favourites_count": 1858,
+        "follow_request_sent": "False",
+        "followers_count": 3005,
+        "following": "False",
+        "friends_count": 836,
+        "geo_enabled": "True",
+        "has_extended_profile": "False",
+        "id": 149454453,
+        "id_str": "149454453",
+        "is_translation_enabled": "False",
+        "is_translator": "False",
+        "lang": "en",
+        "listed_count": 83,
+        "location": "Australia",
+        "name": "Kristina Costalos",
+        "notifications": "False",
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": "False",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/149454453/1551483344",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/1050200992245932032/hP9558gU_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1050200992245932032/hP9558gU_normal.jpg",
+        "profile_link_color": "FA743E",
+        "profile_sidebar_border_color": "000000",
+        "profile_sidebar_fill_color": "000000",
+        "profile_text_color": "000000",
+        "profile_use_background_image": "False",
+        "protected": "False",
+        "screen_name": "kcostalos",
+        "statuses_count": 3034,
+        "time_zone": "None",
+        "translator_type": "none",
+        "url": "https://t.co/nyJMUvCEOQ",
+        "utc_offset": "None",
+        "verified": "True"
+      }
+    },
+    {
+      "contributors": "None",
+      "coordinates": "None",
+      "created_at": "Sat Apr 27 12:41:40 +0000 2019",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "urls": [
+          {
+            "display_url": "twitter.com/i/web/status/1…",
+            "expanded_url": "https://twitter.com/i/web/status/1122118616286224387",
+            "indices": [ 117, 140 ],
+            "url": "https://t.co/tRKap961V2"
+          }
+        ],
+        "user_mentions": []
+      },
+      "favorite_count": 0,
+      "favorited": "False",
+      "geo": "None",
+      "id": 1122118616286224387,
+      "id_str": "1122118616286224387",
+      "in_reply_to_screen_name": "None",
+      "in_reply_to_status_id": "None",
+      "in_reply_to_status_id_str": "None",
+      "in_reply_to_user_id": "None",
+      "in_reply_to_user_id_str": "None",
+      "is_quote_status": "False",
+      "lang": "en",
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "place": "None",
+      "possibly_sensitive": "False",
+      "retweet_count": 0,
+      "retweeted": "False",
+      "source": null,
+      "\"<a href=\"http": null, //www.linkedin.com/" rel="nofollow">LinkedIn</a>",
+      "text": "\"A one-of-a-kind sports car worth $300,000 has been stolen from a garage in one of Melbourne\"s",
+      "most" "exclusive",
+      "suburb…": null,
+      "https": null, //t.co/tRKap961V2",
+      "truncated": "True",
+      "user": {
+        "contributors_enabled": "False",
+        "created_at": "Tue Dec 21 05:42:24 +0000 2010",
+        "default_profile": "True",
+        "default_profile_image": "False",
+        "description": "I am Humble Enough to know that I am Not better than anybody & Wise Enough to know that I am Different from the rest.",
+        "entities": {
+          "description": { "urls": [] },
+          "url": {
+            "urls": [
+              {
+                "display_url": "linkedin.com/in/nirmal-jasw…",
+                "expanded_url": "https://www.linkedin.com/in/nirmal-jaswani-7b18663",
+                "indices": [ 0, 23 ],
+                "url": "https://t.co/SOehqYMdVN"
+              }
+            ]
+          }
+        },
+        "favourites_count": 28,
+        "follow_request_sent": "False",
+        "followers_count": 744,
+        "following": "False",
+        "friends_count": 2085,
+        "geo_enabled": "True",
+        "has_extended_profile": "True",
+        "id": 228976521,
+        "id_str": "228976521",
+        "is_translation_enabled": "False",
+        "is_translator": "False",
+        "lang": "en",
+        "listed_count": 6,
+        "location": "Mumbai, India",
+        "name": "Nirmal Jaswani",
+        "notifications": "False",
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": "False",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/228976521/1453663187",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/514848324755529729/35V2OET9_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/514848324755529729/35V2OET9_normal.jpeg",
+        "profile_link_color": "1DA1F2",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": "True",
+        "protected": "False",
+        "screen_name": "nirmaljaswani",
+        "statuses_count": 18812,
+        "time_zone": "None",
+        "translator_type": "none",
+        "url": "https://t.co/SOehqYMdVN",
+        "utc_offset": "None",
+        "verified": "False"
+      }
+    },
+    {
+      "contributors": "None",
+      "coordinates": "None",
+      "created_at": "Sat Apr 27 11:49:11 +0000 2019",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "urls": [
+          {
+            "display_url": "9news.com.au/national/melbo…",
+            "expanded_url": "https://www.9news.com.au/national/melbourne-news-mclaren-spyder-stolen-sports-car-toorak/a27d73fd-882d-4cd1-97a3-910fc39887d3?ocid=Social-9NewsM",
+            "indices": [ 55, 78 ],
+            "url": "https://t.co/qITHv2ypBA"
+          }
+        ],
+        "user_mentions": []
+      },
+      "favorite_count": 0,
+      "favorited": "False",
+      "geo": "None",
+      "id": 1122105408619995136,
+      "id_str": "1122105408619995136",
+      "in_reply_to_screen_name": "None",
+      "in_reply_to_status_id": "None",
+      "in_reply_to_status_id_str": "None",
+      "in_reply_to_user_id": "None",
+      "in_reply_to_user_id_str": "None",
+      "is_quote_status": "False",
+      "lang": "en",
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "place": "None",
+      "possibly_sensitive": "False",
+      "retweet_count": 0,
+      "retweeted": "False",
+      "source": null,
+      "\"<a href=\"http": null, //www.facebook.com/twitter" rel="nofollow">Facebook</a>",
+      "text": "\"\"Only",
+      "one" "in",
+      "Australia\" sports car stolen in Melbourne https://t.co/qITHv2ypBA\"",
+      "truncated": "False",
+      "user": {
+        "contributors_enabled": "False",
+        "created_at": "Wed Apr 22 21:00:58 +0000 2009",
+        "default_profile": "False",
+        "default_profile_image": "False",
+        "description": "DEVEAUX  & Raging Waters....Rock power trio ....check out on Soundcloud , Reverbnation , Facebook , Twitter & http://t.co/uH2WD3p9r4\nVIADOME  pop dance project",
+        "entities": {
+          "description": {
+            "urls": [
+              {
+                "display_url": "ihearmusic.com/deveaux",
+                "expanded_url": "http://ihearmusic.com/deveaux",
+                "indices": [ 110, 132 ],
+                "url": "http://t.co/uH2WD3p9r4"
+              }
+            ]
+          },
+          "url": {
+            "urls": [
+              {
+                "display_url": "facebook.com/tonydeveaux",
+                "expanded_url": "http://www.facebook.com/tonydeveaux",
+                "indices": [ 0, 22 ],
+                "url": "http://t.co/JpAWXL8ZL1"
+              }
+            ]
+          }
+        },
+        "favourites_count": 9,
+        "follow_request_sent": "False",
+        "followers_count": 473,
+        "following": "False",
+        "friends_count": 1897,
+        "geo_enabled": "True",
+        "has_extended_profile": "False",
+        "id": 34396568,
+        "id_str": "34396568",
+        "is_translation_enabled": "False",
+        "is_translator": "False",
+        "lang": "en",
+        "listed_count": 5,
+        "location": "sydney  australia",
+        "name": "tony deveaux",
+        "notifications": "False",
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": "True",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/34396568/1507296042",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/378800000570606851/58b600235efd2cc033eceef5a0c9dee8_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/378800000570606851/58b600235efd2cc033eceef5a0c9dee8_normal.jpeg",
+        "profile_link_color": "F20519",
+        "profile_sidebar_border_color": "65B0DA",
+        "profile_sidebar_fill_color": "7AC3EE",
+        "profile_text_color": "3D1957",
+        "profile_use_background_image": "True",
+        "protected": "False",
+        "screen_name": "TONYDEVEAUX",
+        "statuses_count": 9833,
+        "time_zone": "None",
+        "translator_type": "none",
+        "url": "http://t.co/JpAWXL8ZL1",
+        "utc_offset": "None",
+        "verified": "False"
+      }
+    },
+    {
+      "contributors": "None",
+      "coordinates": "None",
+      "created_at": "Sat Apr 27 11:19:33 +0000 2019",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "id": 1095206678239240193,
+            "id_str": "1095206678239240193",
+            "indices": [ 3, 16 ],
+            "name": "Monash Trauma Group",
+            "screen_name": "MonashTrauma"
+          },
+          {
+            "id": 182652185,
+            "id_str": "182652185",
+            "indices": [ 48, 61 ],
+            "name": "Monash Medicine",
+            "screen_name": "Monash_FMNHS"
+          },
+          {
+            "id": 27984953,
+            "id_str": "27984953",
+            "indices": [ 62, 76 ],
+            "name": "Collingwood FC",
+            "screen_name": "CollingwoodFC"
+          }
+        ]
+      },
+      "favorite_count": 0,
+      "favorited": "False",
+      "geo": "None",
+      "id": 1122097950639837185,
+      "id_str": "1122097950639837185",
+      "in_reply_to_screen_name": "None",
+      "in_reply_to_status_id": "None",
+      "in_reply_to_status_id_str": "None",
+      "in_reply_to_user_id": "None",
+      "in_reply_to_user_id_str": "None",
+      "is_quote_status": "False",
+      "lang": "en",
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "place": "None",
+      "retweet_count": 5,
+      "retweeted": "False",
+      "retweeted_status": {
+        "contributors": "None",
+        "coordinates": "None",
+        "created_at": "Fri Apr 26 23:03:38 +0000 2019",
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "urls": [
+            {
+              "display_url": "twitter.com/i/web/status/1…",
+              "expanded_url": "https://twitter.com/i/web/status/1121912750911807488",
+              "indices": [ 117, 140 ],
+              "url": "https://t.co/aWfpUpvXww"
+            }
+          ],
+          "user_mentions": [
+            {
+              "id": 182652185,
+              "id_str": "182652185",
+              "indices": [ 30, 43 ],
+              "name": "Monash Medicine",
+              "screen_name": "Monash_FMNHS"
+            },
+            {
+              "id": 27984953,
+              "id_str": "27984953",
+              "indices": [ 44, 58 ],
+              "name": "Collingwood FC",
+              "screen_name": "CollingwoodFC"
+            }
+          ]
+        },
+        "favorite_count": 11,
+        "favorited": "False",
+        "geo": "None",
+        "id": 1121912750911807488,
+        "id_str": "1121912750911807488",
+        "in_reply_to_screen_name": "None",
+        "in_reply_to_status_id": "None",
+        "in_reply_to_status_id_str": "None",
+        "in_reply_to_user_id": "None",
+        "in_reply_to_user_id_str": "None",
+        "is_quote_status": "False",
+        "lang": "en",
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "place": "None",
+        "possibly_sensitive": "False",
+        "retweet_count": 5,
+        "retweeted": "False",
+        "source": null,
+        "\"<a href=\"https": null, //mobile.twitter.com" rel="nofollow">Twitter Web App</a>",
+        "text": "Exciting funding announcement @Monash_FMNHS @CollingwoodFC that will facilitate concussion research. Guest appearan… https://t.co/aWfpUpvXww",
+        "truncated": "True",
+        "user": {
+          "contributors_enabled": "False",
+          "created_at": "Tue Feb 12 06:23:14 +0000 2019",
+          "default_profile": "True",
+          "default_profile_image": "False",
+          "description": "Translational Neurotrauma Researchers at Monash University - All things TBI",
+          "entities": { "description": { "urls": [] } },
+          "favourites_count": 5,
+          "follow_request_sent": "False",
+          "followers_count": 51,
+          "following": "False",
+          "friends_count": 65,
+          "geo_enabled": "False",
+          "has_extended_profile": "True",
+          "id": 1095206678239240193,
+          "id_str": "1095206678239240193",
+          "is_translation_enabled": "False",
+          "is_translator": "False",
+          "lang": "en",
+          "listed_count": 0,
+          "location": "",
+          "name": "Monash Trauma Group",
+          "notifications": "False",
+          "profile_background_color": "F5F8FA",
+          "profile_background_image_url": "None",
+          "profile_background_image_url_https": "None",
+          "profile_background_tile": "False",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/1095206678239240193/1552627358",
+          "profile_image_url": "http://pbs.twimg.com/profile_images/1106799048135073793/DUQkznCz_normal.png",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/1106799048135073793/DUQkznCz_normal.png",
+          "profile_link_color": "1DA1F2",
+          "profile_sidebar_border_color": "C0DEED",
+          "profile_sidebar_fill_color": "DDEEF6",
+          "profile_text_color": "333333",
+          "profile_use_background_image": "True",
+          "protected": "False",
+          "screen_name": "MonashTrauma",
+          "statuses_count": 8,
+          "time_zone": "None",
+          "translator_type": "none",
+          "url": "None",
+          "utc_offset": "None",
+          "verified": "False"
+        }
+      },
+      "source": null,
+      "\"<a href=\"http": null, //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+      "text": "RT @MonashTrauma: Exciting funding announcement @Monash_FMNHS @CollingwoodFC that will facilitate concussion research. Guest appearance by…",
+      "truncated": "False",
+      "user": {
+        "contributors_enabled": "False",
+        "created_at": "Fri Apr 26 01:14:08 +0000 2019",
+        "default_profile": "True",
+        "default_profile_image": "False",
+        "description": "PhD student at Monash University. Neuroscience program, with interests in TBI and chronic pain. BHSc from the University of Calgary. YYC ✈️ MEL",
+        "entities": { "description": { "urls": [] } },
+        "favourites_count": 0,
+        "follow_request_sent": "False",
+        "followers_count": 11,
+        "following": "False",
+        "friends_count": 27,
+        "geo_enabled": "False",
+        "has_extended_profile": "False",
+        "id": 1121583203901251584,
+        "id_str": "1121583203901251584",
+        "is_translation_enabled": "False",
+        "is_translator": "False",
+        "lang": "en",
+        "listed_count": 0,
+        "location": "",
+        "name": "Sabrina Salberg",
+        "notifications": "False",
+        "profile_background_color": "F5F8FA",
+        "profile_background_image_url": "None",
+        "profile_background_image_url_https": "None",
+        "profile_background_tile": "False",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/1121583203901251584/1556242130",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/1121583552573755392/uf7bzJFI_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1121583552573755392/uf7bzJFI_normal.jpg",
+        "profile_link_color": "1DA1F2",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": "True",
+        "protected": "False",
+        "screen_name": "SalbergSabrina",
+        "statuses_count": 1,
+        "time_zone": "None",
+        "translator_type": "none",
+        "url": "None",
+        "utc_offset": "None",
+        "verified": "False"
+      }
+    },
+    {
+      "contributors": "None",
+      "coordinates": "None",
+      "created_at": "Sat Apr 27 10:56:30 +0000 2019",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "id": 1279945944,
+            "id_str": "1279945944",
+            "indices": [ 3, 19 ],
+            "name": "Bulldogs Fans",
+            "screen_name": "NRLBulldogsFans"
+          }
+        ]
+      },
+      "favorite_count": 0,
+      "favorited": "False",
+      "geo": "None",
+      "id": 1122092148612927489,
+      "id_str": "1122092148612927489",
+      "in_reply_to_screen_name": "None",
+      "in_reply_to_status_id": "None",
+      "in_reply_to_status_id_str": "None",
+      "in_reply_to_user_id": "None",
+      "in_reply_to_user_id_str": "None",
+      "is_quote_status": "False",
+      "lang": "en",
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "place": "None",
+      "retweet_count": 1,
+      "retweeted": "False",
+      "retweeted_status": {
+        "contributors": "None",
+        "coordinates": "None",
+        "created_at": "Sat Apr 27 07:18:20 +0000 2019",
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "urls": [
+            {
+              "display_url": "twitter.com/i/web/status/1…",
+              "expanded_url": "https://twitter.com/i/web/status/1122037245366505473",
+              "indices": [ 116, 139 ],
+              "url": "https://t.co/gDldv5mp1h"
+            }
+          ],
+          "user_mentions": []
+        },
+        "favorite_count": 5,
+        "favorited": "False",
+        "geo": "None",
+        "id": 1122037245366505473,
+        "id_str": "1122037245366505473",
+        "in_reply_to_screen_name": "None",
+        "in_reply_to_status_id": "None",
+        "in_reply_to_status_id_str": "None",
+        "in_reply_to_user_id": "None",
+        "in_reply_to_user_id_str": "None",
+        "is_quote_status": "False",
+        "lang": "en",
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "place": "None",
+        "possibly_sensitive": "False",
+        "retweet_count": 1,
+        "retweeted": "False",
+        "source": null,
+        "\"<a href=\"http": null, //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+        "text": "Our next Sydney home match is against Melbourne Storm round 11 at Belmore Sports Ground. \n\nLet’s sell out our only… https://t.co/gDldv5mp1h",
+        "truncated": "True",
+        "user": {
+          "contributors_enabled": "False",
+          "created_at": "Tue Mar 19 09:15:45 +0000 2013",
+          "default_profile": "False",
+          "default_profile_image": "False",
+          "description": "Just Bulldogs fans giving news,updates and opinions.Make sure you follow the official Bulldogs twitter @NRL_Bulldogs. #proudtobeabulldog #dogsofwar",
+          "entities": {
+            "description": { "urls": [] },
+            "url": {
+              "urls": [
+                {
+                  "display_url": "bulldogs.com.au",
+                  "expanded_url": "http://www.bulldogs.com.au/",
+                  "indices": [ 0, 23 ],
+                  "url": "https://t.co/0xB8dq6j14"
+                }
+              ]
+            }
+          },
+          "favourites_count": 9474,
+          "follow_request_sent": "False",
+          "followers_count": 3290,
+          "following": "False",
+          "friends_count": 2208,
+          "geo_enabled": "False",
+          "has_extended_profile": "False",
+          "id": 1279945944,
+          "id_str": "1279945944",
+          "is_translation_enabled": "False",
+          "is_translator": "False",
+          "lang": "en",
+          "listed_count": 20,
+          "location": "ANZ Stadium ",
+          "name": "Bulldogs Fans",
+          "notifications": "False",
+          "profile_background_color": "131516",
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_tile": "True",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/1279945944/1411039524",
+          "profile_image_url": "http://pbs.twimg.com/profile_images/706333828931936256/wG5Vq4XO_normal.jpg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/706333828931936256/wG5Vq4XO_normal.jpg",
+          "profile_link_color": "009999",
+          "profile_sidebar_border_color": "FFFFFF",
+          "profile_sidebar_fill_color": "DDEEF6",
+          "profile_text_color": "333333",
+          "profile_use_background_image": "True",
+          "protected": "False",
+          "screen_name": "NRLBulldogsFans",
+          "statuses_count": 24301,
+          "time_zone": "None",
+          "translator_type": "none",
+          "url": "https://t.co/0xB8dq6j14",
+          "utc_offset": "None",
+          "verified": "False"
+        }
+      },
+      "source": null,
+      "\"<a href=\"http": null, //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+      "text": "RT @NRLBulldogsFans: Our next Sydney home match is against Melbourne Storm round 11 at Belmore Sports Ground. \n\nLet’s sell out our only Bel…",
+      "truncated": "False",
+      "user": {
+        "contributors_enabled": "False",
+        "created_at": "Tue Jan 15 01:07:43 +0000 2013",
+        "default_profile": "True",
+        "default_profile_image": "False",
+        "description": "",
+        "entities": { "description": { "urls": [] } },
+        "favourites_count": 27689,
+        "follow_request_sent": "False",
+        "followers_count": 261,
+        "following": "False",
+        "friends_count": 1761,
+        "geo_enabled": "True",
+        "has_extended_profile": "False",
+        "id": 1090658203,
+        "id_str": "1090658203",
+        "is_translation_enabled": "False",
+        "is_translator": "False",
+        "lang": "en",
+        "listed_count": 6,
+        "location": "",
+        "name": "Nick Nehme",
+        "notifications": "False",
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": "False",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/816234558752366593/dzdad8HM_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/816234558752366593/dzdad8HM_normal.jpg",
+        "profile_link_color": "1DA1F2",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": "True",
+        "protected": "False",
+        "screen_name": "NickNehme1",
+        "statuses_count": 22633,
+        "time_zone": "None",
+        "translator_type": "none",
+        "url": "None",
+        "utc_offset": "None",
+        "verified": "False"
+      }
+    },
+    {
+      "contributors": "None",
+      "coordinates": "None",
+      "created_at": "Sat Apr 27 10:55:32 +0000 2019",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "id": 1095206678239240193,
+            "id_str": "1095206678239240193",
+            "indices": [ 3, 16 ],
+            "name": "Monash Trauma Group",
+            "screen_name": "MonashTrauma"
+          },
+          {
+            "id": 182652185,
+            "id_str": "182652185",
+            "indices": [ 48, 61 ],
+            "name": "Monash Medicine",
+            "screen_name": "Monash_FMNHS"
+          },
+          {
+            "id": 27984953,
+            "id_str": "27984953",
+            "indices": [ 62, 76 ],
+            "name": "Collingwood FC",
+            "screen_name": "CollingwoodFC"
+          }
+        ]
+      },
+      "favorite_count": 0,
+      "favorited": "False",
+      "geo": "None",
+      "id": 1122091904332521472,
+      "id_str": "1122091904332521472",
+      "in_reply_to_screen_name": "None",
+      "in_reply_to_status_id": "None",
+      "in_reply_to_status_id_str": "None",
+      "in_reply_to_user_id": "None",
+      "in_reply_to_user_id_str": "None",
+      "is_quote_status": "False",
+      "lang": "en",
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "place": "None",
+      "retweet_count": 5,
+      "retweeted": "False",
+      "retweeted_status": {
+        "contributors": "None",
+        "coordinates": "None",
+        "created_at": "Fri Apr 26 23:03:38 +0000 2019",
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "urls": [
+            {
+              "display_url": "twitter.com/i/web/status/1…",
+              "expanded_url": "https://twitter.com/i/web/status/1121912750911807488",
+              "indices": [ 117, 140 ],
+              "url": "https://t.co/aWfpUpvXww"
+            }
+          ],
+          "user_mentions": [
+            {
+              "id": 182652185,
+              "id_str": "182652185",
+              "indices": [ 30, 43 ],
+              "name": "Monash Medicine",
+              "screen_name": "Monash_FMNHS"
+            },
+            {
+              "id": 27984953,
+              "id_str": "27984953",
+              "indices": [ 44, 58 ],
+              "name": "Collingwood FC",
+              "screen_name": "CollingwoodFC"
+            }
+          ]
+        },
+        "favorite_count": 11,
+        "favorited": "False",
+        "geo": "None",
+        "id": 1121912750911807488,
+        "id_str": "1121912750911807488",
+        "in_reply_to_screen_name": "None",
+        "in_reply_to_status_id": "None",
+        "in_reply_to_status_id_str": "None",
+        "in_reply_to_user_id": "None",
+        "in_reply_to_user_id_str": "None",
+        "is_quote_status": "False",
+        "lang": "en",
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "place": "None",
+        "possibly_sensitive": "False",
+        "retweet_count": 5,
+        "retweeted": "False",
+        "source": null,
+        "\"<a href=\"https": null, //mobile.twitter.com" rel="nofollow">Twitter Web App</a>",
+        "text": "Exciting funding announcement @Monash_FMNHS @CollingwoodFC that will facilitate concussion research. Guest appearan… https://t.co/aWfpUpvXww",
+        "truncated": "True",
+        "user": {
+          "contributors_enabled": "False",
+          "created_at": "Tue Feb 12 06:23:14 +0000 2019",
+          "default_profile": "True",
+          "default_profile_image": "False",
+          "description": "Translational Neurotrauma Researchers at Monash University - All things TBI",
+          "entities": { "description": { "urls": [] } },
+          "favourites_count": 5,
+          "follow_request_sent": "False",
+          "followers_count": 51,
+          "following": "False",
+          "friends_count": 65,
+          "geo_enabled": "False",
+          "has_extended_profile": "True",
+          "id": 1095206678239240193,
+          "id_str": "1095206678239240193",
+          "is_translation_enabled": "False",
+          "is_translator": "False",
+          "lang": "en",
+          "listed_count": 0,
+          "location": "",
+          "name": "Monash Trauma Group",
+          "notifications": "False",
+          "profile_background_color": "F5F8FA",
+          "profile_background_image_url": "None",
+          "profile_background_image_url_https": "None",
+          "profile_background_tile": "False",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/1095206678239240193/1552627358",
+          "profile_image_url": "http://pbs.twimg.com/profile_images/1106799048135073793/DUQkznCz_normal.png",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/1106799048135073793/DUQkznCz_normal.png",
+          "profile_link_color": "1DA1F2",
+          "profile_sidebar_border_color": "C0DEED",
+          "profile_sidebar_fill_color": "DDEEF6",
+          "profile_text_color": "333333",
+          "profile_use_background_image": "True",
+          "protected": "False",
+          "screen_name": "MonashTrauma",
+          "statuses_count": 8,
+          "time_zone": "None",
+          "translator_type": "none",
+          "url": "None",
+          "utc_offset": "None",
+          "verified": "False"
+        }
+      },
+      "source": null,
+      "\"<a href=\"http": null, //twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+      "text": "RT @MonashTrauma: Exciting funding announcement @Monash_FMNHS @CollingwoodFC that will facilitate concussion research. Guest appearance by…",
+      "truncated": "False",
+      "user": {
+        "contributors_enabled": "False",
+        "created_at": "Wed Aug 25 02:29:16 +0000 2010",
+        "default_profile": "False",
+        "default_profile_image": "False",
+        "description": "\"Monash University\"s",
+        "Faculty" "of",
+        "Medicine",
+        "Nursing" "and",
+        "Health" "Sciences",
+        "is" "globally",
+        "recognised" "for",
+        "our" "quality",
+        "education" "and",
+        "research" "offerings\",",
+        "entities": {
+          "description": { "urls": [] },
+          "url": {
+            "urls": [
+              {
+                "display_url": "monash.edu/medicine",
+                "expanded_url": "http://www.monash.edu/medicine",
+                "indices": [ 0, 23 ],
+                "url": "https://t.co/UMD9z1LDHr"
+              }
+            ]
+          }
+        },
+        "favourites_count": 833,
+        "follow_request_sent": "False",
+        "followers_count": 3787,
+        "following": "False",
+        "friends_count": 1065,
+        "geo_enabled": "True",
+        "has_extended_profile": "False",
+        "id": 182652185,
+        "id_str": "182652185",
+        "is_translation_enabled": "False",
+        "is_translator": "False",
+        "lang": "en",
+        "listed_count": 75,
+        "location": "Melbourne, Australia",
+        "name": "Monash Medicine",
+        "notifications": "False",
+        "profile_background_color": "EEEEEE",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": "False",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/182652185/1555026013",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/1016486608646725632/pDTW7y_t_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1016486608646725632/pDTW7y_t_normal.jpg",
+        "profile_link_color": "009CCB",
+        "profile_sidebar_border_color": "EEEEEE",
+        "profile_sidebar_fill_color": "EFEFEF",
+        "profile_text_color": "333333",
+        "profile_use_background_image": "True",
+        "protected": "False",
+        "screen_name": "Monash_FMNHS",
+        "statuses_count": 5587,
+        "time_zone": "None",
+        "translator_type": "none",
+        "url": "https://t.co/UMD9z1LDHr",
+        "utc_offset": "None",
+        "verified": "False"
+      }
+    },
+    {
+      "contributors": "None",
+      "coordinates": "None",
+      "created_at": "Sat Apr 27 10:55:28 +0000 2019",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "urls": [
+          {
+            "display_url": "melbourneinformer.com/148092/melbour…",
+            "expanded_url": "https://melbourneinformer.com/148092/melbournes-olympic-precinct-70m-upgrade-into-womens-sports-hub-sports-medicine-facility-herald-sun/",
+            "indices": [ 105, 128 ],
+            "url": "https://t.co/9YgXigU35e"
+          }
+        ],
+        "user_mentions": []
+      },
+      "favorite_count": 0,
+      "favorited": "False",
+      "geo": "None",
+      "id": 1122091888381759488,
+      "id_str": "1122091888381759488",
+      "in_reply_to_screen_name": "None",
+      "in_reply_to_status_id": "None",
+      "in_reply_to_status_id_str": "None",
+      "in_reply_to_user_id": "None",
+      "in_reply_to_user_id_str": "None",
+      "is_quote_status": "False",
+      "lang": "en",
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "place": "None",
+      "possibly_sensitive": "False",
+      "retweet_count": 0,
+      "retweeted": "False",
+      "source": null,
+      "\"<a href=\"http": null, //publicize.wp.com/" rel="nofollow">WordPress.com</a>",
+      "text": "Melbourne’s Olympic precinct $70m upgrade into women’s sports hub, sports medicine facility – Herald\\xa0Sun https://t.co/9YgXigU35e",
+      "truncated": "False",
+      "user": {
+        "contributors_enabled": "False",
+        "created_at": "Sun Sep 05 11:05:26 +0000 2010",
+        "default_profile": "False",
+        "default_profile_image": "False",
+        "description": "\"Melbourne News and Australia updates from A - Z, that\"s",
+        "what" "you",
+        "get" "from",
+        "us.\",": null,
+        "entities": {
+          "description": { "urls": [] },
+          "url": {
+            "urls": [
+              {
+                "display_url": "melbourneinformer.com",
+                "expanded_url": "http://melbourneinformer.com/",
+                "indices": [ 0, 22 ],
+                "url": "http://t.co/UDmMJUzkgZ"
+              }
+            ]
+          }
+        },
+        "favourites_count": 0,
+        "follow_request_sent": "False",
+        "followers_count": 492,
+        "following": "False",
+        "friends_count": 40,
+        "geo_enabled": "False",
+        "has_extended_profile": "False",
+        "id": 187137990,
+        "id_str": "187137990",
+        "is_translation_enabled": "False",
+        "is_translator": "False",
+        "lang": "en",
+        "listed_count": 18,
+        "location": "Melbourne",
+        "name": "Melbourne Informer",
+        "notifications": "False",
+        "profile_background_color": "131516",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme14/bg.gif",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme14/bg.gif",
+        "profile_background_tile": "True",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/1117703391/australia_normal.gif",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1117703391/australia_normal.gif",
+        "profile_link_color": "009999",
+        "profile_sidebar_border_color": "EEEEEE",
+        "profile_sidebar_fill_color": "EFEFEF",
+        "profile_text_color": "333333",
+        "profile_use_background_image": "True",
+        "protected": "False",
+        "screen_name": "melbourneinform",
+        "statuses_count": 59896,
+        "time_zone": "None",
+        "translator_type": "none",
+        "url": "http://t.co/UDmMJUzkgZ",
+        "utc_offset": "None",
+        "verified": "False"
+      }
+    },
+    {
+      "contributors": "None",
+      "coordinates": "None",
+      "created_at": "Sat Apr 27 10:00:13 +0000 2019",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "urls": [
+          {
+            "display_url": "twitter.com/i/web/status/1…",
+            "expanded_url": "https://twitter.com/i/web/status/1122077983198666752",
+            "indices": [ 117, 140 ],
+            "url": "https://t.co/udjcFWf9hn"
+          }
+        ],
+        "user_mentions": []
+      },
+      "favorite_count": 5,
+      "favorited": "False",
+      "geo": "None",
+      "id": 1122077983198666752,
+      "id_str": "1122077983198666752",
+      "in_reply_to_screen_name": "None",
+      "in_reply_to_status_id": "None",
+      "in_reply_to_status_id_str": "None",
+      "in_reply_to_user_id": "None",
+      "in_reply_to_user_id_str": "None",
+      "is_quote_status": "False",
+      "lang": "en",
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "place": "None",
+      "possibly_sensitive": "False",
+      "retweet_count": 1,
+      "retweeted": "False",
+      "source": null,
+      "\"<a href=\"https": null, //www.hootsuite.com" rel="nofollow">Hootsuite Inc.</a>",
+      "text": "\"A one-of-a-kind sports car worth $300,000 has been stolen from a garage in one of Melbourne\"s",
+      "most" "exclusive",
+      "suburb…": null,
+      "https": null, //t.co/udjcFWf9hn",
+      "truncated": "True",
+      "user": {
+        "contributors_enabled": "False",
+        "created_at": "Thu Mar 12 02:35:57 +0000 2009",
+        "default_profile": "False",
+        "default_profile_image": "False",
+        "description": "\"Australia\"s",
+        "longest" "running",
+        "breakfast" "TV",
+        "program." "Weekdays",
+        "from" "5.30am",
+        "|" "Weekends",
+        "from" "7.00am",
+        "on" "@Channel9.",
+        "Tag" "us",
+        "using" "#9Today\",",
+        "entities": {
+          "description": { "urls": [] },
+          "url": {
+            "urls": [
+              {
+                "display_url": "todayshow.com.au",
+                "expanded_url": "http://todayshow.com.au",
+                "indices": [ 0, 23 ],
+                "url": "https://t.co/mdVYH0fwgb"
+              }
+            ]
+          }
+        },
+        "favourites_count": 13748,
+        "follow_request_sent": "False",
+        "followers_count": 420904,
+        "following": "False",
+        "friends_count": 2217,
+        "geo_enabled": "True",
+        "has_extended_profile": "False",
+        "id": 23879043,
+        "id_str": "23879043",
+        "is_translation_enabled": "True",
+        "is_translator": "False",
+        "lang": "en",
+        "listed_count": 1683,
+        "location": "Australia",
+        "name": "The Today Show",
+        "notifications": "False",
+        "profile_background_color": "3B94D9",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme9/bg.gif",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme9/bg.gif",
+        "profile_background_tile": "False",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/23879043/1551833337",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/1083081085238431744/h7nEk6Fp_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1083081085238431744/h7nEk6Fp_normal.jpg",
+        "profile_link_color": "F88715",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "FFFFFF",
+        "profile_text_color": "3C48BD",
+        "profile_use_background_image": "False",
+        "protected": "False",
+        "screen_name": "TheTodayShow",
+        "statuses_count": 152985,
+        "time_zone": "None",
+        "translator_type": "none",
+        "url": "https://t.co/mdVYH0fwgb",
+        "utc_offset": "None",
+        "verified": "True"
+      }
+    }
+  ]
+}

@@ -4,15 +4,20 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="23c8761911294986bf6163b4365719be" Name="Diagram1">
-        <EntityTypeShape EntityType="IEProjectModel.AgeSex" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="IEProjectModel.AgeState" Width="1.5" PointX="5.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="IEProjectModel.Content" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="IEProjectModel.Field" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="IEProjectModel.Place" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="IEProjectModel.SportType" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
-        <AssociationConnector Association="IEProjectModel.FK_Content_ToTable" ManuallyRouted="false" />
-        <AssociationConnector Association="IEProjectModel.FK_Place_ToTable" ManuallyRouted="false" />
+      <Diagram DiagramId="c998650ce84c4d06a043211a267aab12" Name="Diagram1">
+        <EntityTypeShape EntityType="DVoyagers_dbModel.AgeSex" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DVoyagers_dbModel.AgeState" Width="1.5" PointX="5.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DVoyagers_dbModel.Content" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DVoyagers_dbModel.Field" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DVoyagers_dbModel.Place" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DVoyagers_dbModel.RPlace" Width="1.5" PointX="3" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DVoyagers_dbModel.SportType" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DVoyagers_dbModel.YPlace" Width="1.5" PointX="3" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DVoyagers_dbModel.Yoga" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="DVoyagers_dbModel.FK_Content_ToTable" ManuallyRouted="false" />
+        <AssociationConnector Association="DVoyagers_dbModel.FK_Place_ToTable" ManuallyRouted="false" />
+        <AssociationConnector Association="DVoyagers_dbModel.FK_RPlace_ToTable" ManuallyRouted="false" />
+        <AssociationConnector Association="DVoyagers_dbModel.FK_YPlace_ToTable" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
