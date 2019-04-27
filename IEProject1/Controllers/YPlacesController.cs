@@ -2,6 +2,7 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
 using System.IO;
@@ -42,6 +43,43 @@ namespace IEProject1.Controllers
                 ViewData["Message"] = null;
             }
             ViewData["Places"] = ps;
+
+            using (StreamReader reader = new StreamReader(Server.MapPath("~/Content/yogaTwitterSearch.json")))
+            {
+
+                string result = reader.ReadToEnd();
+                //var json = JObject.Parse(result);
+                var json = JObject.Parse(result);
+                var trend = json["statuses"];
+
+                var stwitters = new List<Stwitter>();
+
+                dynamic dynJson = JsonConvert.DeserializeObject(trend.ToString());
+
+                foreach (var item in dynJson)
+                {
+                    Stwitter stwitter = new Stwitter();
+                    stwitter.Screen_name = item["user"]["screen_name"];
+                    stwitter.Created_at = item["created_at"];
+                    stwitter.Url = item["user"]["url"];
+                    stwitter.Text = item["text"];
+                    stwitter.User_description = item["user"]["description"];
+                    stwitter.Followers_count = item["user"]["followers_count"];
+                    stwitter.Friends_count = item["user"]["friends_count"];
+                    stwitter.Profile_image_url = item["user"]["profile_image_url"];
+
+                    if(!String.IsNullOrEmpty(stwitter.Url))
+                    {
+                        stwitters.Add(stwitter);
+                    }
+                    
+
+                }
+                //var trends = JsonConvert.DeserializeObject<List<Trend>>(trend).Take(12);
+
+                ViewData["sportsTwitter"] = stwitters;
+            }
+
             return View();
         }
 

@@ -83,27 +83,41 @@
                 </div>
             }
         </div>*@
-    <div class="ui grid container">
-        <div class="ui four cards">
-            @foreach (var item in Model)
-            {
-                <div class="card">
-                    <div class="image">
-                        <img src="~/Content/Images/@item.ImageName">
-                    </div>
-                    <div class="extra">
-                        Rating:@item.Popularity
-                        @*<div class="ui rating" data-rating="@item.Popularity"></div>*@
-                        <div class="ui accurate star widget">
-                            <div class="highlight" style="width:75%"></div>
+    @*<div class="ui grid container">
+            <div class="ui four cards">
+                @foreach (var item in (IEnumerable<IEProject1.Models.Content>)ViewData["contents"])
+                {
+                    <div class="card">
+                        <div class="image">
+                            <img src="~/Content/Images/@item.ImageName">
+                        </div>
+                        <div class="extra">
+                            Rating:@item.Popularity
+                            <div class="ui accurate star widget">
+                                <div class="highlight" style="width:75%"></div>
+                            </div>
                         </div>
                     </div>
+                }
+            </div>
+        </div>*@
+    <div class="ui grid container">
+        <div class="ui four cards">
+            @foreach (var item in (IEnumerable<IEProject1.Controllers.Trend>)ViewData["trends"])
+            {
+              <div class="card">
+                <div class="content" style="text-align:center">
+                    <div class="header">@item.Name</div>
+                   </div>
+                <div class="ui bottom attached button">
+                   <i class="arrow alternate circle right icon"></i>
+                   <a href="@item.Url">Go to Twitter</a>
+                  </div>
                 </div>
             }
+
         </div>
     </div>
-
-
 
     <div name="FieldChoose" class="ui vertical stripe segment">
         <div class="ui text container">

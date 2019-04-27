@@ -21,6 +21,51 @@
     </div>
 </div>
 
+<div class="ui grid container" style="padding-top:4%">
+    <div class="ui four cards">
+        @foreach (var item in (IEnumerable<IEProject1.Controllers.Stwitter>)ViewData["sportsTwitter"])
+        {
+        <div class="card">
+            <div class="content">
+                <img class="right floated mini ui image" src="@item.Profile_image_url">
+                <div class="header">
+                    @item.Screen_name
+                </div>
+                <div class="meta">
+                    Popular twitters
+                </div>
+                <div class="description">
+                    @item.Text
+                </div>
+            </div>
+            <div class="extra content">
+                <span class="right floated user circle">
+                    @item.Followers_count followers
+                </span>
+                <span>
+                    <i class="user icon"></i>
+                    @item.Friends_count Friends
+                </span>
+            </div>
+            <div class="extra content">
+                @if (item.Url != null)
+                {
+                    <div class="ui button"> <a href="@item.Url">Find more details</a></div>
+                }
+                else
+                {
+                    <div class="ui button"> <a href="https://dvoyagers.azurewebsites.net">Find more details</a></div>
+                }
+            </div>
+        </div>
+        }
+
+    </div>
+</div>
+
+
+<h2 style="background-color: Yellow;color: Blue; text-align: center; font-style: oblique">Find Yoga&Taichi places near your suburb</h2>
+
 <script>
     $('.clearable.example .ui.selection.dropdown')
         .dropdown({
@@ -35,7 +80,7 @@
         ;
 </script>
 
-<div class="ui grid container right item" style="padding-top:80px">
+<div class="ui grid container right item">
     @using (Html.BeginForm())
     {
         <div class="content">
@@ -486,7 +531,7 @@ $(document).ready(function(){
     </script>
 }
 
-<h2 style="background-color: Yellow;color: Blue; text-align: center; font-style: oblique">Find Yoga&Taichi places near your suburb</h2>
+
 <fieldset>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -494,7 +539,9 @@ $(document).ready(function(){
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <div id="googleMap" class="ui container" style="height:400px;width:100%;"></div>
+    <div class="ui grid container" style="padding-top:2%">
+        <div id="googleMap" class="ui grid container" style="height:400px;width:100%;padding-top:2%"></div>
+    </div>
 
     <script>
  function myMap() {
@@ -525,7 +572,4 @@ $(document).ready(function(){
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrX2JUBuXyOQ7P8p8Q_SLJ3GTX5m1eRPs&callback=myMap"></script>
 </fieldset>
 
-<footer>
-    <p style="background-color: Yellow; font-weight: bold; color:blue; text-align: center; font-style: oblique">© @DateTime.Now.ToLocalTime()</p> @*Add Date Time*@
-</footer>
 

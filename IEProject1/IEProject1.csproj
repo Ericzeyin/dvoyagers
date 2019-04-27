@@ -181,6 +181,7 @@
     <Compile Include="Controllers\PlacesController.cs" />
     <Compile Include="Controllers\RPlacesController.cs" />
     <Compile Include="Controllers\SemanticUIController.cs" />
+    <Compile Include="Controllers\Stwitter.cs" />
     <Compile Include="Controllers\Trend.cs" />
     <Compile Include="Controllers\YPlacesController.cs" />
     <Compile Include="Global.asax.cs">
