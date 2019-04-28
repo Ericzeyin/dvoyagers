@@ -9,20 +9,23 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Scrolling Nav - Start Bootstrap Template</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="~/Vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="~/Vendor/custom/css/scrolling-nav.css" rel="stylesheet">
-
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/semantic")
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/semantic")
     @Scripts.Render("~/Scripts/semantic.min.js")
     @Scripts.Render("~/Scripts/jquery-ui.js")
+    <!-- Bootstrap core CSS -->
+    <link href="~/Vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="~/Vendor/custom/css/scrolling-nav.css" rel="stylesheet">
+
+    <script>
+        $('#search-select')
+            .dropdown()
+            ;
+    </script>
 </head>
 <body>
     @RenderBody()

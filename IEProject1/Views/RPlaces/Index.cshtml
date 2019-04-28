@@ -5,17 +5,20 @@
     Layout = "~/Views/Shared/_Layout_Semantic.cshtml";
 }
 
+
+<title>Religion</title>
+
 <!-- Following Menu -->
 <div class="ui large top fixed menu">
     <div class="ui container">
         <a href="@Url.Action("Page1", "Contents")" class="item">Home</a>
         @*<a href="@Url.Action("Edit", "Contents", new { id = 1 })" class="item">Sports</a>
-        <a href="@Url.Action("Edit", "Contents", new { id = 2 })" class="item">Religion</a>
-        <a href="@Url.Action("Edit", "Contents", new { id = 3 })" class="item">Yoga</a>
-        <a href="@Url.Action("Edit", "Contents", new { id = 4 })" class="item">Culture</a>
-        <a href="@Url.Action("Create", "Contents")" class="item">Statistics</a>*@
+            <a href="@Url.Action("Edit", "Contents", new { id = 2 })" class="item">Religion</a>
+            <a href="@Url.Action("Edit", "Contents", new { id = 3 })" class="item">Yoga</a>
+            <a href="@Url.Action("Edit", "Contents", new { id = 4 })" class="item">Culture</a>
+            <a href="@Url.Action("Create", "Contents")" class="item">Statistics</a>*@
         <a href="@Url.Action("Index", "Places")" class="item">Sports</a>
-        <a href="@Url.Action("Index", "RPlaces")" class="item">Religion</a>
+        <a href="@Url.Action("Index", "RPlaces")" class="item active">Religion</a>
         <a href="@Url.Action("Index", "YPlaces")" class="item">Yoga&Taichi</a>
         <a href="@Url.Action("Details", "Places")" class="item">Food</a>
     </div>
@@ -25,39 +28,39 @@
     <div class="ui four cards">
         @foreach (var item in (IEnumerable<IEProject1.Controllers.Stwitter>)ViewData["sportsTwitter"])
         {
-        <div class="card">
-            <div class="content">
-                <img class="right floated mini ui image" src="@item.Profile_image_url">
-                <div class="header">
-                    @item.Screen_name
+            <div class="card">
+                <div class="content">
+                    <img class="right floated mini ui image" src="@item.Profile_image_url">
+                    <div class="header">
+                        @item.Screen_name
+                    </div>
+                    <div class="meta">
+                        Popular twitters
+                    </div>
+                    <div class="description">
+                        @item.Text
+                    </div>
                 </div>
-                <div class="meta">
-                    Popular twitters
+                <div class="extra content">
+                    <span class="right floated user circle">
+                        @item.Followers_count followers
+                    </span>
+                    <span>
+                        <i class="user icon"></i>
+                        @item.Friends_count Friends
+                    </span>
                 </div>
-                <div class="description">
-                    @item.Text
+                <div class="extra content">
+                    @if (item.Url != null)
+                    {
+                        <div class="ui button"> <a href="@item.Url">Find more details</a></div>
+                    }
+                    else
+                    {
+                        <div class="ui button"> <a href="https://dvoyagers.azurewebsites.net">Find more details</a></div>
+                    }
                 </div>
             </div>
-            <div class="extra content">
-                <span class="right floated user circle">
-                    @item.Followers_count followers
-                </span>
-                <span>
-                    <i class="user icon"></i>
-                    @item.Friends_count Friends
-                </span>
-            </div>
-            <div class="extra content">
-                @if (item.Url != null)
-                {
-                    <div class="ui button"> <a href="@item.Url">Find more details</a></div>
-                }
-                else
-                {
-                    <div class="ui button"> <a href="https://dvoyagers.azurewebsites.net">Find more details</a></div>
-                }
-            </div>
-        </div>
         }
 
     </div>
@@ -512,8 +515,8 @@
                             <option value="Hindu Temple">Hindu Temple</option>
                             <option value="Buddhist Temple">Buddhist Temple</option>
                         </select>
-                            @*<i class="search link icon"></i>*@
-                            <input class="search icon" type="submit" />
+                        @*<i class="search link icon"></i>*@
+                        <input class="search icon" type="submit" />
                     </div>
                 </div>
             </p>
@@ -532,18 +535,18 @@ $(document).ready(function(){
 }
 
 
-    <fieldset>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<fieldset>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-        <div class="ui grid container" style="padding-top:2%;padding-bottom:3%">
-            <div id="googleMap" class="ui grid container" style="height:400px;width:100%;padding-top:2%"></div>
-        </div>
+    <div class="ui grid container" style="padding-top:2%;padding-bottom:3%">
+        <div id="googleMap" class="ui grid container" style="height:400px;width:100%;padding-top:2%"></div>
+    </div>
 
-        <script>
+    <script>
  function myMap() {
             var markersArray = [];
             var contentArray = [];
@@ -559,17 +562,29 @@ $(document).ready(function(){
             animation: google.maps.Animation.DROP,
             position: new google.maps.LatLng('@item.latitude', '@item.longitude', false),
             title: '@item.Name',
+            content: '<div class="info-window"><h3>@item.Name</h3><div class="info-content"><p>@item.Adress</p></div></div>',
             map: map
      }));
         </text>
             }
 
-       for (var i = 0; i < markersArray.length; i++) {
-             markersArray[i].setMap(map);
-    }
+
+     var infowindow = new google.maps.InfoWindow({
+         content: "",
+         maxWidth: 400
+     });
+
+     for (var i = 0; i < markersArray.length; i++) {
+         markersArray[i].setMap(map);
+
+         google.maps.event.addListener(markersArray[i], 'click', function (event) {
+             infowindow.setContent(this.content);
+             infowindow.open(map, this);
+         });
+     }
 }
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrX2JUBuXyOQ7P8p8Q_SLJ3GTX5m1eRPs&callback=myMap"></script>
-    </fieldset>
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrX2JUBuXyOQ7P8p8Q_SLJ3GTX5m1eRPs&callback=myMap"></script>
+</fieldset>
 
 

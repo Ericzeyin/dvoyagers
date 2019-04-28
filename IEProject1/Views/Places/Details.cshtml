@@ -5,19 +5,17 @@
     Layout = "~/Views/Shared/_Layout_Semantic.cshtml";
 }
 
+
+<title>Food</title>
+
 <!-- Following Menu -->
 <div class="ui large top fixed menu">
     <div class="ui container">
         <a href="@Url.Action("Page1", "Contents")" class="item">Home</a>
-        @*<a href="@Url.Action("Edit", "Contents", new { id = 1 })" class="item">Sports</a>
-            <a href="@Url.Action("Edit", "Contents", new { id = 2 })" class="item">Religion</a>
-            <a href="@Url.Action("Edit", "Contents", new { id = 3 })" class="item">Yoga</a>
-            <a href="@Url.Action("Edit", "Contents", new { id = 4 })" class="item">Culture</a>
-            <a href="@Url.Action("Create", "Contents")" class="item">Statistics</a>*@
         <a href="@Url.Action("Index", "Places")" class="item">Sports</a>
         <a href="@Url.Action("Index", "RPlaces")" class="item">Religion</a>
         <a href="@Url.Action("Index", "YPlaces")" class="item">Yoga&Taichi</a>
-        <a href="@Url.Action("Details", "Places")" class="item">Food</a>
+        <a href="@Url.Action("Details", "Places")" class="item active">Food</a>
     </div>
 </div>
 
@@ -64,7 +62,7 @@
 </div>
 
 
-<h2 style="background-color: Yellow;color: Blue; text-align: center; font-style: oblique">Find Yoga&Taichi places near your suburb</h2>
+<h2 style="background-color: Yellow;color: Blue; text-align: center; font-style: oblique">Find food places near your suburb</h2>
 
 <script>
     $('.clearable.example .ui.selection.dropdown')
@@ -558,14 +556,27 @@ $(document).ready(function(){
             animation: google.maps.Animation.DROP,
             position: new google.maps.LatLng('@item.latitude', '@item.longitude', false),
             title: '@item.Name',
+            content: '<div class="info-window"><h3>@item.Name</h3><div class="info-content"><p>@item.Adress</p></div></div>',
             map: map
      }));
         </text>
             }
 
-       for (var i = 0; i < markersArray.length; i++) {
-             markersArray[i].setMap(map);
-    }
+
+     var infowindow = new google.maps.InfoWindow({
+         content: "",
+         maxWidth: 400
+     });
+
+     for (var i = 0; i < markersArray.length; i++) {
+         markersArray[i].setMap(map);
+
+         google.maps.event.addListener(markersArray[i], 'click', function (event) {
+             infowindow.setContent(this.content);
+             infowindow.open(map, this);
+         });
+     }
+
 }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrX2JUBuXyOQ7P8p8Q_SLJ3GTX5m1eRPs&callback=myMap"></script>

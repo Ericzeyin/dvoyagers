@@ -68,12 +68,14 @@ namespace IEProject1.Controllers
                     stwitter.Friends_count = item["user"]["friends_count"];
                     stwitter.Profile_image_url = item["user"]["profile_image_url"];
 
-                    if(!String.IsNullOrEmpty(stwitter.Url))
+                    if (item["user"]["url"] == "None")
                     {
-                        stwitters.Add(stwitter);
+                        stwitter.Url = "https://twitter.com";
                     }
-                    
 
+                    stwitters.Add(stwitter);
+                    
+                   
                 }
                 //var trends = JsonConvert.DeserializeObject<List<Trend>>(trend).Take(12);
 

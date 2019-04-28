@@ -68,6 +68,11 @@ namespace IEProject1.Controllers
                     stwitter.Friends_count = item["user"]["friends_count"];
                     stwitter.Profile_image_url = item["user"]["profile_image_url"];
 
+                    if (item["user"]["url"] == "None")
+                    {
+                        stwitter.Url = "https://twitter.com";
+                    }
+
                     stwitters.Add(stwitter);
 
                 }
