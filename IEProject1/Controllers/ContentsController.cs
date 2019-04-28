@@ -175,7 +175,8 @@ namespace IEProject1.Controllers
 
         public ActionResult Page1()
         {
-            return View();
+            var contents = db.Content.Include(c => c.Field).Where(s => s.Rank < 9).OrderBy(a => a.Rank);
+            return View(contents.ToList());
         }
 
         public string GetTwitterTrends()

@@ -4,9 +4,23 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
 header {
-  padding: 156px 0 100px;
+    padding: 156px 0 100px;
 }
 
 section {
-  padding: 150px 0;
+    padding: 150px 0;
+}
+
+header.cover-image {
+    background-image: url(../../../Content/Images/help.jpg);
+    overflow: hidden;
+    height: 60%;
+    width: 100%;
+}
+
+h1.cover-text {
+    font-size: 400%;
+    font-style: italic;
+    margin-top: 175px;
+    color: purple;
 }
