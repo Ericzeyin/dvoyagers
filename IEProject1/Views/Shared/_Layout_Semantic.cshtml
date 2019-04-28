@@ -1,35 +1,47 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
+    @*<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />*@
+    @*<title>@ViewBag.Title</title>*@
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Scrolling Nav - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="~/Vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="~/Vendor/custom/css/scrolling-nav.css" rel="stylesheet">
+
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/semantic")
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/semantic")
     @Scripts.Render("~/Scripts/semantic.min.js")
     @Scripts.Render("~/Scripts/jquery-ui.js")
-    <style>
-        .ui.accurate.star.widget {
-            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAcklEQVQoz2P4//8/AzmYgWKN6KC4uFgYhGF8UjTqgjBJGqG2GUOxMF6NQAViQCwFxGpAbICk0QAqBpITw6ZRAUkxLqyA1akENCvg9SNQgRYWTVoEA4cSjTDFalAM5uPVCFTABY0/ASSDBKBiXNRNcqRiADBao1Bj6dJdAAAAAElFTkSuQmCC') repeat scroll 0% 0% transparent;
-            height: 0.875em;
-            width: 4.375em;
-        }
-
-            .ui.accurate.star.widget .highlight {
-                background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAdElEQVQoz2P4//8/AzmYgWKN6KC4uDgBhGF8UjQ+AGGSNEJt+w/FCXg1AhUUAHEDEB8A4g9IGj9AxUByBdg0LkBSjAsvwOpUApoX4PUjUMEFLJouEAwcSjTCFB+AYjAfr0agAgNo/AUgGRQAFTOgbpIjFQMAtcfKBD81ItYAAAAASUVORK5CYII=') repeat scroll left bottom transparent;
-                height: 0.875em;
-            }
-
-            .ui.accurate.star.widget.inline {
-                display: inline-block;
-                margin-left: 0.3em;
-            }
-    </style>
 </head>
 <body>
     @RenderBody()
-    @*@RenderSection("scripts", required: false)*@
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; NewVics 2019</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="~/Vendor/jquery/jquery.min.js"></script>
+    <script src="~/Vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="~/Vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="~/Vendor/custom/js/scrolling-nav.js"></script>
 </body>
 </html>

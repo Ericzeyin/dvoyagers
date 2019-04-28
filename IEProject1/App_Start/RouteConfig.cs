@@ -16,7 +16,7 @@ namespace IEProject1
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Contents", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Contents", action = "Page1", id = UrlParameter.Optional }
             );
         }
     }

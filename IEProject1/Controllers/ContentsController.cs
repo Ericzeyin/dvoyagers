@@ -175,8 +175,27 @@ namespace IEProject1.Controllers
 
         public ActionResult Page1()
         {
+
+            using (StreamReader reader = new StreamReader(Server.MapPath("~/Content/twitterTrends.json")))
+            {
+
+                string result = reader.ReadToEnd();
+                //var json = JObject.Parse(result);
+                JArray jsonArray = JArray.Parse(result);
+                var trend = jsonArray[0]["trends"].ToString();
+
+                var trends = JsonConvert.DeserializeObject<List<Trend>>(trend).Take(12);
+
+                ViewData["trends"] = trends;
+            }
+
+
             var contents = db.Content.Include(c => c.Field).Where(s => s.Rank < 9).OrderBy(a => a.Rank);
-            return View(contents.ToList());
+
+            ViewData["contents"] = contents;
+            return View();
+
+            // return View(contents.ToList());
         }
 
         public string GetTwitterTrends()

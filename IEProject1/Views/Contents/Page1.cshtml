@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+@*<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -20,7 +20,7 @@
     <!-- Custom styles for this template -->
     <link href="~/Vendor/custom/css/scrolling-nav.css" rel="stylesheet">
 
-</head>
+</head>*@
 
 <body id="page-top">
 
@@ -75,22 +75,19 @@
             <p>This will let you know current trending topics</p>
         </div>
         <div class="ui grid container" style="margin-top: 20px;">
-            <div class="ui four cards">
-                @foreach (var item in Model)
-                {
-                    <div class="card">
-                        <div class="image">
-                            <img src="~/Content/Images/@item.ImageName">
-                        </div>
-                        <div class="extra">
-                            Rating:@item.Popularity
-                            @*<div class="ui rating" data-rating="@item.Popularity"></div>*@
-                            <div class="ui accurate star widget">
-                                <div class="highlight" style="width:75%"></div>
+                <div class="ui four cards">
+                    @foreach (var item in (IEnumerable<IEProject1.Controllers.Trend>)ViewData["trends"])
+                    {
+                        <div class="card">
+                            <div class="content" style="text-align:center">
+                                <div class="header">@item.Name</div>
+                            </div>
+                            <div class="ui bottom attached button">
+                                <i class="arrow alternate circle right icon"></i>
+                                <a href="@item.Url">Go to Twitter</a>
                             </div>
                         </div>
-                    </div>
-                }
+                    }
             </div>
         </div>
     </section>
@@ -115,20 +112,20 @@
             </div>
             <div class="four column centered row">
                 <div class="column">
-                    <a href="@Url.Action("Index", "Places")" class="ui large rounded image">
+                    <a href="@Url.Action("Index", "Ylaces")" class="ui large rounded image">
                         <img src="@Url.Content("~/Content/Images/yoga.jpg")">
                     </a>
                 </div>
                 <div class="column">
-                    <a href="@Url.Action("Index", "RPlaces")" class="ui large rounded image">
-                        <img src="@Url.Content("~/Content/Images/photography.jpg")">
+                    <a href="@Url.Action("Details", "Places")" class="ui large rounded image">
+                        <img src="@Url.Content("~/Content/Images/food.jpg")">
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    @*<!-- Footer -->
     <footer class="py-5 bg-dark">
         <div class="container">
             <p class="m-0 text-center text-white">Copyright &copy; NewVics 2019</p>
@@ -144,7 +141,7 @@
     <script src="~/Vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom JavaScript for this theme -->
-    <script src="~/Vendor/custom/js/scrolling-nav.js"></script>
+    <script src="~/Vendor/custom/js/scrolling-nav.js"></script>*@
 
 </body>
 </html>

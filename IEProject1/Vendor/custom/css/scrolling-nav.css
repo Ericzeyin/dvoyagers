@@ -16,6 +16,7 @@ header.cover-image {
     overflow: hidden;
     height: 60%;
     width: 100%;
+    /*background-size: 100% 100%;*/
 }
 
 h1.cover-text {
