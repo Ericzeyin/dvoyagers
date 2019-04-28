@@ -19,8 +19,8 @@
 </div>
 
 <div class="ui center aligned text container" style="padding-top:4%">
-    <h2>Hot twitters</h2>
-    <p>You can see popular twitters from here.</p>
+    <h2>Recent popular tweets</h2>
+    <p>You can see popular tweets from here.</p>
 </div>
 
 <div class="ui grid container" style="padding-top:2%">
@@ -52,11 +52,11 @@
                 <div class="extra content">
                     @if (item.Url != null)
                     {
-                        <div class="ui button"> <a href="@item.Url">Find more details</a></div>
+                        <div class="ui button"> <a href="@item.Url" target="_blank">Find more details</a></div>
                     }
                     else
                     {
-                        <div class="ui button"> <a href="https://dvoyagers.azurewebsites.net">Find more details</a></div>
+                        <div class="ui button"> <a href="https://dvoyagers.azurewebsites.net" target="_blank">Find more details</a></div>
                     }
                 </div>
             </div>
