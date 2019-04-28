@@ -23,7 +23,7 @@ namespace IEProject1.Controllers
 
             Place place = new Place();
 
-            var places = db.Place.Include(p => p.Field).OrderByDescending(a => a.Rating);
+            var places = db.Place.Include(p => p.Field).Where(s => s.Field_id == 1).OrderByDescending(a => a.Rating);
 
             var ps = from s in places
                      select s;
@@ -80,18 +80,71 @@ namespace IEProject1.Controllers
         }
 
         // GET: Places/Details/5
-        public ActionResult Details(string id)
+        //Get food type data
+        public ActionResult Details(string searchString, string searchString1)
         {
-            if (id == null)
+            GetFoodData(searchString, searchString1);
+
+            Place place = new Place();
+
+            var places = db.Place.Include(p => p.Field).Where(s => s.Field_id == 4).OrderByDescending(a => a.Rating);
+
+            var ps = from s in places
+                     select s;
+            if (!(String.IsNullOrEmpty(searchString) && String.IsNullOrEmpty(searchString1)))
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                ps = ps.Where(s => s.Adress.Contains(searchString) && s.Photo_reference.Contains(searchString1));
             }
-            Place place = db.Place.Find(id);
-            if (place == null)
+
+            Place pl = ps.FirstOrDefault();
+
+            if (pl == null)
             {
-                return HttpNotFound();
+                ViewData["Message"] = "Sorry, there is no clubs in your suburb!You can select Melbourne to see all";
             }
-            return View(place);
+            else
+            {
+                ViewData["Message"] = null;
+            }
+            ViewData["Places"] = ps;
+
+            //using (StreamReader reader = new StreamReader(Server.MapPath("~/Content/yogaTwitterSearch.json")))
+            //{
+
+            //    string result = reader.ReadToEnd();
+            //    //var json = JObject.Parse(result);
+            //    var json = JObject.Parse(result);
+            //    var trend = json["statuses"];
+
+            //    var stwitters = new List<Stwitter>();
+
+            //    dynamic dynJson = JsonConvert.DeserializeObject(trend.ToString());
+
+            //    foreach (var item in dynJson)
+            //    {
+            //        Stwitter stwitter = new Stwitter();
+            //        stwitter.Screen_name = item["user"]["screen_name"];
+            //        stwitter.Created_at = item["created_at"];
+            //        stwitter.Url = item["user"]["url"];
+            //        stwitter.Text = item["text"];
+            //        stwitter.User_description = item["user"]["description"];
+            //        stwitter.Followers_count = item["user"]["followers_count"];
+            //        stwitter.Friends_count = item["user"]["friends_count"];
+            //        stwitter.Profile_image_url = item["user"]["profile_image_url"];
+
+            //        if (!String.IsNullOrEmpty(stwitter.Url))
+            //        {
+            //            stwitters.Add(stwitter);
+            //        }
+
+
+            //    }
+            //    //var trends = JsonConvert.DeserializeObject<List<Trend>>(trend).Take(12);
+
+            //    ViewData["sportsTwitter"] = stwitters;
+            //}
+
+            return View();
         }
 
         // GET: Places/Create
@@ -226,12 +279,79 @@ namespace IEProject1.Controllers
                 Place place = new Place();
                 place.Id = item["id"];
                 place.Name = item["name"];
+                place.Photo_reference = "sports";
                 place.latitude = item["geometry"]["location"]["lat"];
                 place.longitude = item["geometry"]["location"]["lng"];
                 place.Rating = (decimal)Convert.ToSingle(item.rating);
                 place.Adress = item.formatted_address;
                 place.Total_rating_people = Convert.ToInt32(item.user_ratings_total);
                 place.Field_id = 1;
+
+                Place place2 = db.Place.FirstOrDefault(m => m.Id == place.Id /*&& m.Name == place.Name && m.Adress == place.Adress*/);
+
+                if (place2 == null)
+                {
+                    db.Place.Add(place);
+                    db.SaveChanges();
+                }
+
+            }
+            response.Close();
+
+        }
+
+
+        public void GetFoodData(string input, string input1)
+        {
+            //db.Places.clear();
+            //string url = @"https://maps.googleapis.com/maps/api/place/textsearch/json?query=fitness+center+in+caulfield+east&key=AIzaSyD9LUlNJjOHpdMmBFzYkLpuC91VlO5McLg";
+
+            string str1 = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=";
+            if (String.IsNullOrEmpty(input1))
+            {
+                input1 = "cafe";
+            }
+            string type = input1.Replace(' ', '+');
+
+            string inornear = "+near+";
+            if (String.IsNullOrEmpty(input))
+            {
+                input = "melbourne";
+            }
+            string suburb = input.Replace(' ', '+');
+            string key = "&key=AIzaSyD9LUlNJjOHpdMmBFzYkLpuC91VlO5McLg";
+            string str = str1 + type + inornear + suburb + key;
+
+            string url = @str;
+
+            WebRequest request = WebRequest.Create(url);
+
+            WebResponse response = request.GetResponse();
+
+            Stream data = response.GetResponseStream();
+
+            StreamReader reader = new StreamReader(data);
+
+            // json-formatted string from maps api
+            string responseFromServer = reader.ReadToEnd();
+
+            var jsonObject = JObject.Parse(responseFromServer);
+            var json = jsonObject["results"];
+
+            dynamic dynJson = JsonConvert.DeserializeObject(json.ToString());
+
+            foreach (var item in dynJson)
+            {
+                Place place = new Place();
+                place.Id = item["id"];
+                place.Name = item["name"];
+                place.Photo_reference = input1;
+                place.latitude = item["geometry"]["location"]["lat"];
+                place.longitude = item["geometry"]["location"]["lng"];
+                place.Rating = (decimal)Convert.ToSingle(item.rating);
+                place.Adress = item.formatted_address;
+                place.Total_rating_people = Convert.ToInt32(item.user_ratings_total);
+                place.Field_id = 4;
 
                 Place place2 = db.Place.FirstOrDefault(m => m.Id == place.Id /*&& m.Name == place.Name && m.Adress == place.Adress*/);
 

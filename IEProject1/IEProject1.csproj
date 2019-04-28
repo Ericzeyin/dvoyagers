@@ -387,6 +387,7 @@
     <Content Include="Content\Images\cat.png" />
     <Content Include="Content\Images\cuture.png" />
     <Content Include="Content\Images\egames.jpg" />
+    <Content Include="Content\Images\food.jpg" />
     <Content Include="Content\Images\football.jpg" />
     <Content Include="Content\Images\help.jpg" />
     <Content Include="Content\Images\lol.jpg" />

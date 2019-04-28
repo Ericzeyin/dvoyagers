@@ -1,83 +1,574 @@
-﻿@model IEProject1.Models.Place
+﻿@model IEnumerable<IEProject1.Models.Place>
 
 @{
     ViewBag.Title = "Details";
     Layout = "~/Views/Shared/_Layout_Semantic.cshtml";
 }
 
-<h2>Details</h2>
-
-<div>
-    <h4>Place</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Adress)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Adress)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Rating)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Rating)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.latitude)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.latitude)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.longitude)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.longitude)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Total_rating_people)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Total_rating_people)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Photo_reference)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Photo_reference)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Field.FieldName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Field.FieldName)
-        </dd>
-
-    </dl>
+<!-- Following Menu -->
+<div class="ui large top fixed menu">
+    <div class="ui container">
+        <a href="@Url.Action("Index", "Contents")" class="item">Home</a>
+        @*<a href="@Url.Action("Edit", "Contents", new { id = 1 })" class="item">Sports</a>
+            <a href="@Url.Action("Edit", "Contents", new { id = 2 })" class="item">Religion</a>
+            <a href="@Url.Action("Edit", "Contents", new { id = 3 })" class="item">Yoga</a>
+            <a href="@Url.Action("Edit", "Contents", new { id = 4 })" class="item">Culture</a>
+            <a href="@Url.Action("Create", "Contents")" class="item">Statistics</a>*@
+        <a href="@Url.Action("Index", "Places")" class="item">Sports</a>
+        <a href="@Url.Action("Index", "RPlaces")" class="item">Religion</a>
+        <a href="@Url.Action("Index", "YPlaces")" class="item">Yoga&Taichi</a>
+        <a href="@Url.Action("Details", "Places")" class="item">Food</a>
+    </div>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+
+@*<div class="ui grid container" style="padding-top:4%">
+    <div class="ui four cards">
+        @foreach (var item in (IEnumerable<IEProject1.Controllers.Stwitter>)ViewData["sportsTwitter"])
+        {
+            <div class="card">
+                <div class="content">
+                    <img class="right floated mini ui image" src="@item.Profile_image_url">
+                    <div class="header">
+                        @item.Screen_name
+                    </div>
+                    <div class="meta">
+                        Popular twitters
+                    </div>
+                    <div class="description">
+                        @item.Text
+                    </div>
+                </div>
+                <div class="extra content">
+                    <span class="right floated user circle">
+                        @item.Followers_count followers
+                    </span>
+                    <span>
+                        <i class="user icon"></i>
+                        @item.Friends_count Friends
+                    </span>
+                </div>
+                <div class="extra content">
+                    @if (item.Url != null)
+                    {
+                        <div class="ui button"> <a href="@item.Url">Find more details</a></div>
+                    }
+                    else
+                    {
+                        <div class="ui button"> <a href="https://dvoyagers.azurewebsites.net">Find more details</a></div>
+                    }
+                </div>
+            </div>
+        }
+
+    </div>
+</div>*@
+
+
+<h2 style="background-color: Yellow;color: Blue; text-align: center; font-style: oblique">Find Yoga&Taichi places near your suburb</h2>
+
+<script>
+    $('.clearable.example .ui.selection.dropdown')
+        .dropdown({
+            clearable: true
+        })
+        ;
+    $('.clearable.example .ui.inline.dropdown')
+        .dropdown({
+            clearable: true,
+            placeholder: 'any'
+        })
+        ;
+</script>
+
+<div class="ui grid container right item">
+    @using (Html.BeginForm())
+    {
+        <div class="content">
+            <p>
+                <div class="inline field">
+                    <div class="ui icon input">
+                        @*<input type="text" placeholder="Search suburb..." name="SearchString">*@
+                        <div class="ui right pointing red basic label">
+                            Please select your suburb
+                        </div>
+                        <select class="ui search dropdown" name="SearchString">
+                            <option value="">Melbourne</option>
+                            <option value="Abbotsford">Abbotsford</option>
+                            <option value="Aberfeldie">Aberfeldie</option>
+                            <option value="Airport West">Airport West</option>
+                            <option value="Albanvale">Albanvale</option>
+                            <option value="Albert Park">Albert Park</option>
+                            <option value="Albion">Albion</option>
+                            <option value="Alphington">Alphington</option>
+                            <option value="Altona Meadows">Altona Meadows</option>
+                            <option value="Altona North">Altona North</option>
+                            <option value="Altona">Altona</option>
+                            <option value="Ardeer">Ardeer</option>
+                            <option value="Armadale">Armadale</option>
+                            <option value="Arthurs Seat">Arthurs Seat</option>
+                            <option value="Ascot Vale">Ascot Vale</option>
+                            <option value="Ashburton">Ashburton</option>
+                            <option value="Ashwood">Ashwood</option>
+                            <option value="Aspendale">Aspendale</option>
+                            <option value="Aspendale Gardens">Aspendale Gardens</option>
+                            <option value="Attwood">Attwood</option>
+                            <option value="Auburn">Auburn</option>
+                            <option value="Aurora">Aurora</option>
+                            <option value="Avondale Heights">Avondale Heights</option>
+                            <option value="Avonsleigh">Avonsleigh</option>
+                            <option value="Balaclava">Balaclava</option>
+                            <option value="Balwyn">Balwyn</option>
+                            <option value="Balwyn North">Balwyn North</option>
+                            <option value="Bangholme">Bangholme</option>
+                            <option value="Baxter">Baxter</option>
+                            <option value="Bayswater">Bayswater</option>
+                            <option value="Bayswater North">Bayswater North</option>
+                            <option value="Beaconsfield">Beaconsfield</option>
+                            <option value="Beaumaris">Beaumaris</option>
+                            <option value="Belgrave">Belgrave</option>
+                            <option value="Belgrave Heights">Belgrave Heights</option>
+                            <option value="Belgrave South">Belgrave South</option>
+                            <option value="Bellfield">Bellfield</option>
+                            <option value="Bennettswood">Bennettswood</option>
+                            <option value="Bentleigh">Bentleigh</option>
+                            <option value="Bentleigh East">Bentleigh East</option>
+                            <option value="Berwick">Berwick</option>
+                            <option value="Bittern">Bittern</option>
+                            <option value="Black Rock">Black Rock</option>
+                            <option value="Blackburn">Blackburn</option>
+                            <option value="Blackburn North">Blackburn North</option>
+                            <option value="Blackburn South">Blackburn South</option>
+                            <option value="Blairgowrie">Blairgowrie</option>
+                            <option value="Bonbeach">Bonbeach</option>
+                            <option value="Boronia">Boronia</option>
+                            <option value="Box Hill">Box Hill</option>
+                            <option value="Box Hill North">Box Hill North</option>
+                            <option value="Box Hill South">Box Hill South</option>
+                            <option value="Braeside">Braeside</option>
+                            <option value="Braybrook">Braybrook</option>
+                            <option value="Briar Hill">Briar Hill</option>
+                            <option value="Brighton">Brighton</option>
+                            <option value="Brighton East">Brighton East</option>
+                            <option value="Broadmeadows">Broadmeadows</option>
+                            <option value="Brookfield">Brookfield</option>
+                            <option value="Brooklyn">Brooklyn</option>
+                            <option value="Brunswick">Brunswick</option>
+                            <option value="Brunswick East">Brunswick East</option>
+                            <option value="Brunswick West">Brunswick West</option>
+                            <option value="Bulla">Bulla</option>
+                            <option value="Bulleen">Bulleen</option>
+                            <option value="Bundoora">Bundoora</option>
+                            <option value="Burnley">Burnley</option>
+                            <option value="Burnside">Burnside</option>
+                            <option value="Burnside Heights">Burnside Heights</option>
+                            <option value="Burwood">Burwood</option>
+                            <option value="Burwood East">Burwood East</option>
+                            <option value="Cairnlea">Cairnlea</option>
+                            <option value="Calder Park">Calder Park</option>
+                            <option value="Camberwell">Camberwell</option>
+                            <option value="Campbellfield">Campbellfield</option>
+                            <option value="Canterbury">Canterbury</option>
+                            <option value="Carlton North">Carlton North</option>
+                            <option value="Carlton">Carlton</option>
+                            <option value="Carnegie">Carnegie</option>
+                            <option value="Caroline Springs">Caroline Springs</option>
+                            <option value="Carrum">Carrum</option>
+                            <option value="Carrum Downs">Carrum Downs</option>
+                            <option value="Caulfield">Caulfield</option>
+                            <option value="Caulfield East">Caulfield East</option>
+                            <option value="Caulfield North">Caulfield North</option>
+                            <option value="Caulfield South">Caulfield South</option>
+                            <option value="Chadstone">Chadstone</option>
+                            <option value="Chelsea">Chelsea</option>
+                            <option value="Chelsea Heights">Chelsea Heights</option>
+                            <option value="Cheltenham">Cheltenham</option>
+                            <option value="Chirnside Park">Chirnside Park</option>
+                            <option value="Clarinda">Clarinda</option>
+                            <option value="Clayton">Clayton</option>
+                            <option value="Clayton South">Clayton South</option>
+                            <option value="Clematis">Clematis</option>
+                            <option value="Clifton Hill">Clifton Hill</option>
+                            <option value="Coburg">Coburg</option>
+                            <option value="Coburg North">Coburg North</option>
+                            <option value="Cocoroc">Cocoroc</option>
+                            <option value="Coldstream">Coldstream</option>
+                            <option value="Collingwood">Collingwood</option>
+                            <option value="Coolaroo">Coolaroo</option>
+                            <option value="Craigieburn">Craigieburn</option>
+                            <option value="Cranbourne">Cranbourne</option>
+                            <option value="Cranbourne East">Cranbourne East</option>
+                            <option value="Cranbourne North">Cranbourne North</option>
+                            <option value="Cranbourne South">Cranbourne South</option>
+                            <option value="Cranbourne West">Cranbourne West</option>
+                            <option value="Cremorne">Cremorne</option>
+                            <option value="Crib Point">Crib Point</option>
+                            <option value="Croydon">Croydon</option>
+                            <option value="Croydon Hills">Croydon Hills</option>
+                            <option value="Croydon North">Croydon North</option>
+                            <option value="Croydon South">Croydon South</option>
+                            <option value="Dallas">Dallas</option>
+                            <option value="Dandenong">Dandenong</option>
+                            <option value="Dandenong North">Dandenong North</option>
+                            <option value="Dandenong South">Dandenong South</option>
+                            <option value="Deer Park">Deer Park</option>
+                            <option value="Delahey">Delahey</option>
+                            <option value="Derrimut">Derrimut</option>
+                            <option value="Diamond Creek">Diamond Creek</option>
+                            <option value="Dingley Village">Dingley Village</option>
+                            <option value="Docklands">Docklands</option>
+                            <option value="Doncaster">Doncaster</option>
+                            <option value="Doncaster East">Doncaster East</option>
+                            <option value="Donvale">Donvale</option>
+                            <option value="Doreen">Doreen</option>
+                            <option value="Doveton">Doveton</option>
+                            <option value="Dromana">Dromana</option>
+                            <option value="Eaglemont">Eaglemont</option>
+                            <option value="East Melbourne">East Melbourne</option>
+                            <option value="Edithvale">Edithvale</option>
+                            <option value="Elsternwick">Elsternwick</option>
+                            <option value="Eltham">Eltham</option>
+                            <option value="Eltham North">Eltham North</option>
+                            <option value="Elwood">Elwood</option>
+                            <option value="Emerald">Emerald</option>
+                            <option value="Endeavour Hills">Endeavour Hills</option>
+                            <option value="Epping">Epping</option>
+                            <option value="Essendon Fields">Essendon Fields</option>
+                            <option value="Essendon North">Essendon North</option>
+                            <option value="Essendon West">Essendon West</option>
+                            <option value="Essendon">Essendon</option>
+                            <option value="Eumemmerring">Eumemmerring</option>
+                            <option value="Fairfield">Fairfield</option>
+                            <option value="Fawkner">Fawkner</option>
+                            <option value="Ferntree Gully">Ferntree Gully</option>
+                            <option value="Ferny Creek">Ferny Creek</option>
+                            <option value="Fitzroy">Fitzroy</option>
+                            <option value="Fitzroy North">Fitzroy North</option>
+                            <option value="Flemington">Flemington</option>
+                            <option value="Footscray">Footscray</option>
+                            <option value="Forest Hill">Forest Hill</option>
+                            <option value="Frankston">Frankston</option>
+                            <option value="Frankston North">Frankston North</option>
+                            <option value="Frankston South">Frankston South</option>
+                            <option value="Gardenvale">Gardenvale</option>
+                            <option value="Gladstone Park">Gladstone Park</option>
+                            <option value="Glen Huntly">Glen Huntly</option>
+                            <option value="Glen Iris">Glen Iris</option>
+                            <option value="Glen Waverley">Glen Waverley</option>
+                            <option value="Glenroy">Glenroy</option>
+                            <option value="Gowanbrae">Gowanbrae</option>
+                            <option value="Greensborough">Greensborough</option>
+                            <option value="Greenvale Lakes">Greenvale Lakes</option>
+                            <option value="Greenvale">Greenvale</option>
+                            <option value="Guys Hill">Guys Hill</option>
+                            <option value="Hadfield">Hadfield</option>
+                            <option value="Hallam">Hallam</option>
+                            <option value="Hampton">Hampton</option>
+                            <option value="Hampton East">Hampton East</option>
+                            <option value="Hampton Park">Hampton Park</option>
+                            <option value="Harkaway">Harkaway</option>
+                            <option value="Hawthorn">Hawthorn</option>
+                            <option value="Hawthorn East">Hawthorn East</option>
+                            <option value="Heatherdale">Heatherdale</option>
+                            <option value="Heatherton">Heatherton</option>
+                            <option value="Heathmont">Heathmont</option>
+                            <option value="Heidelberg">Heidelberg</option>
+                            <option value="Heidelberg Heights">Heidelberg Heights</option>
+                            <option value="Heidelberg West">Heidelberg West</option>
+                            <option value="Highett">Highett</option>
+                            <option value="Hillside">Hillside</option>
+                            <option value="Hoppers Crossing">Hoppers Crossing</option>
+                            <option value="Houston">Houston</option>
+                            <option value="Hughesdale">Hughesdale</option>
+                            <option value="Huntingdale">Huntingdale</option>
+                            <option value="Hurstbridge">Hurstbridge</option>
+                            <option value="Ivanhoe">Ivanhoe</option>
+                            <option value="Ivanhoe East">Ivanhoe East</option>
+                            <option value="Jacana">Jacana</option>
+                            <option value="Junction Village">Junction Village</option>
+                            <option value="Kallista">Kallista</option>
+                            <option value="Kalorama">Kalorama</option>
+                            <option value="Karingal">Karingal</option>
+                            <option value="Kealba">Kealba</option>
+                            <option value="Keilor">Keilor</option>
+                            <option value="Keilor Downs">Keilor Downs</option>
+                            <option value="Keilor East">Keilor East</option>
+                            <option value="Keilor Lodge">Keilor Lodge</option>
+                            <option value="Keilor North">Keilor North</option>
+                            <option value="Keilor Park">Keilor Park</option>
+                            <option value="Kensington">Kensington</option>
+                            <option value="Kerrimuir">Kerrimuir</option>
+                            <option value="Kew">Kew</option>
+                            <option value="Kew East">Kew East</option>
+                            <option value="Keysborough">Keysborough</option>
+                            <option value="Kilsyth">Kilsyth</option>
+                            <option value="Kilsyth South">Kilsyth South</option>
+                            <option value="Kings Park">Kings Park</option>
+                            <option value="Kingsbury">Kingsbury</option>
+                            <option value="Kingsville">Kingsville</option>
+                            <option value="Knoxfield">Knoxfield</option>
+                            <option value="Kooyong">Kooyong</option>
+                            <option value="Kurunjang">Kurunjang</option>
+                            <option value="Laburnum">Laburnum</option>
+                            <option value="Lalor">Lalor</option>
+                            <option value="Langwarrin">Langwarrin</option>
+                            <option value="Langwarrin South">Langwarrin South</option>
+                            <option value="Laverton">Laverton</option>
+                            <option value="Laverton North">Laverton North</option>
+                            <option value="Lilydale">Lilydale</option>
+                            <option value="Lower Plenty">Lower Plenty</option>
+                            <option value="Lynbrook">Lynbrook</option>
+                            <option value="Lyndhurst">Lyndhurst</option>
+                            <option value="Lysterfield">Lysterfield</option>
+                            <option value="Lysterfield South">Lysterfield South</option>
+                            <option value="Macclesfield">Macclesfield</option>
+                            <option value="McCrae">McCrae</option>
+                            <option value="McKinnon">McKinnon</option>
+                            <option value="Macleod">Macleod</option>
+                            <option value="Maidstone">Maidstone</option>
+                            <option value="Malvern">Malvern</option>
+                            <option value="Malvern East">Malvern East</option>
+                            <option value="Maribyrnong">Maribyrnong</option>
+                            <option value="Meadow Heights">Meadow Heights</option>
+                            <option value="Melbourne Airport">Melbourne Airport</option>
+                            <option value="Melton (suburb)">Melton (suburb)</option>
+                            <option value="Melton South">Melton South</option>
+                            <option value="Melton West">Melton West</option>
+                            <option value="Mentone">Mentone</option>
+                            <option value="Menzies Creek">Menzies Creek</option>
+                            <option value="Mernda">Mernda</option>
+                            <option value="Mickleham">Mickleham</option>
+                            <option value="Middle Park">Middle Park</option>
+                            <option value="Milgate Park Estate">Milgate Park Estate</option>
+                            <option value="Mill Park">Mill Park</option>
+                            <option value="Mitcham">Mitcham</option>
+                            <option value="Monbulk">Monbulk</option>
+                            <option value="Mont Albert">Mont Albert</option>
+                            <option value="Mont Albert North">Mont Albert North</option>
+                            <option value="Montmorency">Montmorency</option>
+                            <option value="Montrose">Montrose</option>
+                            <option value="Moonee Ponds">Moonee Ponds</option>
+                            <option value="Moorabbin Airport">Moorabbin Airport</option>
+                            <option value="Moorabbin">Moorabbin</option>
+                            <option value="Moorooduc">Moorooduc</option>
+                            <option value="Mooroolbark">Mooroolbark</option>
+                            <option value="Mordialloc">Mordialloc</option>
+                            <option value="Mornington">Mornington</option>
+                            <option value="Mount Dandenong">Mount Dandenong</option>
+                            <option value="Mount Eliza">Mount Eliza</option>
+                            <option value="Mount Evelyn">Mount Evelyn</option>
+                            <option value="Mount Martha">Mount Martha</option>
+                            <option value="Mount Waverley">Mount Waverley</option>
+                            <option value="Mulgrave">Mulgrave</option>
+                            <option value="Narre Warren East">Narre Warren East</option>
+                            <option value="Narre Warren North">Narre Warren North</option>
+                            <option value="Narre Warren South">Narre Warren South</option>
+                            <option value="Narre Warren">Narre Warren</option>
+                            <option value="Newport">Newport</option>
+                            <option value="Niddrie">Niddrie</option>
+                            <option value="Noble Park">Noble Park</option>
+                            <option value="Noble Park North">Noble Park North</option>
+                            <option value="North Melbourne">North Melbourne</option>
+                            <option value="North Richmond">North Richmond</option>
+                            <option value="North Warrandyte">North Warrandyte</option>
+                            <option value="Northcote">Northcote</option>
+                            <option value="Norwood">Norwood</option>
+                            <option value="Notting Hill">Notting Hill</option>
+                            <option value="Nunawading">Nunawading</option>
+                            <option value="Oak Park">Oak Park</option>
+                            <option value="Oaklands Junction">Oaklands Junction</option>
+                            <option value="Oakleigh">Oakleigh</option>
+                            <option value="Oakleigh East">Oakleigh East</option>
+                            <option value="Oakleigh South">Oakleigh South</option>
+                            <option value="Olinda">Olinda</option>
+                            <option value="Olivers Hill">Olivers Hill</option>
+                            <option value="Ormond">Ormond</option>
+                            <option value="Pakenham">Pakenham</option>
+                            <option value="Panton Hill">Panton Hill</option>
+                            <option value="Park Orchards">Park Orchards</option>
+                            <option value="Parkdale">Parkdale</option>
+                            <option value="Parkville">Parkville</option>
+                            <option value="Pascoe Vale South">Pascoe Vale South</option>
+                            <option value="Pascoe Vale">Pascoe Vale</option>
+                            <option value="The Patch">The Patch</option>
+                            <option value="Patterson Lakes">Patterson Lakes</option>
+                            <option value="Pennydale">Pennydale</option>
+                            <option value="Plenty">Plenty</option>
+                            <option value="Point Cook">Point Cook</option>
+                            <option value="Port Melbourne">Port Melbourne</option>
+                            <option value="Portsea">Portsea</option>
+                            <option value="Prahran">Prahran</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Princes Hill">Princes Hill</option>
+                            <option value="Ravenhall">Ravenhall</option>
+                            <option value="Research">Research</option>
+                            <option value="Reservoir">Reservoir</option>
+                            <option value="Richmond">Richmond</option>
+                            <option value="Ringwood">Ringwood</option>
+                            <option value="Ringwood East">Ringwood East</option>
+                            <option value="Ringwood North">Ringwood North</option>
+                            <option value="Ripponlea">Ripponlea</option>
+                            <option value="Rockbank">Rockbank</option>
+                            <option value="Rosanna">Rosanna</option>
+                            <option value="Rosebud">Rosebud</option>
+                            <option value="Rosebud West">Rosebud West</option>
+                            <option value="Rowville">Rowville</option>
+                            <option value="Roxburgh Park">Roxburgh Park</option>
+                            <option value="Rye">Rye</option>
+                            <option value="Safety Beach">Safety Beach</option>
+                            <option value="St Albans">St Albans</option>
+                            <option value="St Helena">St Helena</option>
+                            <option value="St Kilda">St Kilda</option>
+                            <option value="St Kilda East">St Kilda East</option>
+                            <option value="St Kilda West">St Kilda West</option>
+                            <option value="Sandhurst">Sandhurst</option>
+                            <option value="Sandringham">Sandringham</option>
+                            <option value="Sassafras">Sassafras</option>
+                            <option value="Scoresby">Scoresby</option>
+                            <option value="Seabrook">Seabrook</option>
+                            <option value="Seaford">Seaford</option>
+                            <option value="Seaholme">Seaholme</option>
+                            <option value="Seddon">Seddon</option>
+                            <option value="Selby">Selby</option>
+                            <option value="Seville">Seville</option>
+                            <option value="Sherbrooke">Sherbrooke</option>
+                            <option value="Skye">Skye</option>
+                            <option value="Somerton">Somerton</option>
+                            <option value="Sorrento">Sorrento</option>
+                            <option value="South Kingsville">South Kingsville</option>
+                            <option value="South Melbourne">South Melbourne</option>
+                            <option value="South Morang">South Morang</option>
+                            <option value="South Wharf">South Wharf</option>
+                            <option value="South Yarra">South Yarra</option>
+                            <option value="Southbank">Southbank</option>
+                            <option value="Spotswood">Spotswood</option>
+                            <option value="Springvale">Springvale</option>
+                            <option value="Springvale South">Springvale South</option>
+                            <option value="Strathmore">Strathmore</option>
+                            <option value="Strathmore Heights">Strathmore Heights</option>
+                            <option value="Sunbury">Sunbury</option>
+                            <option value="Sunshine">Sunshine</option>
+                            <option value="Sunshine North">Sunshine North</option>
+                            <option value="Sunshine West">Sunshine West</option>
+                            <option value="Surrey Hills">Surrey Hills</option>
+                            <option value="Sydenham">Sydenham</option>
+                            <option value="Syndal">Syndal</option>
+                            <option value="Tally Ho">Tally Ho</option>
+                            <option value="Tarneit">Tarneit</option>
+                            <option value="Taylors Hill">Taylors Hill</option>
+                            <option value="Taylors Lakes">Taylors Lakes</option>
+                            <option value="Tecoma">Tecoma</option>
+                            <option value="Templestowe">Templestowe</option>
+                            <option value="Templestowe Lower">Templestowe Lower</option>
+                            <option value="The Basin">The Basin</option>
+                            <option value="Thomastown">Thomastown</option>
+                            <option value="Thornbury">Thornbury</option>
+                            <option value="Toorak">Toorak</option>
+                            <option value="Tootgarook">Tootgarook</option>
+                            <option value="Tottenham">Tottenham</option>
+                            <option value="Travancore">Travancore</option>
+                            <option value="Tremont">Tremont</option>
+                            <option value="Truganina">Truganina</option>
+                            <option value="Tullamarine">Tullamarine</option>
+                            <option value="Upfield">Upfield</option>
+                            <option value="Upper Ferntree Gully">Upper Ferntree Gully</option>
+                            <option value="Upwey">Upwey</option>
+                            <option value="Vermont">Vermont</option>
+                            <option value="Vermont South">Vermont South</option>
+                            <option value="Viewbank">Viewbank</option>
+                            <option value="Wantirna">Wantirna</option>
+                            <option value="Wantirna South">Wantirna South</option>
+                            <option value="Warrandyte">Warrandyte</option>
+                            <option value="Warrandyte South">Warrandyte South</option>
+                            <option value="Warranwood">Warranwood</option>
+                            <option value="Waterways">Waterways</option>
+                            <option value="Watsonia">Watsonia</option>
+                            <option value="Watsonia North">Watsonia North</option>
+                            <option value="Wattle Glen">Wattle Glen</option>
+                            <option value="Waverley Park">Waverley Park</option>
+                            <option value="Werribee">Werribee</option>
+                            <option value="Werribee South">Werribee South</option>
+                            <option value="West Footscray">West Footscray</option>
+                            <option value="West Melbourne">West Melbourne</option>
+                            <option value="Westgarth">Westgarth</option>
+                            <option value="Westmeadows">Westmeadows</option>
+                            <option value="Wheelers Hill">Wheelers Hill</option>
+                            <option value="Wildwood">Wildwood</option>
+                            <option value="Williams Landing">Williams Landing</option>
+                            <option value="Williamstown">Williamstown</option>
+                            <option value="Williamstown North">Williamstown North</option>
+                            <option value="Windsor">Windsor</option>
+                            <option value="Wonga Park">Wonga Park</option>
+                            <option value="Wyndham Vale">Wyndham Vale</option>
+                            <option value="Yallambie">Yallambie</option>
+                            <option value="Yarrambat">Yarrambat</option>
+                            <option value="Yarraville">Yarraville</option>
+                            <option value="Yuroke">Yuroke</option>
+                        </select>
+                        <div class="ui right pointing red basic label">
+                            Please select your place type
+                        </div>
+                        <select class="ui search dropdown" name="SearchString1">
+                            <option value="Cafe">Cafe</option>
+                            <option value="Restaurant">Restaurant</option>
+                        </select>
+                        @*<i class="search link icon"></i>*@
+                        <input class="search icon" type="submit" />
+                    </div>
+                </div>
+            </p>
+        </div>
+    }
+</div>
+
+
+@if (ViewData["Message"] != null)
+{
+    <script>
+$(document).ready(function(){
+    alert('@ViewData["Message"]');
+});
+    </script>
+}
+
+
+<fieldset>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <div class="ui grid container" style="padding-top:2%">
+        <div id="googleMap" class="ui grid container" style="height:400px;width:100%;padding-top:2%"></div>
+    </div>
+
+    <script>
+ function myMap() {
+            var markersArray = [];
+            var contentArray = [];
+            var _c = null;
+            var myCenter = new google.maps.LatLng(-37.883145, 145.013360);
+            var mapProp = { center: myCenter, zoom: 10, scrollwheel: false, draggable: true, mapTypeId: google.maps.MapTypeId.ROADMAP };
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+        @foreach (var item in (IEnumerable<IEProject1.Models.Place >)ViewData["Places"])
+        {
+        <text>
+        markersArray.push(new google.maps.Marker({
+            animation: google.maps.Animation.DROP,
+            position: new google.maps.LatLng('@item.latitude', '@item.longitude', false),
+            title: '@item.Name',
+            map: map
+     }));
+        </text>
+            }
+
+       for (var i = 0; i < markersArray.length; i++) {
+             markersArray[i].setMap(map);
+    }
+}
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrX2JUBuXyOQ7P8p8Q_SLJ3GTX5m1eRPs&callback=myMap"></script>
+</fieldset>
+
+
