@@ -15,13 +15,13 @@ header.cover-image {
     background-image: url(../../../Content/Images/help.jpg);
     overflow: hidden;
     height: 60%;
-    width: 100%;
-    /*background-size: 100% 100%;*/
+    width: 110%;
 }
 
 h1.cover-text {
     font-size: 400%;
     font-style: italic;
     margin-top: 175px;
-    color: purple;
+    color: black;
+    background-color: #d5f4e685;
 }
