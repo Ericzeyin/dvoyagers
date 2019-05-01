@@ -251,30 +251,46 @@ namespace IEProject1.Controllers
         }
 
         // GET: Places/Delete/5
-        public ActionResult Delete(string id)
+        public ActionResult Delete()
         {
-            if (id == null)
+            using (StreamReader reader = new StreamReader(Server.MapPath("~/Content/sportsTwitterSearch.json")))
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                string result = reader.ReadToEnd();
+                var json = JObject.Parse(result);
+                var trend = json["statuses"]; 
+
+                var stwitters = new List<Stwitter>();
+
+                dynamic dynJson = JsonConvert.DeserializeObject(trend.ToString());
+
+                foreach (var item in dynJson)
+                {
+                    Stwitter stwitter = new Stwitter();
+                    stwitter.Screen_name = item["user"]["screen_name"];
+                    stwitter.Created_at = item["created_at"];
+                    stwitter.Url = item["user"]["url"];
+                    stwitter.Text = item["text"];
+                    stwitter.User_description = item["user"]["description"];
+                    stwitter.Followers_count = item["user"]["followers_count"];
+                    stwitter.Friends_count = item["user"]["friends_count"];
+                    stwitter.Profile_image_url = item["user"]["profile_image_url"];
+
+                    if (item["user"]["url"] == "None")
+                    {
+                        stwitter.Url = "https://twitter.com";
+                    }
+
+                    stwitters.Add(stwitter);
+
+                }
+                //var trends = JsonConvert.DeserializeObject<List<Trend>>(trend).Take(12);
+
+                ViewData["sportsTwitter"] = stwitters.Take(4);
             }
-            Place place = db.Place.Find(id);
-            if (place == null)
-            {
-                return HttpNotFound();
-            }
-            return View(place);
+
+            return View();
         }
 
-        // POST: Places/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(string id)
-        {
-            Place place = db.Place.Find(id);
-            db.Place.Remove(place);
-            db.SaveChanges();
-            return RedirectToAction("Index");
-        }
 
         protected override void Dispose(bool disposing)
         {
@@ -483,6 +499,14 @@ namespace IEProject1.Controllers
                 {
                     place.Label = "B";
                 }
+                else if (input1 == "Yoga")
+                {
+                    place.Label = "Y";
+                }
+                else if (input1 == "Tennis")
+                {
+                    place.Label = "T";
+                }
                 else {
                     place.Label = "S";
                 }
@@ -569,6 +593,21 @@ namespace IEProject1.Controllers
         }
 
         public ActionResult Question()
+        {
+            return View();
+        }
+
+        public ActionResult Fishing()
+        {
+            return View();
+        }
+
+        public ActionResult Hiking()
+        {
+            return View();
+        }
+
+        public ActionResult Clambing()
         {
             return View();
         }

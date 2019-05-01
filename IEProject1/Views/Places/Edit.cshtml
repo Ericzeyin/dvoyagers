@@ -26,15 +26,15 @@
 </style>
 
 
-<fieldset style="padding-bottom:3%">
+<fieldset>
     <div class="first">
         <fieldset>
-            <div class="ui vertical stripe quote segment">
+            <div class="ui vertical stripe quote segment" style="background-color:#414c56">
                 <div class="ui equal width stackable internally celled grid">
                     <div class="center aligned row">
-                        <div class="column">
-                            <h3>Popular foods</h3>
-                            <p>Click pictures to see videos to find how to make it.</p>
+                        <div class="column" style="color:white">
+                            <h2>Popular sports</h2>
+                            <p>The following is the three most popular sports.</p>
                         </div>
                     </div>
                 </div>
@@ -807,7 +807,7 @@ $(document).ready(function(){
                             <img src="@Url.Content("~/Content/Images/l1.jpg")">
                         </div>
                         <div class="content">
-                            <a class="header">Zomato</a>
+                            <a class="header" href="https://www.zomato.com/melbourne" target="_blank">Zomato</a>
                         </div>
                     </div>
                 </div>
@@ -817,7 +817,7 @@ $(document).ready(function(){
                             <img src="@Url.Content("~/Content/Images/l2.jpg")">
                         </div>
                         <div class="content">
-                            <a class="header">Uber Eats</a>
+                            <a class="header" href="https://www.ubereats.com/en-AU" target="_blank">Uber Eats</a>
                         </div>
                     </div>
                 </div>
@@ -827,7 +827,7 @@ $(document).ready(function(){
                             <img src="@Url.Content("~/Content/Images/l3.jpg")">
                         </div>
                         <div class="content">
-                            <a class="header">Youfoodz</a>
+                            <a class="header" href="https://youfoodz.com" target="_blank">Youfoodz</a>
                         </div>
                     </div>
                 </div>
@@ -838,19 +838,20 @@ $(document).ready(function(){
 
   
     <div class="second">
-        <div class="ui vertical stripe quote segment">
+
+        <div class="ui vertical stripe quote segment" style="background-color:#414c56">
             <div class="ui equal width stackable internally celled grid">
                 <div class="center aligned row">
-                    <div class="column">
-                        <h3>Recent popular tweets</h3>
+                    <div class="column" style="color:white">
+                        <h2>Newsfeed about food</h2>
                         <p>You can see popular tweets from here.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="ui grid container" style="padding-top:4%">
-            <div class="ui cards">
+        <div class="ui grid container" style="padding-top:4%;padding-bottom:4%">
+            <div class="ui centered cards">
                 @foreach (var item in (IEnumerable<IEProject1.Controllers.Stwitter>)ViewData["sportsTwitter"])
                 {
                     <div class="card">

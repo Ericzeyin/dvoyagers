@@ -1,0 +1,119 @@
+﻿
+@{
+    ViewBag.Title = "Hiking";
+    Layout = "~/Views/Shared/_Layout_Semantic.cshtml";
+}
+
+<h2>Hiking</h2>
+
+<fieldset style="padding-bottom:4%;padding-bottom:4%">
+    <div class="ui vertical stripe quote segment">
+        <div class="ui equal width stackable internally celled grid">
+            <div class="center aligned row">
+                <div class="column">
+                    <h2>Now you can see the five most popular hiking places.</h2>
+                    @*<p>You can also click to see more information.</p>*@
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui grid container" style="padding-top:3%">
+        <div class="ui special cards">
+            <div class="card">
+                <div class="blurring dimmable image">
+                    <div class="ui dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui inverted button">Add Friend</div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src=@Url.Content("~/Content/Images/hiking1.jpg")>
+                </div>
+                <div class="content">
+                    <a class="header">Mornington Peninsula National Park</a>
+                    @*<div class="meta">
+                            <span class="date">Created in Sep 2014</span>
+                        </div>*@
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="blurring dimmable image">
+                    <div class="ui inverted dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui primary button">Add Friend</div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src=@Url.Content("~/Content/Images/hiking2.jpg")>
+                </div>
+                <div class="content">
+                    <a class="header">You Yangs Regional Park</a>
+                    @*<div class="meta">
+                            <span class="date">Created in Aug 2014</span>
+                        </div>*@
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="blurring dimmable image">
+                    <div class="ui inverted dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui primary button">Add Friend</div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src=@Url.Content("~/Content/Images/hiking3.jpg")>
+                </div>
+                <div class="content">
+                    <a class="header">Dandenong Ranges National Park</a>
+                    @*<div class="meta">
+                            <span class="date">Created in Aug 2014</span>
+                        </div>*@
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="blurring dimmable image">
+                    <div class="ui inverted dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui primary button">Add Friend</div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src=@Url.Content("~/Content/Images/hiking4.jpg")>
+                </div>
+                <div class="content">
+                    <a class="header">Werribee Gorge</a>
+                    @*<div class="meta">
+                            <span class="date">Created in Aug 2014</span>
+                        </div>*@
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="blurring dimmable image">
+                    <div class="ui inverted dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui primary button">Add Friend</div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src=@Url.Content("~/Content/Images/hiking5.jpg")>
+                </div>
+                <div class="content">
+                    <a class="header">Cathedral Range State Park</a>
+                    @*<div class="meta">
+                            <span class="date">Created in Aug 2014</span>
+                        </div>*@
+                </div>
+            </div>
+        </div>
+    </div>
+</fieldset>

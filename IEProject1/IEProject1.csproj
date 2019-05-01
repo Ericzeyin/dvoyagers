@@ -176,6 +176,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\SemanticUIStart.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\APlace.cs" />
     <Compile Include="Controllers\ContentsController.cs" />
     <Compile Include="Controllers\OAuthController.cs" />
     <Compile Include="Controllers\PlacesController.cs" />
@@ -382,15 +383,49 @@
     <Content Include="Content\components\visit.js" />
     <Content Include="Content\components\visit.min.js" />
     <Content Include="Content\Images\basketball.jpg" />
+    <Content Include="Content\Images\basketball1.jpg" />
     <Content Include="Content\Images\bg.jpg" />
     <Content Include="Content\Images\building.jpg" />
     <Content Include="Content\Images\cat.png" />
+    <Content Include="Content\Images\clambing1.jpg" />
+    <Content Include="Content\Images\clambing2.jpg" />
+    <Content Include="Content\Images\clambing3.jpg" />
+    <Content Include="Content\Images\clambing4.jpg" />
+    <Content Include="Content\Images\cover1_1.jpg" />
     <Content Include="Content\Images\cuture.png" />
     <Content Include="Content\Images\egames.jpg" />
+    <Content Include="Content\Images\fish1.jpg" />
+    <Content Include="Content\Images\fish2.jpg" />
+    <Content Include="Content\Images\fish3.jpg" />
+    <Content Include="Content\Images\fish4.jpg" />
+    <Content Include="Content\Images\fish5.jpg" />
     <Content Include="Content\Images\food.jpg" />
+    <Content Include="Content\Images\food1.jpg" />
+    <Content Include="Content\Images\food2.jpg" />
+    <Content Include="Content\Images\food3.jpg" />
+    <Content Include="Content\Images\food4.jpg" />
     <Content Include="Content\Images\football.jpg" />
+    <Content Include="Content\Images\football1 .jpg" />
+    <Content Include="Content\Images\football1.jpg" />
     <Content Include="Content\Images\help.jpg" />
+    <Content Include="Content\Images\hiking1.jpg" />
+    <Content Include="Content\Images\hiking2.jpg" />
+    <Content Include="Content\Images\hiking3.jpg" />
+    <Content Include="Content\Images\hiking4.jpg" />
+    <Content Include="Content\Images\hiking5.jpg" />
+    <Content Include="Content\Images\l1.jpg" />
+    <Content Include="Content\Images\l2.jpg" />
+    <Content Include="Content\Images\l3.jpg" />
     <Content Include="Content\Images\lol.jpg" />
+    <Content Include="Content\Images\out1.jpg" />
+    <Content Include="Content\Images\out2.jpg" />
+    <Content Include="Content\Images\out3.jpg" />
+    <Content Include="Content\Images\yoga1.jpg" />
+    <Content Include="m1.png" />
+    <Content Include="m2.png" />
+    <Content Include="m3.png" />
+    <Content Include="m4.png" />
+    <Content Include="m5.png" />
     <Content Include="Content\Images\Music.jpg" />
     <Content Include="Content\Images\photography.jpg" />
     <Content Include="Content\Images\piano.jpg" />
@@ -464,8 +499,10 @@
     <Content Include="Content\ReligionTwitterSearch.json" />
     <Content Include="Content\sportsTwitterSearch.json" />
     <Content Include="Content\yogaTwitterSearch.json" />
+    <Content Include="Content\foodTwitterSearch.json" />
     <None Include="Properties\PublishProfiles\DVoyagers - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\DVoyagers2 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\Newvic - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -477,10 +514,26 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="markerclusterer.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\semantic.js" />
     <Content Include="Scripts\semantic.min.js" />
     <Content Include="Scripts\semantic.site.js" />
+    <Content Include="Vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="Vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Vendor\custom\css\scrolling-nav.css" />
+    <Content Include="Vendor\custom\js\scrolling-nav.js" />
+    <Content Include="Vendor\jquery-easing\jquery.easing.compatibility.js" />
+    <Content Include="Vendor\jquery-easing\jquery.easing.js" />
+    <Content Include="Vendor\jquery-easing\jquery.easing.min.js" />
+    <Content Include="Vendor\jquery\jquery.js" />
+    <Content Include="Vendor\jquery\jquery.min.js" />
+    <Content Include="Vendor\jquery\jquery.slim.js" />
+    <Content Include="Vendor\jquery\jquery.slim.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -488,7 +541,9 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -517,10 +572,21 @@
     <Content Include="Views\YPlaces\Details.cshtml" />
     <Content Include="Views\YPlaces\Edit.cshtml" />
     <Content Include="Views\YPlaces\Index.cshtml" />
+    <Content Include="Vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="Vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Include="Vendor\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="Vendor\jquery\jquery.min.map" />
+    <Content Include="Vendor\jquery\jquery.slim.min.map" />
+    <Content Include="Views\Places\Question.cshtml" />
+    <Content Include="Views\Places\Fishing.cshtml" />
+    <Content Include="Views\Places\Hiking.cshtml" />
+    <Content Include="Views\Places\Clambing.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\OAuth\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
