@@ -567,5 +567,10 @@ namespace IEProject1.Controllers
             response.Close();
             return places;
         }
+
+        public ActionResult Question()
+        {
+            return View();
+        }
     }
 }
