@@ -13,6 +13,7 @@
         public string Photo_reference { get; set; }
         public string Icon { get; set; }
         public string Label { get; set; }
+        public string Photo { get; set; }
         public int Field_id { get; set; }
     }
 }
