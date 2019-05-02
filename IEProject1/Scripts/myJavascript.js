@@ -1,0 +1,1 @@
+﻿$(document).ready(function () { $('#search-select').dropdown(); }); 

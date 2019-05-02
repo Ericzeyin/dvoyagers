@@ -313,6 +313,10 @@ namespace IEProject1.Controllers
             {
                 input = "melbourne";
             }
+            else
+            {
+                input = input + " melbourne";
+            }
             string suburb = input.Replace(' ', '+');
             string key = "&key=AIzaSyD9LUlNJjOHpdMmBFzYkLpuC91VlO5McLg";
             string str = str1 + type + inornear + suburb + key;
@@ -379,6 +383,10 @@ namespace IEProject1.Controllers
             {
                 input = "melbourne";
             }
+            else
+            {
+                input = input + " melbourne";
+            }
             string suburb = input.Replace(' ', '+');
             string key = "&key=AIzaSyD9LUlNJjOHpdMmBFzYkLpuC91VlO5McLg";
             string str = str1 + type + inornear + suburb + key;
@@ -443,6 +451,10 @@ namespace IEProject1.Controllers
             if (String.IsNullOrEmpty(input))
             {
                 input = "melbourne";
+            }
+            else
+            {
+                input = input + " melbourne";
             }
             string suburb = input.Replace(' ', '+');
             string key = "&key=AIzaSyD9LUlNJjOHpdMmBFzYkLpuC91VlO5McLg";
@@ -533,6 +545,10 @@ namespace IEProject1.Controllers
             if (String.IsNullOrEmpty(input))
             {
                 input = "melbourne";
+            }
+            else
+            {
+                input = input + " melbourne";
             }
             string suburb = input.Replace(' ', '+');
             string key = "&key=AIzaSyD9LUlNJjOHpdMmBFzYkLpuC91VlO5McLg";
