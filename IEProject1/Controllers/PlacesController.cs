@@ -80,7 +80,7 @@ namespace IEProject1.Controllers
                 }
                 //var trends = JsonConvert.DeserializeObject<List<Trend>>(trend).Take(12);
 
-                ViewData["sportsTwitter"] = stwitters.Take(6);
+                ViewData["sportsTwitter"] = stwitters.Take(5);
             }
 
             return View();
@@ -285,7 +285,7 @@ namespace IEProject1.Controllers
                 }
                 //var trends = JsonConvert.DeserializeObject<List<Trend>>(trend).Take(12);
 
-                ViewData["sportsTwitter"] = stwitters.Take(4);
+                ViewData["sportsTwitter"] = stwitters.Take(3);
             }
 
             return View();
