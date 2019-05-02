@@ -4,5 +4,426 @@
     Layout = "~/Views/Shared/_Layout_Semantic.cshtml";
 }
 
-<h2>Question</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Questions</title>
 
+    <script>
+            $(document).ready(function(){
+                $("#question2").hide();
+                $("#question3").hide();
+                $("#question4").hide();
+                $("#question5").hide();
+                $("#result").hide();
+
+                $("#question1_next").click(function () {
+                    $("#question1").hide()
+                    $("#question2").show()
+                });
+
+                $("#question2_next").click(function () {
+                    $("#question2").hide()
+                    $("#question3").show()
+                });
+
+                $("#question3_next").click(function () {
+                    $("#question3").hide()
+                    $("#question4").show()
+                });
+
+                $("#question4_next").click(function () {
+                    $("#question4").hide()
+                    $("#question5").show()
+                });
+
+                $("#question5_next").click(function () {
+                    $("#question5").hide()
+                    $("#result").show()
+                });
+            });
+
+            var aflTeamDict = {
+                "Richmond": 0,
+                "West Coast": 0,
+                "Collingwood": 0,
+                "Hawthorn": 0,
+                "Melbourne": 0,
+                "Sydney": 0,
+                "Greater Western Sydney": 0,
+                "Geelong": 0,
+                "North Melbourne": 0,
+                "Port Adelaide0": 0,
+                "Essendon": 0,
+                "Adelaide": 0,
+                "Western Bulldogs": 0,
+                "Fremantle": 0,
+                "Brisbane Lions": 0,
+                "St Kilda": 0,
+                "Gold Coast": 0,
+                "Carlton": 0
+            }
+
+            function question1(p1) {
+                if (p1 == 1) {
+                    for (var i = 0; i <= 5; i++) {
+                        var keyName = Object.keys(aflTeamDict)[i]
+                        aflTeamDict[keyName]++
+                        console.log(aflTeamDict[keyName])
+                    }
+                } else if (p1 == 2) {
+                    for (var i = 6; i <= 11; i++) {
+                        var keyName = Object.keys(aflTeamDict)[i]
+                        aflTeamDict[keyName]++
+                        console.log(aflTeamDict[keyName])
+                    }
+                } else {
+                    for (var i = 12; i <= 17; i++) {
+                        var keyName = Object.keys(aflTeamDict)[i]
+                        aflTeamDict[keyName]++
+                        console.log(aflTeamDict[keyName])
+                    }
+                }
+                console.log(Object.values(aflTeamDict));
+            }
+
+            function question2(p1) {
+                if (p1 == 1) {
+                    var catArr = [0, 7, 14];
+                    for (var i = 0; i < catArr.length; i++) {
+                        var keyName = Object.keys(aflTeamDict)[catArr[i]]
+                        aflTeamDict[keyName]++
+                        console.log(aflTeamDict[keyName])
+                    }
+                } else if (p1 == 2) {
+                    var birdArr = [1, 2, 3, 10, 11]
+                    for (var i = 0; i < birdArr.length; i++) {
+                        var keyName = Object.keys(aflTeamDict)[birdArr[i]]
+                        aflTeamDict[keyName]++
+                        console.log(aflTeamDict[keyName])
+                    }
+                } else {
+                    var otherArr = [4, 5, 6, 8, 9, 13, 15, 16, 17]
+                    for (var i = 0; i < otherArr.length; i++) {
+                        var keyName = Object.keys(aflTeamDict)[otherArr[i]]
+                        aflTeamDict[keyName]++
+                        console.log(aflTeamDict[keyName])
+                    }
+                }
+                console.log(Object.values(aflTeamDict));
+            }
+
+            function question3(p1) {
+                if (p1 == 1) {
+                    var celebArr = [0, 3, 1, 10, 2, 11]
+                    for (var i = 0; i < celebArr.length; i++) {
+                        var keyName = Object.keys(aflTeamDict)[celebArr[i]]
+                        aflTeamDict[keyName]++
+                        console.log(aflTeamDict[keyName])
+                    }
+                } else if (p1 == 2) {
+                    var tvArr = [7, 5, 17, 13, 9, 15]
+                    for (var i = 0; i < tvArr.length; i++) {
+                        var keyName = Object.keys(aflTeamDict)[tvArr[i]]
+                        aflTeamDict[keyName]++
+                        console.log(aflTeamDict[keyName])
+                    }
+                } else {
+                    var dramaArr = [4, 6, 8, 12, 14, 16]
+                    for (var i = 0; i < dramaArr.length; i++) {
+                        var keyName = Object.keys(aflTeamDict)[dramaArr[i]]
+                        aflTeamDict[keyName]++
+                        console.log(aflTeamDict[keyName])
+                    }
+                }
+                console.log(Object.values(aflTeamDict));
+            }
+
+            function question4(p1) {
+                if (p1 == 1) {
+                    var vicArr = [0, 3, 10, 2, 7, 17, 15, 4, 12, 8]
+                    for (var i = 0; i < vicArr.length; i++) {
+                        var keyName = Object.keys(aflTeamDict)[vicArr[i]]
+                        aflTeamDict[keyName]++
+                        console.log(aflTeamDict[keyName])
+                    }
+                } else if (p1 == 2) {
+                    var waArr = [1, 13]
+                    for (var i = 0; i < waArr.length; i++) {
+                        var keyName = Object.keys(aflTeamDict)[waArr[i]]
+                        aflTeamDict[keyName]++
+                        console.log(aflTeamDict[keyName])
+                    }
+                } else if (p1 == 3) {
+                    var saArr = [9, 11]
+                    for (var i = 0; i < saArr.length; i++) {
+                        var keyName = Object.keys(aflTeamDict)[saArr[i]]
+                        aflTeamDict[keyName]++
+                        console.log(aflTeamDict[keyName])
+                    }
+                } else if (p1 == 4) {
+                    var nswArr = [5, 6]
+                    for (var i = 0; i < nswArr.length; i++) {
+                        var keyName = Object.keys(aflTeamDict)[nswArr[i]]
+                        aflTeamDict[keyName]++
+                        console.log(aflTeamDict[keyName])
+                    }
+                } else {
+                    var queenArr = [14, 16]
+                    for (var i = 0; i < queenArr.length; i++) {
+                        var keyName = Object.keys(aflTeamDict)[queenArr[i]]
+                        aflTeamDict[keyName]++
+                        console.log(aflTeamDict[keyName])
+                    }
+                }
+                console.log(Object.values(aflTeamDict));
+            }
+
+            function question5(p1) {
+                if (p1 == 1) {
+                    var fdArr = [2, 3, 1, 10, 0, 17]
+                    for (var i = 0; i < fdArr.length; i++) {
+                        var keyName = Object.keys(aflTeamDict)[fdArr[i]]
+                        aflTeamDict[keyName]++
+                        console.log(aflTeamDict[keyName])
+                    }
+                } else if (p1 == 2) {
+                    var cdArr = [9, 7, 11, 13, 14, 4]
+                    for (var i = 0; i < cdArr.length; i++) {
+                        var keyName = Object.keys(aflTeamDict)[cdArr[i]]
+                        aflTeamDict[keyName]++
+                        console.log(aflTeamDict[keyName])
+                    }
+                } else {
+                    var ceArr = [5, 6, 8, 12, 15, 16]
+                    for (var i = 0; i < ceArr.length; i++) {
+                        var keyName = Object.keys(aflTeamDict)[ceArr[i]]
+                        aflTeamDict[keyName]++
+                        console.log(aflTeamDict[keyName])
+                    }
+                }
+                console.log(Object.values(aflTeamDict));
+
+                sortDict()
+            }
+
+            function sortDict() {
+                // Create items array
+                var items = Object.keys(aflTeamDict).map(function (key) {
+                    return [key, aflTeamDict[key]];
+                });
+
+                // Sort the array based on the second element
+                items.sort(function (first, second) {
+                    return second[1] - first[1];
+                });
+
+                // Create a new array with only the first 5 items
+                console.log(items.slice(0, 1));
+
+                var finalTeamName = items.slice(0, 1)
+
+                document.getElementById("teamName").innerHTML = finalTeamName[0][0];
+            }
+
+            function buttonClick(p1) {
+                document.getElementById('clicked_button').value = p1;
+                return true;
+            }
+    </script>
+
+    <style>
+        .ui.black.button:focus {
+            background-color: #284d96;
+        }
+    </style>
+</head>
+
+<body>
+
+    @*Ranking*@
+    <div class="ui segment" id="question1" style="margin-top: 100px; margin-bottom: 100px;">
+        <div class="ui two column very relaxed grid">
+            <div class="ui column centered grid">
+                <div class="image" style="margin-bottom: 20px;">
+                    <img src="~/Content/Images/question1.jpeg" style="height: 300px;">
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui center aligned container">
+                    <p style="font-size: 200%; color: black;">What is winnnig for you.?</p>
+                </div>
+                <div class="ui column centered grid">
+                    <div class="ui vertical buttons" style="margin-top: 50px;">
+                        <button onclick="buttonClick(1)" class="ui black button" style="margin-bottom: 20px;padding-left: 50px;padding-right: 50px;">Everything</button>
+                        <button onclick="buttonClick(2)" class="ui black button" style="margin-bottom: 20px;padding-left: 50px;padding-right: 50px;">Possible</button>
+                        <button onclick="buttonClick(3)" class="ui black button" style="margin-bottom: 20px;padding-left: 50px;padding-right: 50px;">Negotiable</button>
+                    </div>
+                </div>
+                <div class="ui center aligned container">
+                    <button onclick="question1(document.getElementById('clicked_button').value)" class="ui button" id="question1_next" style="margin-top: 20px;margin-bottom: 20px;padding-left: 50px;padding-right: 50px;">
+                        Next <i class="arrow circle right icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="ui vertical divider">
+            <i class="circle outline icon"></i>
+        </div>
+    </div>
+
+    @*Mascot*@
+    <div class="ui segment" id="question2" style="margin-top: 100px; margin-bottom: 100px;">
+        <div class="ui two column very relaxed grid">
+            <div class="ui column centered grid">
+                <div class="image" style="margin-bottom: 20px;">
+                    <img src="~/Content/Images/question2.jpeg" style="height: 300px;">
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui center aligned container">
+                    <p style="font-size: 200%; color: black;">Which animal do you prefer.?</p>
+                </div>
+                <div class="ui column centered grid">
+                    <div class="ui vertical buttons" style="margin-top: 50px;">
+                        <button onclick="buttonClick(1)" class="ui black button" style="margin-bottom: 20px;padding-left: 50px;padding-right: 50px;">Cats</button>
+                        <button onclick="buttonClick(2)" class="ui black button" style="margin-bottom: 20px;padding-left: 50px;padding-right: 50px;">Birds</button>
+                        <button onclick="buttonClick(3)" class="ui black button" style="margin-bottom: 20px;padding-left: 50px;padding-right: 50px;">Never Mind</button>
+                    </div>
+                </div>
+                <div class="ui center aligned container">
+                    <button onclick="question2(document.getElementById('clicked_button').value)" class="ui button" id="question2_next" style="margin-top: 20px;margin-bottom: 20px;padding-left: 50px;padding-right: 50px;">
+                        Next <i class="arrow circle right icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="ui vertical divider">
+            <i class="circle outline icon"></i>
+        </div>
+    </div>
+
+    @*Membership*@
+    <div class="ui segment" id="question3" style="margin-top: 100px; margin-bottom: 100px;">
+        <div class="ui two column very relaxed grid">
+            <div class="ui column centered grid">
+                <div class="image" style="margin-bottom: 20px;">
+                    <img src="~/Content/Images/question3.jpg" style="height: 300px;">
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui center aligned container">
+                    <p style="font-size: 200%; color: black;">What would you like to be.?</p>
+                </div>
+                <div class="ui column centered grid">
+                    <div class="ui vertical buttons" style="margin-top: 50px;">
+                        <button onclick="buttonClick(1)" class="ui black button" style="margin-bottom: 20px;padding-left: 50px;padding-right: 50px;">Movie Celebrity</button>
+                        <button onclick="buttonClick(2)" class="ui black button" style="margin-bottom: 20px;padding-left: 50px;padding-right: 50px;">TV series artist</button>
+                        <button onclick="buttonClick(3)" class="ui black button" style="margin-bottom: 20px;padding-left: 50px;padding-right: 50px;">Drama Artist</button>
+                    </div>
+                </div>
+                <div class="ui center aligned container">
+                    <button onclick="question3(document.getElementById('clicked_button').value)" class="ui button" id="question3_next" style="margin-top: 20px;margin-bottom: 20px;padding-left: 50px;padding-right: 50px;">
+                        Next <i class="arrow circle right icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="ui vertical divider">
+            <i class="circle outline icon"></i>
+        </div>
+    </div>
+
+    @*State*@
+    <div class="ui segment" id="question4" style="margin-top: 100px; margin-bottom: 100px;">
+        <div class="ui two column very relaxed grid">
+            <div class="ui column centered grid">
+                <div class="image" style="margin-bottom: 20px;">
+                    <img src="~/Content/Images/question4.jpeg" style="height: 300px; margin-top: 50px;">
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui center aligned container">
+                    <p style="font-size: 200%; color: black;">Which state do you like.?</p>
+                </div>
+                <div class="ui column centered grid">
+                    <div class="ui vertical buttons" style="margin-top: 50px;">
+                        <button onclick="buttonClick(1)" class="ui black button" style="margin-bottom: 20px;padding-left: 50px;padding-right: 50px;">Victoria</button>
+                        <button onclick="buttonClick(2)" class="ui black button" style="margin-bottom: 20px;padding-left: 50px;padding-right: 50px;">Western Australia</button>
+                        <button onclick="buttonClick(3)" class="ui black button" style="margin-bottom: 20px;padding-left: 50px;padding-right: 50px;">South Australia</button>
+                        <button onclick="buttonClick(4)" class="ui black button" style="margin-bottom: 20px;padding-left: 50px;padding-right: 50px;">New South Wales</button>
+                        <button onclick="buttonClick(5)" class="ui black button" style="margin-bottom: 20px;padding-left: 50px;padding-right: 50px;">Queensland</button>
+                    </div>
+                </div>
+                <div class="ui center aligned container">
+                    <button onclick="question4(document.getElementById('clicked_button').value)" class="ui button" id="question4_next" style="margin-top: 20px;margin-bottom: 20px;padding-left: 50px;padding-right: 50px;">
+                        Next <i class="arrow circle right icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="ui vertical divider">
+            <i class="circle outline icon"></i>
+        </div>
+    </div>
+
+    @*Revenue*@
+    <div class="ui segment" id="question5" style="margin-top: 100px; margin-bottom: 100px;">
+        <div class="ui two column very relaxed grid">
+            <div class="ui column centered grid">
+                <div class="image" style="margin-bottom: 20px;">
+                    <img src="~/Content/Images/question5.jpeg" style="height: 300px;">
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui center aligned container">
+                    <p style="font-size: 200%; color: black;">Select a place to dine</p>
+                </div>
+                <div class="ui column centered grid">
+                    <div class="ui vertical buttons" style="margin-top: 50px;">
+                        <button onclick="buttonClick(1)" class="ui toggle black button" style="margin-bottom: 20px;padding-left: 50px;padding-right: 50px;">Fine dinning</button>
+                        <button onclick="buttonClick(2)" class="ui black button" style="margin-bottom: 20px;padding-left: 50px;padding-right: 50px;">Casual dining</button>
+                        <button onclick="buttonClick(3)" class="ui black button" style="margin-bottom: 20px;padding-left: 50px;padding-right: 50px;">Cheap eats :D</button>
+                    </div>
+                    <div class="ui center aligned container">
+                        <button onclick="question5(document.getElementById('clicked_button').value)" class="ui button" id="question5_next" style="margin-bottom: 20px;padding-left: 50px;padding-right: 50px;">
+                            Next <i class="arrow circle right icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui vertical divider">
+            <i class="circle outline icon"></i>
+        </div>
+    </div>
+
+    @*Revenue*@
+    <div class="ui segment" id="result" style="margin-top: 100px; margin-bottom: 100px;">
+        <div class="ui two column very relaxed grid">
+            <div class="ui column centered grid">
+                <div class="image" style="margin-bottom: 20px;">
+                    <img src="~/Content/Images/afl.png" style="height: 300px;">
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui center aligned container">
+                    <p style="font-size: 200%; color: black;">Congratulation!</p>
+                </div>
+                <div class="ui center aligned container">
+                    <p style="font-size: 200%; color: black;">You are best suitable for: </p>
+                </div>
+                <div class="ui center aligned container">
+                    <p id="teamName" style="font-size: 200%; color: black;"></p>
+                </div>
+            </div>
+        </div>
+        <div class="ui vertical divider">
+            <i class="circle outline icon"></i>
+        </div>
+    </div>
+
+    <input type="hidden" name="clicked_button" id="clicked_button" value="" />
+
+</body>
+</html>
